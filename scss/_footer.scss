@@ -1,0 +1,28 @@
+footer{
+    overflow-x: hidden;
+    .redesFooter{
+        .iconos{
+            font-size: 2rem;
+            display: flex;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+        .iconos:hover{
+           font-size: 40px;
+        }
+    }
+    .contenedorLogo{
+        .imgLogo{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .parrafoFooter{
+        font-size: small;
+        font-family: $fontexto;
+    }
+}

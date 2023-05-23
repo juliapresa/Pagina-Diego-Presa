@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header .contenedorLogo .imgLogo {
+  width: 150px;
+  height: 150px;
+}
+header .contenedorNav {
+  margin-top: 0%;
+  font-family: "Source Serif Pro", serif;
+  font-size: large;
+}
+
+footer {
+  overflow-x: hidden;
+}
+footer .redesFooter .iconos {
+  font-size: 2rem;
+  display: flex;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+footer .redesFooter .iconos:hover {
+  font-size: 40px;
+}
+footer .contenedorLogo .imgLogo {
+  width: 150px;
+  height: 150px;
+}
+footer .parrafoFooter {
+  font-size: small;
+  font-family: "Source Serif Pro", serif;
+}
+
+/*# sourceMappingURL=styles.css.map */
