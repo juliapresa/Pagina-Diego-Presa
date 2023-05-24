@@ -6,8 +6,8 @@
 }
 
 header .contenedorLogo .imgLogo {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 100px;
 }
 header .contenedorNav {
   margin-top: 0%;
@@ -32,12 +32,45 @@ footer .redesFooter .iconos:hover {
   font-size: 40px;
 }
 footer .contenedorLogo .imgLogo {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 100px;
 }
 footer .parrafoFooter {
   font-size: small;
   font-family: "Source Serif Pro", serif;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+main .tituloMusica {
+  font-family: "Castoro Titling", cursive;
+  font-size: larger;
+  margin-top: 5%;
+}
+main .subtituloMusica {
+  margin-top: 5%;
+  font-family: "Source Serif Pro", serif;
+  font-size: large;
+}
+main .contenedorDiscos {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+main .contenedorDiscos .textoDiscos {
+  margin: 0%;
+  font-family: "Source Serif Pro", serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main .contenedorDiscos .discos {
+  border: 1px black solid;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
 }
 
 /*# sourceMappingURL=styles.css.map */
