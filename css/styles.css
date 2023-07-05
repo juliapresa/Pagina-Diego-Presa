@@ -3,33 +3,87 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-header {
+.header {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+.header .row {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  background-color: white;
   height: fit-content;
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: white;
 }
-header .contenedorLogo {
+.header .row .contenedorLogo {
   height: fit-content;
 }
-header .contenedorLogo .imgLogo {
+.header .row .contenedorLogo .imgLogo {
   width: 70px;
   height: 90px;
 }
-header .contenedorNav {
+.header .row .contenedorNav {
+  margin: 0%;
+  padding: 0%;
   height: fit-content;
   font-family: "Source Serif Pro", serif;
   font-size: large;
   margin-top: 1%;
 }
 
+.headerIndex {
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  background-image: url(../assets/img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headerIndex .row {
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+  background-color: rgba(8, 8, 8, 0);
+}
+.headerIndex .row .contenedorLogo {
+  height: fit-content;
+}
+.headerIndex .row .contenedorLogo .imgLogo {
+  width: 70px;
+  height: 90px;
+}
+.headerIndex .row .contenedorNav {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Source Serif Pro", serif;
+  font-size: large;
+  color: white;
+  height: fit-content;
+}
+
 footer {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
   overflow-x: hidden;
 }
-footer .redesFooter .iconos {
+footer .row {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+footer .row .redesFooter .iconos {
   font-size: 2rem;
   display: flex;
   margin-left: 2%;
@@ -39,42 +93,99 @@ footer .redesFooter .iconos {
   text-decoration: none;
   color: black;
 }
-footer .redesFooter .iconos:hover {
+footer .row .redesFooter .iconos:hover {
   font-size: 40px;
 }
-footer .contenedorLogo .imgLogo {
+footer .row .contenedorLogo .imgLogo {
   width: 80px;
   height: 100px;
 }
-footer .parrafoFooter {
+footer .row .parrafoFooter {
   font-size: small;
   font-family: "Source Serif Pro", serif;
 }
 
-main .carousel {
-  width: 100%;
-  height: 70vh;
-}
-
-main {
-  width: 100%;
+body {
+  width: 100vw;
+  margin: 0%;
+  padding: 0%;
   overflow-x: hidden;
 }
-main .tituloMusica {
+body .mainInicio {
+  margin-top: 15%;
+}
+body .mainInicio .texto {
+  font-family: "Source Serif Pro", serif;
+  font-size: x-large;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+body .mainInicio .cardNoticias .cardCuerpo {
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+}
+body .mainInicio .cardNoticias .cardCuerpo .cardBody {
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+}
+body .mainInicio .cardNoticias .cardCuerpo .cardTitle {
+  font-family: "Castoro Titling", cursive;
+  font-size: xx-large;
+  margin-top: 2%;
+}
+body .mainInicio .cards {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  overflow: hidden;
+}
+body .mainInicio .cards .card {
+  width: 20rem;
+}
+body .mainInicio .cards .card .card-body {
+  padding: 0%;
+}
+body .mainInicio .cards .card .cardTitle {
+  font-family: "Castoro Titling", cursive;
+  margin-top: 2%;
+}
+body .mainInicio .cards .card .cardBody {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+body .mainInicio .cards .card .cardImg {
+  width: 100%;
+  height: 70%;
+}
+
+body .main {
+  width: 100vw;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+body .main .section {
+  margin: 0%;
+  padding: 0%;
+}
+body .main .section .tituloMusica {
   font-family: "Castoro Titling", cursive;
   font-size: larger;
   margin-top: 5%;
 }
-main .subtituloMusica {
+body .main .section .subtituloMusica {
   margin-top: 5%;
   font-family: "Source Serif Pro", serif;
   font-size: large;
 }
-main .contenedorDiscos {
+body .main .section .contenedorDiscos {
+  padding: 0%;
   margin-top: 2%;
   margin-bottom: 5%;
 }
-main .contenedorDiscos .textoDiscos {
+body .main .section .contenedorDiscos .textoDiscos {
   margin: 0%;
   font-family: "Source Serif Pro", serif;
   font-size: 15px;
@@ -82,11 +193,11 @@ main .contenedorDiscos .textoDiscos {
   flex-direction: column;
   text-align: center;
 }
-main .contenedorDiscos .discos {
+body .main .section .contenedorDiscos .discos {
   border: 1px black solid;
   border-radius: 20px;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */

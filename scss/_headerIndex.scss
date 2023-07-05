@@ -1,32 +1,33 @@
-.header{
+.headerIndex {
     width: 100%;
+    height: 100vh;
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
-    
-    .row{
+    background-image: url(../assets/img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .row {
         width: 100%;
+        height: 100vh;
         margin: 0%;
         padding: 0%;
-        background-color: white;
-        height: fit-content;
-        position: sticky;
-        top: 0;
-        z-index: 10;
+        background-color: rgba(8, 8, 8, 0);
         .contenedorLogo{
             height: fit-content;
-            .imgLogo{
+            .imgLogo {
                 width: 70px;
                 height: 90px;
             }
         }
-        .contenedorNav{
+        .contenedorNav {
             margin: 0%;
             padding: 0%;
-            height: fit-content;
             font-family: $fontexto;
             font-size: large;
-            margin-top: 1%;
+            color: white;
+            height: fit-content;
+
         }
     }
 }

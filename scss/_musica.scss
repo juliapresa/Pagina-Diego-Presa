@@ -1,32 +1,47 @@
-main{
-    width: 100%;
-    overflow-x: hidden;
-    .tituloMusica{
-        font-family: $fontitulo;
-        font-size: larger;
-        margin-top: 5%;
-    }
-    .subtituloMusica{
-        margin-top: 5%;
-        font-family: $fontexto;
-        font-size: large;
-    }
-    .contenedorDiscos{
-        margin-top: 2%;
-        margin-bottom: 5%;
-        .textoDiscos{
+body{
+    .main {
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+        overflow-x: hidden;
+    
+        .section {
             margin: 0%;
-            font-family: $fontexto;
-            font-size: 15px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
+            padding: 0%;
+            .tituloMusica {
+                font-family: $fontitulo;
+                font-size: larger;
+                margin-top: 5%;
+            }
+    
+            .subtituloMusica {
+                margin-top: 5%;
+                font-family: $fontexto;
+                font-size: large;
+            }
+    
+            .contenedorDiscos {
+                padding: 0%;
+                margin-top: 2%;
+                margin-bottom: 5%;
+    
+                .textoDiscos {
+                    margin: 0%;
+                    font-family: $fontexto;
+                    font-size: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+    
+                .discos {
+                    border: 1px black solid;
+                    border-radius: 20px;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
         }
-        .discos{
-            border: 1px black solid;
-            border-radius: 20px;
-            width: 250px;
-            height: 250px;
-        }
+    
     }
 }
