@@ -800,31 +800,31 @@ body .mainInicio .galeria .divGaleria .imgGaleriaSeis {
     margin-bottom: 2%;
     width: 100%;
   }
-  body .mainInicio .divTextoUno {
+  body .mainInicio .biografia .divTextoUno {
     margin: 0%;
     padding: 0%;
     width: 100%;
     height: 50%;
     overflow-x: hidden;
   }
-  body .mainInicio .divTextoUno .textoUno {
+  body .mainInicio .biografia .divTextoUno .textoUno {
     font-family: "JetBrains Mono", monospace;
     font-size: 12px;
     color: rgb(164, 164, 164);
     letter-spacing: 0rem;
   }
-  body .mainInicio .divTextoDos {
-    overflow-x: hidden;
-    padding: 0%;
+  body .mainInicio .biografia .divTextoDos {
     margin: 0%;
+    padding: 0%;
     width: 100%;
     height: 50%;
+    overflow-x: hidden;
   }
-  body .mainInicio .divTextoDos .textoDos {
-    letter-spacing: 0rem;
+  body .mainInicio .biografia .divTextoDos .textoDos {
     font-family: "JetBrains Mono", monospace;
     font-size: 12px;
     color: rgb(164, 164, 164);
+    letter-spacing: 0rem;
   }
   body .mainInicio .sectionTitulos {
     margin-top: 10%;
