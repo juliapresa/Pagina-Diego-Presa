@@ -1,0 +1,128 @@
+body {
+    .mainContacto {
+        .tituloPagina {
+            .subtituloPagina{
+                font-family: $fontexto;
+                font-size: 28px;
+                font-weight: 400;
+                color: white;
+                letter-spacing: 0.1rem;
+                overflow-y: hidden;
+            }
+        }
+        .divHr{
+            .hr{
+                color: white;
+                height: 2px;
+                width: 100%;
+            }
+        }
+        .divFormulario {
+            margin-bottom: 5%;
+            margin-top: 5%;
+            margin-right: 2%;
+            .divImgContacto {
+                .imgContacto {
+                    height: 370px;
+                    width: 550px;
+                }
+            }
+
+            .formulario {
+                align-items: center;
+                background-color: black;
+                .formularioContenido {
+                    .form-control{
+                        background-color: black;
+                        color: white;
+                    }
+                    width: 95%;
+                    font-family: $fontexto;
+                    color: white;
+                }
+
+                .button {
+                    background-color: black;
+                    border: 1px solid white;
+                    color: white;
+                    font-family: $fontexto;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    body {
+       overflow-x: hidden;
+        .mainContacto {
+            width: 100%;
+            overflow-x: hidden;
+            .tituloPagina {
+                display: flex;
+                justify-content: center;
+                .subtituloPagina{
+                    font-family: $fontexto;
+                    font-size: 28px;
+                    font-weight: 400;
+                    color: white;
+                    letter-spacing: 0.1rem;
+                    overflow-y: hidden;
+                }
+            }
+            .divHr{
+                .hr{
+                    color: white;
+                    height: 2px;
+                    width: 100%;
+                }
+            }
+            .divFormulario {
+                width: 100%;
+                margin: 0%;
+                padding: 0%;
+                overflow-x: hidden;
+                margin-bottom: 5%;
+                margin-top: 5%;
+                margin-right: 2%;
+                display: flex;
+                flex-direction: column;
+                .divImgContacto {
+                    width: 100%;
+                    margin-bottom: 5%;
+                    justify-content: center;
+                    .imgContacto {
+                        height: 270px;
+                        width: 345px;
+                    }
+                }
+    
+                .formulario {
+                    width: 100%;
+                    align-items: center;
+                    background-color: black;
+                    display: flex;
+                    justify-content: center;
+                    .formularioContenido {
+                        .form-control{
+                            background-color: black;
+                            color: white;
+                        }
+                        width: 95%;
+                        font-family: $fontexto;
+                        color: white;
+                    }
+    
+                    .button {
+                        background-color: black;
+                        border: 1px solid white;
+                        color: white;
+                        font-family: $fontexto;
+                    }
+                }
+    
+            }
+        }
+    }
+}

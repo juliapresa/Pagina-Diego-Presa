@@ -1,0 +1,167 @@
+body{
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    .mainNoticias{
+        .tituloPagina {
+            .subtituloPagina{
+                font-family: $fontexto;
+                font-size: 28px;
+                font-weight: 400;
+                color: white;
+                letter-spacing: 0.1rem;
+                overflow-y: hidden;
+            }
+        }
+        .divHr{
+           
+            .hr{
+                color: white;
+                height: 2px;
+                width: 100%;
+            }
+        }
+        .noticias{
+            .divNoticiasUno{
+                margin: 0%;
+                padding: 0%;
+                .divHrNoticias{
+                    margin: 0%;
+                    padding: 0%;
+                    margin-bottom: 1%;
+                    margin-top: 1%;
+                    .hrNoticias{
+                        margin: 0%;
+                        padding: 0%;
+                      background-color: white;
+                        height: 2px;
+                        width: 100%;
+                    }
+                }
+                    .imgNoticias{
+                        width: 330px;
+                        height: 300px;
+                        margin-left: 5%;
+                    }
+                    .divTextoNoticias{
+                        .tituloNoticias{
+                            color: rgb(164, 164, 164);;
+                            overflow-y: hidden;
+                            font-family: $fontexto;
+                        }
+                        .parrafoNoticias{
+                            color: rgb(164, 164, 164);
+                            font-family: $fontexto;
+                        }
+                    }
+                .divFechaNoticias{
+                    color: rgb(164, 164, 164);
+                    font-family: $fontexto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    body{
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+        overflow-x: hidden;
+        .mainNoticias{
+            .tituloPagina {
+                display: flex;
+                justify-content: center;
+                .subtituloPagina{
+                    font-family: $fontexto;
+                    font-size: 28px;
+                    font-weight: 400;
+                    color: white;
+                    letter-spacing: 0.1rem;
+                    overflow-y: hidden;
+                }
+            }
+            .divHr{
+               
+                .hr{
+                    color: white;
+                    height: 2px;
+                    width: 100%;
+                }
+            }
+            .noticias {
+                .divNoticiasUno {
+                    margin: 0%;
+                    padding: 0%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .divHrNoticias {
+                        margin: 0%;
+                        padding: 0%;
+                        margin-bottom: 1%;
+                        margin-top: 1%;
+                        .hrNoticias {
+                            margin: 0%;
+                            padding: 0%;
+                            background-color: white;
+                            height: 2px;
+                            width: 100%;
+                        }
+                    }
+                    .divImgNoticias{
+                        padding: 0%;
+                        display: flex;
+                        justify-content: center;
+                            align-items: center;
+                        .imgNoticias {
+                            width: 360px;
+                            height: 330px;
+                            margin: 0%;
+                            padding: 0%;
+                        }
+                    }
+                    .divTextoNoticias {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .tituloNoticias {
+                            color: rgb(164, 164, 164);
+                            overflow-y: hidden;
+                            font-family: $fontexto;
+                            margin-top: 2%;
+                        }
+
+                        .parrafoNoticias {
+                            color: rgb(164, 164, 164);
+                            font-family: $fontexto;
+                            margin: 0%;
+                            margin-bottom: 2%;
+                        }
+                    }
+
+                    .divFechaNoticias {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        color: rgb(164, 164, 164);
+                        font-family: $fontexto;
+                        margin-top: 2%;
+                    }
+
+                    .divBotonNoticias {
+                        .botonNoticias {
+                            border: none;
+                            background-color: black;
+                            color: white;
+                            font-family: $fontexto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+body {
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+
+    .mainConciertos {
+        .tituloPagina {
+            .subtituloPagina {
+                font-family: $fontexto;
+                font-size: 28px;
+                font-weight: 400;
+                color: white;
+                letter-spacing: 0.1rem;
+                overflow-y: hidden;
+            }
+        }
+
+        .divHr {
+            .hr {
+                color: white;
+                height: 2px;
+                width: 100%;
+            }
+        }
+
+        .conciertos {
+            .divConciertosUno {
+                margin: 0%;
+                padding: 0%;
+                .divHrConciertos {
+                    margin: 0%;
+                    padding: 0%;
+                    margin-bottom: 1%;
+                    margin-top: 1%;
+
+                    .hrConciertos {
+                        margin: 0%;
+                        padding: 0%;
+                        background-color: white;
+                        height: 2px;
+                        width: 100%;
+                    }
+                }
+
+                .divTextoConciertos {
+                    padding: 0%;
+                    margin: 0%;
+                    margin-left: 2%;
+                    width: 50%;
+                    height: fit-content;
+
+                    .tituloConciertos {
+                        color: rgb(164, 164, 164);
+                        overflow-y: hidden;
+                        font-family: $fontexto;
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+
+                    .parrafoConciertos {
+                        color: rgb(164, 164, 164);
+                        font-family: $fontexto;
+                    }
+                }
+
+                .divFechaConciertos {
+                    width: fit-content;
+                    height: fit-content;
+                    padding: 0%;
+                    margin: 0%;
+                    color: rgb(164, 164, 164);
+                    font-family: $fontexto;
+                    .divFechasChicoUno {
+                        width: fit-content;
+                        height: fit-content;
+                        .fecha {
+                            margin: 0%;
+                            padding: 0%;
+                            width: fit-content;
+                            height: fit-content;
+                        }
+                    }
+
+                }
+                .divFechaBoton{
+                    .boton:hover{
+                        color: rgb(138, 30, 30);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    body {
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+        overflow-x: hidden;
+    
+        .mainConciertos {
+            .tituloPagina {
+                display: flex;
+                justify-content: center;
+                .subtituloPagina {
+                    font-family: $fontexto;
+                    font-size: 28px;
+                    font-weight: 400;
+                    color: white;
+                    letter-spacing: 0.1rem;
+                    overflow-y: hidden;
+                }
+            }
+    
+            .divHr {
+                .hr {
+                    color: white;
+                    height: 2px;
+                    width: 100%;
+                }
+            }
+    
+            .conciertos {
+                .divConciertosUno {
+                    margin: 0%;
+                    padding: 0%;
+                    .divHrConciertos {
+                        margin: 0%;
+                        padding: 0%;
+                        margin-bottom: 1%;
+                        margin-top: 1%;
+    
+                        .hrConciertos {
+                            margin: 0%;
+                            padding: 0%;
+                            background-color: white;
+                            height: 2px;
+                            width: 100%;
+                        }
+                    }
+    
+                    .divTextoConciertos {
+                        padding: 0%;
+                        margin: 0%;
+                        margin-left: 2%;
+                        width: 50%;
+                        height: fit-content;
+    
+                        .tituloConciertos {
+                            color: rgb(164, 164, 164);
+                            overflow-y: hidden;
+                            font-family: $fontexto;
+                            font-weight: 500;
+                            font-size: 20px;
+                        }
+    
+                        .parrafoConciertos {
+                            color: rgb(164, 164, 164);
+                            font-family: $fontexto;
+                        }
+                    }
+    
+                    .divFechaConciertos {
+                        width: fit-content;
+                        height: fit-content;
+                        padding: 0%;
+                        margin: 0%;
+                        color: rgb(164, 164, 164);
+                        font-family: $fontexto;
+                        .divFechasChicoUno {
+                            width: fit-content;
+                            height: fit-content;
+                            .fecha {
+                                margin: 0%;
+                                padding: 0%;
+                                width: fit-content;
+                                height: fit-content;
+                            }
+                        }
+    
+                    }
+                    .divFechaBoton{
+                        .boton:hover{
+                            color: rgb(138, 30, 30);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

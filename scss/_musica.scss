@@ -1,47 +1,131 @@
-body{
-    .main {
-        width: 100vw;
-        margin: 0%;
+body {
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    .mainMusica {
         padding: 0%;
-        overflow-x: hidden;
-    
-        .section {
+        .tituloPagina {
+            .subtituloPagina{
+                font-family: $fontexto;
+                font-size: 28px;
+                font-weight: 400;
+                color: white;
+                letter-spacing: 0.1rem;
+                overflow-y: hidden;
+            }
+        }
+        .divHr{
+            color: white;
+            .hr{
+               color: white;
+                height: 2px;
+                width: 100%;
+            }
+        }
+        .contenedorDiscos {
             margin: 0%;
             padding: 0%;
-            .tituloMusica {
-                font-family: $fontitulo;
-                font-size: larger;
-                margin-top: 5%;
-            }
-    
-            .subtituloMusica {
-                margin-top: 5%;
+            margin-top: 3%;
+            margin-bottom: 5%;
+            .textoDiscosTitulo{
+                margin: 0%;
+                margin-top: 1%;
                 font-family: $fontexto;
-                font-size: large;
+                font-size: 18px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;   
+                color: white;
             }
-    
-            .contenedorDiscos {
-                padding: 0%;
-                margin-top: 2%;
-                margin-bottom: 5%;
-    
-                .textoDiscos {
+            .textoDiscosTitulo:hover{
+                color: rgb(138, 30, 30);
+            }
+            .textoDiscos {
+                overflow-y: hidden;
+                color: white;
+                margin: 0%;
+                margin-top: 1%;
+                font-family: $fontexto;
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .ancla{
+                text-decoration: none;
+                .textoDiscosTituloBuceo{
                     margin: 0%;
+                    margin-top: 1%;
+                    font-family: $fontexto;
+                    font-size: 17px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;   
+                    color: white;
+                    overflow-y: hidden;
+
+                }
+                .textoDiscosTituloBuceo:hover{
+                    color: rgb(85, 24, 24);
+                }
+                .divTextos{
+                    .textoDiscosTitulo{
+                        margin: 0%;
+                        margin-top: 1%;
+                        font-family: $fontexto;
+                        font-size: 18px;
+                        font-weight: bold;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;   
+                        color: white;
+                    }
+                    .textoDiscosTitulo:hover{
+                        color: rgb(138, 30, 30);
+                    }
+                }
+                .textoDiscos {
+                    color: white;
+                    margin: 0%;
+                    margin-top: 1%;
                     font-family: $fontexto;
                     font-size: 15px;
                     display: flex;
                     flex-direction: column;
                     text-align: center;
                 }
-    
-                .discos {
-                    border: 1px black solid;
-                    border-radius: 20px;
-                    width: 200px;
-                    height: 200px;
+                .textoDiscos:hover{
+                    color: rgb(85, 24, 24);
                 }
             }
+            .discos {
+                width: 350px;
+                height: 350px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .discos:hover{
+                width: 354px;
+                height: 354px;
+            }
         }
-    
+
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    .tituloPagina {
+        display: flex;
+        justify-content: center;
+        .subtituloPagina{
+            font-family: $fontexto;
+            font-size: 28px;
+            font-weight: 400;
+            color: white;
+            letter-spacing: 0.1rem;
+            overflow-y: hidden;
+        }
     }
 }

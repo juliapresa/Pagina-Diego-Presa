@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=JetBrains+Mono:wght@100;200;300;400;500&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -16,7 +16,7 @@
   width: 100%;
   margin: 0%;
   padding: 0%;
-  background-color: white;
+  background-color: black;
   height: fit-content;
   position: sticky;
   top: 0;
@@ -31,13 +31,71 @@
 }
 .header .row .contenedorNav {
   margin: 0%;
+  margin-top: 1%;
   padding: 0%;
   height: fit-content;
-  font-family: "Source Serif Pro", serif;
-  font-size: large;
-  margin-top: 1%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 17px;
+  color: white;
+}
+.header .row .contenedorNav .nav-link {
+  color: white;
+}
+.header .row .contenedorNav .nav-link:hover {
+  text-decoration: underline;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .header {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+  }
+  .header .row {
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+  }
+  .header .row .contenedorLogo {
+    width: 50%;
+    margin: 0%;
+    padding: 0%;
+  }
+  .header .row .contenedorLogo .imgLogo {
+    width: 70px;
+    height: 90px;
+  }
+  .header .row .contenedorNav {
+    justify-content: end;
+    width: 50%;
+    margin: 0%;
+    margin-top: 5%;
+    padding: 0%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 17px;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .header .row .contenedorNav .navbar-toggler {
+    display: flex;
+    justify-content: end;
+  }
+  .header .row .contenedorNav .nav-link {
+    display: flex;
+    justify-content: end;
+    color: white;
+  }
+  .header .row .contenedorNav .nav-link:hover {
+    text-decoration: underline;
+  }
+  .header .row .contenedorNav .navbar-toggler {
+    background-color: white;
+  }
+}
 .headerIndex {
   width: 100%;
   height: 100vh;
@@ -55,27 +113,155 @@
   padding: 0%;
   background-color: rgba(8, 8, 8, 0);
 }
-.headerIndex .row .contenedorLogo {
-  height: fit-content;
+.headerIndex .row .primeraCol {
+  padding: 0%;
+  margin-top: 1%;
 }
-.headerIndex .row .contenedorLogo .imgLogo {
+.headerIndex .row .primeraCol .contenedorLogo {
+  margin: 0%;
+  margin-left: 6%;
+  padding: 0%;
+}
+.headerIndex .row .primeraCol .contenedorLogo .imgLogo {
   width: 70px;
   height: 90px;
+}
+.headerIndex .row .primeraCol .redesFooter {
+  margin: 0%;
+  padding: 0%;
+  margin-top: 1%;
+}
+.headerIndex .row .primeraCol .redesFooter .iconos {
+  font-size: 25px;
+  display: flex;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.headerIndex .row .primeraCol .redesFooter .iconos:hover {
+  font-size: 35px;
 }
 .headerIndex .row .contenedorNav {
   margin: 0%;
   padding: 0%;
-  font-family: "Source Serif Pro", serif;
-  font-size: large;
-  color: white;
   height: fit-content;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 17px;
+  margin-top: 1%;
+  color: white;
 }
-
-footer {
-  width: 100%;
+.headerIndex .row .contenedorNav .nav-link {
+  color: white;
+}
+.headerIndex .row .contenedorNav .nav-link:hover {
+  text-decoration: underline;
+}
+.headerIndex .contenedorLogo {
   margin: 0%;
   padding: 0%;
+}
+.headerIndex .contenedorLogo .imgLogo {
+  width: 70px;
+  height: 90px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .headerIndex {
+    width: 100%;
+    height: 50vh;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    background-image: url(../assets/img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+  }
+  .headerIndex .row {
+    overflow-x: hidden;
+    width: 100%;
+    height: 50vh;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgba(8, 8, 8, 0);
+    display: flex;
+    flex-direction: column;
+  }
+  .headerIndex .row .primeraCol {
+    width: 100%;
+    height: fit-content;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+  }
+  .headerIndex .row .primeraCol .contenedorLogo {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+  }
+  .headerIndex .row .primeraCol .contenedorLogo .imgLogo {
+    width: 70px;
+    height: 90px;
+  }
+  .headerIndex .row .primeraCol .redesFooter {
+    margin: 0%;
+    padding: 0%;
+    margin-top: 5%;
+    justify-content: end;
+    width: 50%;
+  }
+  .headerIndex .row .primeraCol .redesFooter .iconos {
+    font-size: 25px;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+  .headerIndex .row .primeraCol .redesFooter .iconos:hover {
+    font-size: 35px;
+  }
+  .headerIndex .row .contenedorNav {
+    margin: 0%;
+    padding: 0%;
+    height: fit-content;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 17px;
+    margin-top: 1%;
+    color: white;
+  }
+  .headerIndex .row .contenedorNav .nav-link {
+    color: white;
+  }
+  .headerIndex .row .contenedorNav .nav-link:hover {
+    text-decoration: underline;
+  }
+  .headerIndex .contenedorLogo {
+    margin: 0%;
+    padding: 0%;
+  }
+  .headerIndex .contenedorLogo .imgLogo {
+    width: 70px;
+    height: 90px;
+  }
+}
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+}
+footer .divHr .hr {
+  background-color: white;
+  height: 2px;
+  width: 90%;
 }
 footer .row {
   width: 100%;
@@ -83,26 +269,22 @@ footer .row {
   padding: 0%;
   overflow-x: hidden;
 }
+footer .row .redesFooter {
+  margin: 0;
+  padding: 0;
+}
 footer .row .redesFooter .iconos {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 2%;
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 footer .row .redesFooter .iconos:hover {
-  font-size: 40px;
-}
-footer .row .contenedorLogo .imgLogo {
-  width: 80px;
-  height: 100px;
-}
-footer .row .parrafoFooter {
-  font-size: small;
-  font-family: "Source Serif Pro", serif;
+  font-size: 2rem;
 }
 
 body {
@@ -111,93 +293,1053 @@ body {
   padding: 0%;
   overflow-x: hidden;
 }
-body .mainInicio {
-  margin-top: 15%;
+body .mainConciertos .tituloPagina .subtituloPagina {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.1rem;
+  overflow-y: hidden;
 }
-body .mainInicio .texto {
-  font-family: "Source Serif Pro", serif;
-  font-size: x-large;
-  margin-top: 15%;
-  margin-bottom: 15%;
+body .mainConciertos .divHr .hr {
+  color: white;
+  height: 2px;
+  width: 100%;
 }
-body .mainInicio .cardNoticias .cardCuerpo {
-  text-decoration: none;
-  color: black;
-  font-size: medium;
-}
-body .mainInicio .cardNoticias .cardCuerpo .cardBody {
-  text-decoration: none;
-  color: black;
-  font-size: medium;
-}
-body .mainInicio .cardNoticias .cardCuerpo .cardTitle {
-  font-family: "Castoro Titling", cursive;
-  font-size: xx-large;
-  margin-top: 2%;
-}
-body .mainInicio .cards {
-  margin-top: 15%;
-  margin-bottom: 15%;
-  overflow: hidden;
-}
-body .mainInicio .cards .card {
-  width: 20rem;
-}
-body .mainInicio .cards .card .card-body {
+body .mainConciertos .conciertos .divConciertosUno {
+  margin: 0%;
   padding: 0%;
 }
-body .mainInicio .cards .card .cardTitle {
-  font-family: "Castoro Titling", cursive;
-  margin-top: 2%;
+body .mainConciertos .conciertos .divConciertosUno .divHrConciertos {
+  margin: 0%;
+  padding: 0%;
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
-body .mainInicio .cards .card .cardBody {
-  text-decoration: none;
-  color: black;
-  font-size: small;
-}
-body .mainInicio .cards .card .cardImg {
+body .mainConciertos .conciertos .divConciertosUno .divHrConciertos .hrConciertos {
+  margin: 0%;
+  padding: 0%;
+  background-color: white;
+  height: 2px;
   width: 100%;
-  height: 70%;
+}
+body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos {
+  padding: 0%;
+  margin: 0%;
+  margin-left: 2%;
+  width: 50%;
+  height: fit-content;
+}
+body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos .tituloConciertos {
+  color: rgb(164, 164, 164);
+  overflow-y: hidden;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  font-size: 20px;
+}
+body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos .parrafoConciertos {
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos {
+  width: fit-content;
+  height: fit-content;
+  padding: 0%;
+  margin: 0%;
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFechasChicoUno {
+  width: fit-content;
+  height: fit-content;
+}
+body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFechasChicoUno .fecha {
+  margin: 0%;
+  padding: 0%;
+  width: fit-content;
+  height: fit-content;
+}
+body .mainConciertos .conciertos .divConciertosUno .divFechaBoton .boton:hover {
+  color: rgb(138, 30, 30);
 }
 
-body .main {
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+  }
+  body .mainConciertos .tituloPagina {
+    display: flex;
+    justify-content: center;
+  }
+  body .mainConciertos .tituloPagina .subtituloPagina {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.1rem;
+    overflow-y: hidden;
+  }
+  body .mainConciertos .divHr .hr {
+    color: white;
+    height: 2px;
+    width: 100%;
+  }
+  body .mainConciertos .conciertos .divConciertosUno {
+    margin: 0%;
+    padding: 0%;
+  }
+  body .mainConciertos .conciertos .divConciertosUno .divHrConciertos {
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
+  body .mainConciertos .conciertos .divConciertosUno .divHrConciertos .hrConciertos {
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+  }
+  body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos {
+    padding: 0%;
+    margin: 0%;
+    margin-left: 2%;
+    width: 50%;
+    height: fit-content;
+  }
+  body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos .tituloConciertos {
+    color: rgb(164, 164, 164);
+    overflow-y: hidden;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos .parrafoConciertos {
+    color: rgb(164, 164, 164);
+    font-family: "JetBrains Mono", monospace;
+  }
+  body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos {
+    width: fit-content;
+    height: fit-content;
+    padding: 0%;
+    margin: 0%;
+    color: rgb(164, 164, 164);
+    font-family: "JetBrains Mono", monospace;
+  }
+  body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFechasChicoUno {
+    width: fit-content;
+    height: fit-content;
+  }
+  body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFechasChicoUno .fecha {
+    margin: 0%;
+    padding: 0%;
+    width: fit-content;
+    height: fit-content;
+  }
+  body .mainConciertos .conciertos .divConciertosUno .divFechaBoton .boton:hover {
+    color: rgb(138, 30, 30);
+  }
+}
+body .mainContacto .tituloPagina .subtituloPagina {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.1rem;
+  overflow-y: hidden;
+}
+body .mainContacto .divHr .hr {
+  color: white;
+  height: 2px;
+  width: 100%;
+}
+body .mainContacto .divFormulario {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-right: 2%;
+}
+body .mainContacto .divFormulario .divImgContacto .imgContacto {
+  height: 370px;
+  width: 550px;
+}
+body .mainContacto .divFormulario .formulario {
+  align-items: center;
+  background-color: black;
+}
+body .mainContacto .divFormulario .formulario .formularioContenido {
+  width: 95%;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+}
+body .mainContacto .divFormulario .formulario .formularioContenido .form-control {
+  background-color: black;
+  color: white;
+}
+body .mainContacto .divFormulario .formulario .button {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .mainContacto {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  body .mainContacto .tituloPagina {
+    display: flex;
+    justify-content: center;
+  }
+  body .mainContacto .tituloPagina .subtituloPagina {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.1rem;
+    overflow-y: hidden;
+  }
+  body .mainContacto .divHr .hr {
+    color: white;
+    height: 2px;
+    width: 100%;
+  }
+  body .mainContacto .divFormulario {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .mainContacto .divFormulario .divImgContacto {
+    width: 100%;
+    margin-bottom: 5%;
+    justify-content: center;
+  }
+  body .mainContacto .divFormulario .divImgContacto .imgContacto {
+    height: 270px;
+    width: 345px;
+  }
+  body .mainContacto .divFormulario .formulario {
+    width: 100%;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+  }
+  body .mainContacto .divFormulario .formulario .formularioContenido {
+    width: 95%;
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+  }
+  body .mainContacto .divFormulario .formulario .formularioContenido .form-control {
+    background-color: black;
+    color: white;
+  }
+  body .mainContacto .divFormulario .formulario .button {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+  }
+}
+body {
   width: 100vw;
-  margin: 0%;
-  padding: 0%;
   overflow-x: hidden;
+  background-color: black;
 }
-body .main .section {
+body .mainInicio {
+  width: 100vw;
+}
+body .mainInicio .biografia {
   margin: 0%;
-  padding: 0%;
-}
-body .main .section .tituloMusica {
-  font-family: "Castoro Titling", cursive;
-  font-size: larger;
-  margin-top: 5%;
-}
-body .main .section .subtituloMusica {
-  margin-top: 5%;
-  font-family: "Source Serif Pro", serif;
-  font-size: large;
-}
-body .main .section .contenedorDiscos {
   padding: 0%;
   margin-top: 2%;
   margin-bottom: 5%;
+  width: 100%;
+  justify-content: center;
 }
-body .main .section .contenedorDiscos .textoDiscos {
+body .mainInicio .biografia .divTextoUno {
   margin: 0%;
-  font-family: "Source Serif Pro", serif;
+  padding: 0%;
+  width: 80%;
+}
+body .mainInicio .biografia .divTextoUno .textoUno {
+  letter-spacing: 0.1rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 17px;
+  text-indent: 0cqmax;
+  color: rgb(164, 164, 164);
+}
+body .mainInicio .biografia .divTextoDos {
+  padding: 0%;
+  margin: 0%;
+  width: 80%;
+}
+body .mainInicio .biografia .divTextoDos .textoDos {
+  letter-spacing: 0.1rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 17px;
+  color: rgb(164, 164, 164);
+}
+body .mainInicio .tituloPagina {
+  margin-top: 10%;
+}
+body .mainInicio .tituloPagina .subtituloPagina {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 23px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.1rem;
+  overflow-y: hidden;
+}
+body .mainInicio .divHr .hr {
+  color: white;
+  height: 2px;
+  width: 100%;
+}
+body .mainInicio .noticias .divNoticiasUno {
+  margin: 0%;
+  padding: 0%;
+}
+body .mainInicio .noticias .divNoticiasUno .divHrNoticias {
+  margin: 0%;
+  padding: 0%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+body .mainInicio .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
+  margin: 0%;
+  padding: 0%;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+}
+body .mainInicio .noticias .divNoticiasUno .imgNoticias {
+  width: 330px;
+  height: 300px;
+  margin-left: 5%;
+}
+body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
+  color: rgb(164, 164, 164);
+  overflow-y: hidden;
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainInicio .noticias .divNoticiasUno .divFechaNoticias {
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainInicio .noticias .divNoticiasUno .divBotonNoticias {
+  padding-right: 5%;
+}
+body .mainInicio .noticias .divNoticiasUno .divBotonNoticias .botonNoticias {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainInicio .videos .divBotonVideos {
+  padding-right: 5%;
+}
+body .mainInicio .videos .divBotonVideos .botonVideos {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainInicio .contenedorDiscos {
+  margin: 0%;
+  padding: 0%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+body .mainInicio .contenedorDiscos .textoDiscosTitulo {
+  margin: 0%;
+  margin-top: 1%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+body .mainInicio .contenedorDiscos .textoDiscosTitulo:hover {
+  color: rgb(138, 30, 30);
+}
+body .mainInicio .contenedorDiscos .textoDiscos {
+  overflow-y: hidden;
+  color: white;
+  margin: 0%;
+  margin-top: 1%;
+  font-family: "JetBrains Mono", monospace;
   font-size: 15px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-body .main .section .contenedorDiscos .discos {
-  border: 1px black solid;
-  border-radius: 20px;
-  width: 200px;
-  height: 200px;
+body .mainInicio .contenedorDiscos .ancla {
+  text-decoration: none;
+}
+body .mainInicio .contenedorDiscos .ancla .textoDiscosTituloBuceo {
+  margin: 0%;
+  margin-top: 1%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  overflow-y: hidden;
+}
+body .mainInicio .contenedorDiscos .ancla .textoDiscosTituloBuceo:hover {
+  color: rgb(85, 24, 24);
+}
+body .mainInicio .contenedorDiscos .ancla .divTextos .textoDiscosTitulo {
+  margin: 0%;
+  margin-top: 1%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+body .mainInicio .contenedorDiscos .ancla .divTextos .textoDiscosTitulo:hover {
+  color: rgb(138, 30, 30);
+}
+body .mainInicio .contenedorDiscos .ancla .textoDiscos {
+  color: white;
+  margin: 0%;
+  margin-top: 1%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body .mainInicio .contenedorDiscos .ancla .textoDiscos:hover {
+  color: rgb(85, 24, 24);
+}
+body .mainInicio .contenedorDiscos .discos {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+body .mainInicio .contenedorDiscos .discos:hover {
+  width: 320px;
+  height: 320px;
+}
+body .mainInicio .divBotonMusica {
+  padding-right: 5%;
+}
+body .mainInicio .divBotonMusica .botonMusica {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainInicio .galeria .divGaleria .imgGaleriaUno {
+  width: 800px;
+  height: 300px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+body .mainInicio .galeria .divGaleria .imgGaleriaDos {
+  width: auto;
+  height: auto;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+body .mainInicio .galeria .divGaleria .imgGaleriaTres {
+  width: auto;
+  height: auto;
+  margin-bottom: 2%;
+}
+body .mainInicio .galeria .divGaleria .imgGaleriaCuatro {
+  width: auto;
+  height: auto;
+  margin-right: 2%;
+}
+body .mainInicio .galeria .divGaleria .imgGaleriaCinco {
+  width: auto;
+  height: auto;
+}
+body .mainInicio .galeria .divGaleria .imgGaleriaSeis {
+  width: auto;
+  height: auto;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: black;
+  }
+  body .mainInicio {
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+  }
+  body .mainInicio .divTextoUno {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 50%;
+    overflow-x: hidden;
+  }
+  body .mainInicio .divTextoUno .textoUno {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    color: rgb(164, 164, 164);
+    letter-spacing: 0rem;
+  }
+  body .mainInicio .divTextoDos {
+    overflow-x: hidden;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 50%;
+  }
+  body .mainInicio .divTextoDos .textoDos {
+    letter-spacing: 0rem;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    color: rgb(164, 164, 164);
+  }
+  body .mainInicio .sectionTitulos {
+    margin-top: 10%;
+  }
+  body .mainInicio .sectionTitulos .tituloPagina {
+    overflow-x: hidden;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+  body .mainInicio .sectionTitulos .tituloPagina .subtituloPagina {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 23px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.1rem;
+    overflow-y: hidden;
+  }
+  body .mainInicio .noticias .divNoticiasUno {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divHrNoticias {
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divImgNoticias {
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divImgNoticias .imgNoticias {
+    width: 360px;
+    height: 330px;
+    margin: 0%;
+    padding: 0%;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divTextoNoticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
+    color: rgb(164, 164, 164);
+    overflow-y: hidden;
+    font-family: "JetBrains Mono", monospace;
+    margin-top: 2%;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
+    color: rgb(164, 164, 164);
+    font-family: "JetBrains Mono", monospace;
+    margin: 0%;
+    margin-bottom: 2%;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divFechaNoticias {
+    color: rgb(164, 164, 164);
+    font-family: "JetBrains Mono", monospace;
+    margin-top: 2%;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divBotonNoticias .botonNoticias {
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+  }
+  body .mainInicio .videos .divBotonVideos .botonVideos {
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+  }
+  body .mainInicio .contenedorDiscos {
+    margin: 0%;
+    padding: 0%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  body .mainInicio .contenedorDiscos .textoDiscosTitulo {
+    margin: 0%;
+    margin-top: 1%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  body .mainInicio .contenedorDiscos .textoDiscosTitulo:hover {
+    color: rgb(138, 30, 30);
+  }
+  body .mainInicio .contenedorDiscos .textoDiscos {
+    overflow-y: hidden;
+    color: white;
+    margin: 0%;
+    margin-top: 1%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  body .mainInicio .contenedorDiscos .ancla {
+    text-decoration: none;
+  }
+  body .mainInicio .contenedorDiscos .ancla .textoDiscosTituloBuceo {
+    margin: 0%;
+    margin-top: 1%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    overflow-y: hidden;
+  }
+  body .mainInicio .contenedorDiscos .ancla .textoDiscosTituloBuceo:hover {
+    color: rgb(85, 24, 24);
+  }
+  body .mainInicio .contenedorDiscos .ancla .divTextos .textoDiscosTitulo {
+    margin: 0%;
+    margin-top: 1%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  body .mainInicio .contenedorDiscos .ancla .divTextos .textoDiscosTitulo:hover {
+    color: rgb(138, 30, 30);
+  }
+  body .mainInicio .contenedorDiscos .ancla .textoDiscos {
+    color: white;
+    margin: 0%;
+    margin-top: 1%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  body .mainInicio .contenedorDiscos .ancla .textoDiscos:hover {
+    color: rgb(85, 24, 24);
+  }
+  body .mainInicio .contenedorDiscos .discos {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .mainInicio .contenedorDiscos .discos:hover {
+    width: 320px;
+    height: 320px;
+  }
+  body .mainInicio .divBotonMusica .botonMusica {
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+  }
+  body .mainInicio .galeria .divGaleria {
+    flex-direction: column;
+  }
+  body .mainInicio .galeria .divGaleria .imgGaleriaUno {
+    width: 800px;
+    height: 300px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+  body .mainInicio .galeria .divGaleria .imgGaleriaDos {
+    width: auto;
+    height: auto;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+  body .mainInicio .galeria .divGaleria .imgGaleriaTres {
+    width: auto;
+    height: auto;
+    margin-bottom: 2%;
+  }
+  body .mainInicio .galeria .divGaleria .imgGaleriaCuatro {
+    width: auto;
+    height: auto;
+    margin-right: 2%;
+  }
+  body .mainInicio .galeria .divGaleria .imgGaleriaCinco {
+    width: auto;
+    height: auto;
+  }
+  body .mainInicio .galeria .divGaleria .imgGaleriaSeis {
+    width: auto;
+    height: auto;
+  }
+}
+body {
+  width: 100vw;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+body .mainMusica {
+  padding: 0%;
+}
+body .mainMusica .tituloPagina .subtituloPagina {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.1rem;
+  overflow-y: hidden;
+}
+body .mainMusica .divHr {
+  color: white;
+}
+body .mainMusica .divHr .hr {
+  color: white;
+  height: 2px;
+  width: 100%;
+}
+body .mainMusica .contenedorDiscos {
+  margin: 0%;
+  padding: 0%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+body .mainMusica .contenedorDiscos .textoDiscosTitulo {
+  margin: 0%;
+  margin-top: 1%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+body .mainMusica .contenedorDiscos .textoDiscosTitulo:hover {
+  color: rgb(138, 30, 30);
+}
+body .mainMusica .contenedorDiscos .textoDiscos {
+  overflow-y: hidden;
+  color: white;
+  margin: 0%;
+  margin-top: 1%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body .mainMusica .contenedorDiscos .ancla {
+  text-decoration: none;
+}
+body .mainMusica .contenedorDiscos .ancla .textoDiscosTituloBuceo {
+  margin: 0%;
+  margin-top: 1%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  overflow-y: hidden;
+}
+body .mainMusica .contenedorDiscos .ancla .textoDiscosTituloBuceo:hover {
+  color: rgb(85, 24, 24);
+}
+body .mainMusica .contenedorDiscos .ancla .divTextos .textoDiscosTitulo {
+  margin: 0%;
+  margin-top: 1%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+body .mainMusica .contenedorDiscos .ancla .divTextos .textoDiscosTitulo:hover {
+  color: rgb(138, 30, 30);
+}
+body .mainMusica .contenedorDiscos .ancla .textoDiscos {
+  color: white;
+  margin: 0%;
+  margin-top: 1%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body .mainMusica .contenedorDiscos .ancla .textoDiscos:hover {
+  color: rgb(85, 24, 24);
+}
+body .mainMusica .contenedorDiscos .discos {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+body .mainMusica .contenedorDiscos .discos:hover {
+  width: 354px;
+  height: 354px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .tituloPagina {
+    display: flex;
+    justify-content: center;
+  }
+  .tituloPagina .subtituloPagina {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.1rem;
+    overflow-y: hidden;
+  }
+}
+body {
+  width: 100vw;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+body .mainNoticias .tituloPagina .subtituloPagina {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.1rem;
+  overflow-y: hidden;
+}
+body .mainNoticias .divHr .hr {
+  color: white;
+  height: 2px;
+  width: 100%;
+}
+body .mainNoticias .noticias .divNoticiasUno {
+  margin: 0%;
+  padding: 0%;
+}
+body .mainNoticias .noticias .divNoticiasUno .divHrNoticias {
+  margin: 0%;
+  padding: 0%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
+  margin: 0%;
+  padding: 0%;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+}
+body .mainNoticias .noticias .divNoticiasUno .imgNoticias {
+  width: 330px;
+  height: 300px;
+  margin-left: 5%;
+}
+body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
+  color: rgb(164, 164, 164);
+  overflow-y: hidden;
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+  }
+  body .mainNoticias .tituloPagina {
+    display: flex;
+    justify-content: center;
+  }
+  body .mainNoticias .tituloPagina .subtituloPagina {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.1rem;
+    overflow-y: hidden;
+  }
+  body .mainNoticias .divHr .hr {
+    color: white;
+    height: 2px;
+    width: 100%;
+  }
+  body .mainNoticias .noticias .divNoticiasUno {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divHrNoticias {
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticias {
+    width: 360px;
+    height: 330px;
+    margin: 0%;
+    padding: 0%;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
+    color: rgb(164, 164, 164);
+    overflow-y: hidden;
+    font-family: "JetBrains Mono", monospace;
+    margin-top: 2%;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
+    color: rgb(164, 164, 164);
+    font-family: "JetBrains Mono", monospace;
+    margin: 0%;
+    margin-bottom: 2%;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(164, 164, 164);
+    font-family: "JetBrains Mono", monospace;
+    margin-top: 2%;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divBotonNoticias .botonNoticias {
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+  }
+}
+body {
+  width: 100vw;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+body .mainVideo .tituloPagina .subtituloPagina {
+  margin: 0%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.1rem;
+  overflow-y: hidden;
+}
+body .mainVideo .divHr .hr {
+  background-color: white;
+  height: 2px;
+  width: 100%;
+}
+body .mainVideo .sectionVideoUno {
+  margin-top: 2%;
+}
+body .mainVideo .sectionVideoUno .videoUno {
+  margin-left: 2%;
+}
+body .mainVideo .sectionVideoDos {
+  margin-top: 2%;
+}
+body .mainVideo .sectionVideoDos .videoCuatro {
+  margin-left: 2%;
+}
+body .mainVideo .sectionVideoTres {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+body .mainVideo .sectionVideoTres .videoCinco {
+  border: 1px white solid;
 }
 
 /*# sourceMappingURL=styles.css.map */

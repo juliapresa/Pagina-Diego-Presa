@@ -1,37 +1,36 @@
 footer{
     width: 100%;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
+    .divHr{
+        .hr{
+          background-color: white;
+            height: 2px;
+            width: 90%;
+        }
+    }
     .row{
         width: 100%;
         margin: 0%;
         padding: 0%;
         overflow-x: hidden;
         .redesFooter{
+            margin: 0;
+            padding: 0;
             .iconos{
-                font-size: 2rem;
+                font-size: 1.5rem;
                 display: flex;
                 margin-left: 2%;
                 margin-right: 2%;
                 margin-bottom: 2%;
                 list-style: none;
                 text-decoration: none;
-                color: black;
+                color: white;
             }
             .iconos:hover{
-               font-size: 40px;
+               font-size: 2rem;
             }
-        }
-        .contenedorLogo{
-            .imgLogo{
-                width: 80px;
-                height: 100px;
-            }
-        }
-        .parrafoFooter{
-            font-size: small;
-            font-family: $fontexto;
         }
     }
     }
