@@ -184,47 +184,56 @@
   .headerIndex .row {
     overflow-x: hidden;
     width: 100%;
-    height: 100vh;
+    height: 80%;
     margin: 0%;
     padding: 0%;
   }
-  .headerIndex .row .primeraCol {
-    width: 100%;
-    height: fit-content;
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-  }
-  .headerIndex .row .primeraCol .contenedorLogo {
+  .headerIndex .row .contenedorLogo {
     margin: 0%;
     padding: 0%;
     width: 50%;
+    height: fit-content;
   }
-  .headerIndex .row .primeraCol .contenedorLogo .imgLogo {
+  .headerIndex .row .contenedorLogo .imgLogo {
     width: 70px;
     height: 90px;
   }
-  .headerIndex .redesFooter {
+  .headerIndex .row .contenedorNav {
     margin: 0%;
     padding: 0%;
-    width: fit-content;
+    width: 50%;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    margin-right: 1%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 15px;
+    margin-top: 1%;
+    color: white;
   }
-  .headerIndex .redesFooter .iconos {
-    font-size: 25px;
+  .headerIndex .row .contenedorNav .nav-link {
+    color: white;
+  }
+  .headerIndex .row .contenedorNav .nav-link:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  .redesFooter {
+    margin: 0%;
+    padding: 0%;
+    height: 20%;
+  }
+  .redesFooter .iconos {
+    font-size: 20px;
     display: flex;
     margin-top: 2%;
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 2%;
     list-style: none;
     text-decoration: none;
     color: white;
   }
-  .headerIndex .contenedorNav {
-    width: 100%;
+  .contenedorNav {
+    width: 50%;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
     font-family: "JetBrains Mono", monospace;
@@ -233,28 +242,28 @@
     display: flex;
     justify-content: center;
   }
-  .headerIndex .contenedorNav .navbar-toggler {
+  .contenedorNav .navbar-toggler {
     display: flex;
     justify-content: end;
   }
-  .headerIndex .contenedorNav .nav-link {
+  .contenedorNav .nav-link {
     display: flex;
     justify-content: end;
     color: white;
   }
-  .headerIndex .contenedorNav .nav-link:hover {
+  .contenedorNav .nav-link:hover {
     text-decoration: underline;
     color: white;
   }
-  .headerIndex .contenedorNav .navbar-toggler {
+  .contenedorNav .navbar-toggler {
     background-color: white;
   }
-  .headerIndex .contenedorLogo {
+  .contenedorLogo {
     margin: 0%;
     padding: 0%;
     height: fit-content;
   }
-  .headerIndex .contenedorLogo .imgLogo {
+  .contenedorLogo .imgLogo {
     width: 70px;
     height: 90px;
   }
