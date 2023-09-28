@@ -108,38 +108,34 @@
 }
 .headerIndex .row {
   width: 100%;
-  height: 100vh;
+  height: 80%;
   margin: 0%;
   padding: 0%;
-  background-color: rgba(8, 8, 8, 0);
 }
-.headerIndex .row .primeraCol {
-  padding: 0%;
-  margin-top: 1%;
-}
-.headerIndex .row .primeraCol .contenedorLogo {
+.headerIndex .row .contenedorLogo {
   margin: 0%;
-  margin-left: 6%;
   padding: 0%;
+  width: 50%;
+  height: fit-content;
 }
-.headerIndex .row .primeraCol .contenedorLogo .imgLogo {
+.headerIndex .row .contenedorLogo .imgLogo {
   width: 70px;
   height: 90px;
 }
-.headerIndex .row .primeraCol .contenedorNav {
+.headerIndex .row .contenedorNav {
   margin: 0%;
   padding: 0%;
-  width: 100%;
+  width: 50%;
   height: fit-content;
   font-family: "JetBrains Mono", monospace;
   font-size: 17px;
   margin-top: 1%;
   color: white;
 }
-.headerIndex .row .primeraCol .contenedorNav .nav-link {
+.headerIndex .row .contenedorNav .nav-link {
   color: white;
 }
-.headerIndex .row .primeraCol .contenedorNav .nav-link:hover {
+.headerIndex .row .contenedorNav .nav-link:hover {
   text-decoration: underline;
   color: white;
 }
@@ -147,6 +143,7 @@
   margin: 0%;
   padding: 0%;
   margin-top: 1%;
+  height: 20%;
 }
 .headerIndex .redesFooter .iconos {
   font-size: 25px;
@@ -187,12 +184,9 @@
   .headerIndex .row {
     overflow-x: hidden;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     margin: 0%;
     padding: 0%;
-    background-color: rgba(8, 8, 8, 0);
-    display: flex;
-    flex-direction: column;
   }
   .headerIndex .row .primeraCol {
     width: 100%;
@@ -210,17 +204,16 @@
     width: 70px;
     height: 90px;
   }
-  .headerIndex .row .primeraCol .redesFooter {
-    visibility: hidden;
+  .headerIndex .redesFooter {
     margin: 0%;
     padding: 0%;
-    margin-top: 5%;
-    justify-content: end;
-    width: 100%;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
     flex-direction: column;
+    margin-right: 1%;
   }
-  .headerIndex .row .primeraCol .redesFooter .iconos {
-    justify-content: end;
+  .headerIndex .redesFooter .iconos {
     font-size: 25px;
     display: flex;
     margin-top: 2%;
@@ -230,17 +223,12 @@
     text-decoration: none;
     color: white;
   }
-  .headerIndex .row .primeraCol .redesFooter .iconos:hover {
-    font-size: 35px;
-  }
   .headerIndex .contenedorNav {
-    justify-content: end;
     width: 100%;
     margin: 0%;
-    margin-top: 5%;
     padding: 0%;
     font-family: "JetBrains Mono", monospace;
-    font-size: 15px;
+    font-size: 13px;
     color: white;
     display: flex;
     justify-content: center;
@@ -253,7 +241,6 @@
     display: flex;
     justify-content: end;
     color: white;
-    width: fit-content;
   }
   .headerIndex .contenedorNav .nav-link:hover {
     text-decoration: underline;
