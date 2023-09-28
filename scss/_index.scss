@@ -236,6 +236,7 @@ body {
 
         .divBotonMusica {
             padding-right: 5%;
+
             .botonMusica {
                 border: none;
                 background-color: black;
@@ -244,48 +245,33 @@ body {
             }
         }
 
-        .galeria {
-            .divGaleria {
-                .imgGaleriaUno {
+        .galery {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 250px;
+            grid-gap: 20px;
+            padding: 100px 0;
 
-                    width: 800px;
-                    height: 300px;
-                    margin-right: 2%;
-                    margin-bottom: 2%;
-                }
-
-                .imgGaleriaDos {
-                    width: auto;
-                    height: auto;
-                    margin-right: 2%;
-                    margin-bottom: 2%;
-                }
-
-                .imgGaleriaTres {
-                    width: auto;
-                    height: auto;
-                    margin-bottom: 2%;
-                }
-
-                .imgGaleriaCuatro {
-                    width: auto;
-                    height: auto;
-                    margin-right: 2%;
-                }
-
-                .imgGaleriaCinco {
-                    width: auto;
-                    height: auto;
-                }
-
-                .imgGaleriaSeis {
-                    width: auto;
-                    height: auto;
+            .box {
+                .imgGalery {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
-        }
-    }
 
+            .box:nth-child(1) {
+                grid-column-start: span 2;
+            }
+
+            .box:nth-child(4) {
+                grid-column-start: span 2;
+            }
+        }
+
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -301,14 +287,15 @@ body {
             margin-top: 2%;
             margin-bottom: 2%;
             width: 100%;
-            .biografia{
+
+            .biografia {
                 .divTextoUno {
                     margin: 0%;
                     padding: 0%;
                     width: 100%;
                     height: 50%;
                     overflow-x: hidden;
-    
+
                     .textoUno {
                         font-family: $fontexto;
                         font-size: 12px;
@@ -316,14 +303,15 @@ body {
                         letter-spacing: 0rem;
                     }
                 }
-    
+
                 .divTextoDos {
+                    visibility: hidden;
                     margin: 0%;
                     padding: 0%;
                     width: 100%;
                     height: 50%;
                     overflow-x: hidden;
-    
+
                     .textoDos {
                         font-family: $fontexto;
                         font-size: 12px;
@@ -332,14 +320,16 @@ body {
                     }
                 }
             }
-            .sectionTitulos{
+
+            .sectionTitulos {
                 margin-top: 10%;
+
                 .tituloPagina {
                     overflow-x: hidden;
                     margin-top: 5%;
                     justify-content: center;
                     align-items: center;
-    
+
                     .subtituloPagina {
                         font-family: $fontexto;
                         font-size: 23px;
@@ -349,8 +339,9 @@ body {
                         overflow-y: hidden;
                     }
                 }
-    
+
             }
+
             .noticias {
                 .divNoticiasUno {
                     margin: 0%;
@@ -358,11 +349,13 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
                     .divHrNoticias {
                         margin: 0%;
                         padding: 0%;
                         margin-bottom: 1%;
                         margin-top: 1%;
+
                         .hrNoticias {
                             margin: 0%;
                             padding: 0%;
@@ -371,11 +364,13 @@ body {
                             width: 100%;
                         }
                     }
-                    .divImgNoticias{
+
+                    .divImgNoticias {
                         padding: 0%;
                         display: flex;
                         justify-content: center;
-                            align-items: center;
+                        align-items: center;
+
                         .imgNoticias {
                             width: 360px;
                             height: 330px;
@@ -383,11 +378,13 @@ body {
                             padding: 0%;
                         }
                     }
+
                     .divTextoNoticias {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+
                         .tituloNoticias {
                             color: rgb(164, 164, 164);
                             overflow-y: hidden;
@@ -540,45 +537,16 @@ body {
                 }
             }
 
-            .galeria {
-                .divGaleria {
-                    flex-direction: column;
-                    .imgGaleriaUno {
+            .galery {
+                padding: 30px;
+                grid-template-columns: repeat(1, 1fr);
 
-                        width: 800px;
-                        height: 300px;
-                        margin-right: 2%;
-                        margin-bottom: 2%;
-                    }
+                .box:nth-child(1) {
+                    grid-column-start: span 1;
+                }
 
-                    .imgGaleriaDos {
-                        width: auto;
-                        height: auto;
-                        margin-right: 2%;
-                        margin-bottom: 2%;
-                    }
-
-                    .imgGaleriaTres {
-                        width: auto;
-                        height: auto;
-                        margin-bottom: 2%;
-                    }
-
-                    .imgGaleriaCuatro {
-                        width: auto;
-                        height: auto;
-                        margin-right: 2%;
-                    }
-
-                    .imgGaleriaCinco {
-                        width: auto;
-                        height: auto;
-                    }
-
-                    .imgGaleriaSeis {
-                        width: auto;
-                        height: auto;
-                    }
+                .box:nth-child(4) {
+                    grid-column-start: span 1;
                 }
             }
         }
