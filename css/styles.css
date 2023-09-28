@@ -216,20 +216,16 @@
     color: white;
   }
   .redesFooter {
-    margin: 0%;
-    padding: 0%;
-    height: 20%;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
   }
   .redesFooter .iconos {
     font-size: 20px;
-    display: flex;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
     list-style: none;
     text-decoration: none;
     color: white;
+    margin: 0 10px;
   }
   .contenedorNav {
     width: 50%;
