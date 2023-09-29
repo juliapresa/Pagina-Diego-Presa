@@ -812,7 +812,7 @@ body .mainInicio .galery .box:nth-child(4) {
   }
   body .mainInicio .biografia .divTextoUno .textoUno {
     font-family: "JetBrains Mono", monospace;
-    font-size: 1px;
+    font-size: 13px;
     color: rgb(164, 164, 164);
     letter-spacing: 0rem;
   }
