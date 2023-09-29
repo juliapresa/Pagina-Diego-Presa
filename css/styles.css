@@ -139,13 +139,13 @@
   text-decoration: underline;
   color: white;
 }
-.headerIndex .redesFooter {
+.headerIndex .redesHeader {
   margin: 0%;
   padding: 0%;
   margin-top: 1%;
   height: 20%;
 }
-.headerIndex .redesFooter .iconos {
+.headerIndex .redesHeader .iconos {
   font-size: 25px;
   display: flex;
   margin-top: 2%;
@@ -156,7 +156,7 @@
   text-decoration: none;
   color: white;
 }
-.headerIndex .redesFooter .iconos:hover {
+.headerIndex .redesHeader .iconos:hover {
   font-size: 35px;
 }
 .headerIndex .contenedorLogo {
@@ -215,12 +215,12 @@
     text-decoration: underline;
     color: white;
   }
-  .redesFooter {
+  .redesHeader {
     display: flex;
     flex-direction: column;
     visibility: hidden;
   }
-  .redesFooter .iconos {
+  .redesHeader .iconos {
     font-size: 20px;
     list-style: none;
     text-decoration: none;
@@ -639,9 +639,10 @@ body .mainInicio .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
   width: 100%;
 }
 body .mainInicio .noticias .divNoticiasUno .imgNoticias {
-  width: 330px;
-  height: 300px;
+  width: 350px;
+  height: 330px;
   margin-left: 5%;
+  object-fit: cover;
 }
 body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
   color: rgb(164, 164, 164);
@@ -811,7 +812,7 @@ body .mainInicio .galery .box:nth-child(4) {
   }
   body .mainInicio .biografia .divTextoUno .textoUno {
     font-family: "JetBrains Mono", monospace;
-    font-size: 13px;
+    font-size: 1px;
     color: rgb(164, 164, 164);
     letter-spacing: 0rem;
   }
@@ -1175,9 +1176,22 @@ body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
   width: 100%;
 }
 body .mainNoticias .noticias .divNoticiasUno .imgNoticias {
-  width: 330px;
-  height: 300px;
+  width: 350px;
+  height: 330px;
   margin-left: 5%;
+  object-fit: cover;
+}
+body .mainNoticias .noticias .divNoticiasUno .imgNoticiasDos {
+  width: fit-content;
+  height: 330px;
+  margin-left: 5%;
+  object-fit: cover;
+}
+body .mainNoticias .noticias .divNoticiasUno .imgNoticiasTres {
+  width: 350px;
+  height: 330px;
+  margin-left: 5%;
+  object-fit: cover;
 }
 body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
   color: rgb(164, 164, 164);
@@ -1242,10 +1256,12 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticias {
-    width: 360px;
-    height: 330px;
+    width: fit-content;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
   }

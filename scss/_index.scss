@@ -84,9 +84,10 @@ body {
                 }
 
                 .imgNoticias {
-                    width: 330px;
-                    height: 300px;
+                    width: 350px;
+                    height: 330px;
                     margin-left: 5%;
+                    object-fit: cover;
                 }
 
                 .divTextoNoticias {
@@ -298,7 +299,7 @@ body {
 
                     .textoUno {
                         font-family: $fontexto;
-                        font-size: 13px;
+                        font-size: 1px;
                         color: rgb(164, 164, 164);
                         letter-spacing: 0rem;
                     }

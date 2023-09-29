@@ -40,9 +40,22 @@ body{
                     }
                 }
                     .imgNoticias{
-                        width: 330px;
-                        height: 300px;
+                        width: 350px;
+                        height: 330px;
                         margin-left: 5%;
+                        object-fit: cover;
+                    }
+                    .imgNoticiasDos{
+                        width: fit-content;
+                        height: 330px;
+                        margin-left: 5%;
+                        object-fit: cover;
+                    }
+                    .imgNoticiasTres{
+                        width: 350px;
+                        height: 330px;
+                        margin-left: 5%;
+                        object-fit: cover;
                     }
                     .divTextoNoticias{
                         .tituloNoticias{
@@ -115,10 +128,12 @@ body{
                         padding: 0%;
                         display: flex;
                         justify-content: center;
-                            align-items: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
                         .imgNoticias {
-                            width: 360px;
-                            height: 330px;
+                            width: fit-content;
+                            height: fit-content;
                             margin: 0%;
                             padding: 0%;
                         }
