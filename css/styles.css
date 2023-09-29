@@ -1265,6 +1265,18 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     margin: 0%;
     padding: 0%;
   }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasDos {
+    width: fit-content;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasTres {
+    width: fit-content;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+  }
   body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
     display: flex;
     flex-direction: column;
