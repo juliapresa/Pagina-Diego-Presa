@@ -878,6 +878,7 @@ body .mainInicio .galery .box:nth-child(4) {
     height: 330px;
     margin: 0%;
     padding: 0%;
+    object-fit: contain;
   }
   body .mainInicio .noticias .divNoticiasUno .divTextoNoticias {
     display: flex;
