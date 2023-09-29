@@ -1252,30 +1252,28 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     width: 100%;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
-    padding: 0%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticias {
-    width: fit-content;
-    height: fit-content;
+    width: 360px;
+    height: 330px;
     margin: 0%;
     padding: 0%;
+    object-fit: cover;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasDos {
     width: fit-content;
-    height: fit-content;
+    height: 330px;
     margin: 0%;
     padding: 0%;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasTres {
-    width: fit-content;
-    height: fit-content;
+    width: 360px;
+    height: 330px;
     margin: 0%;
     padding: 0%;
+    object-fit: cover;
   }
   body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
     display: flex;
