@@ -1260,20 +1260,27 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     height: 330px;
     margin: 0%;
     padding: 0%;
-    object-fit: cover;
-  }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasDos {
-    width: fit-content;
-    height: 330px;
-    margin: 0%;
-    padding: 0%;
+    object-fit: contain;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasTres {
     width: 360px;
     height: 330px;
     margin: 0%;
     padding: 0%;
-    object-fit: cover;
+    object-fit: contain;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 290px;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasDos {
+    margin: 0%;
+    padding: 0%;
+    object-fit: contain;
   }
   body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
     display: flex;

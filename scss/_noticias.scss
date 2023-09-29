@@ -132,20 +132,27 @@ body{
                             height: 330px;
                             margin: 0%;
                             padding: 0%;
-                            object-fit: cover;
-                        }
-                        .imgNoticiasDos {
-                            width: fit-content;
-                            height: 330px;
-                            margin: 0%;
-                            padding: 0%;
+                            object-fit: contain;
                         }
                         .imgNoticiasTres {
                             width: 360px;
                             height: 330px;
                             margin: 0%;
                             padding: 0%;
-                            object-fit: cover;
+                            object-fit: contain;
+                        }
+                    }
+                    .divImgNoticiasDos{
+                        overflow-y: hidden;
+                        overflow-x: hidden;
+                        display: flex;
+                        justify-content: center;
+                        width: 95%;
+                        height: 290px;
+                        .imgNoticiasDos {
+                            margin: 0%;
+                            padding: 0%;
+                            object-fit: contain;
                         }
                     }
                     .divTextoNoticias {
