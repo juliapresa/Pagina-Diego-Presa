@@ -474,6 +474,9 @@ body .mainContacto .divFormulario {
   margin-top: 5%;
   margin-right: 2%;
 }
+body .mainContacto .divFormulario .mailto {
+  opacity: 0;
+}
 body .mainContacto .divFormulario .divImgContacto .imgContacto {
   height: 370px;
   width: 550px;
@@ -788,6 +791,38 @@ body .mainInicio .galery .box:nth-child(1) {
 body .mainInicio .galery .box:nth-child(4) {
   grid-column-start: span 2;
 }
+body .mainInicio .libro .divLibroUno {
+  margin: 0%;
+  padding: 0%;
+}
+body .mainInicio .libro .divLibroUno .divHrLibro {
+  margin: 0%;
+  padding: 0%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+body .mainInicio .libro .divLibroUno .divHrLibro .hrLibro {
+  margin: 0%;
+  padding: 0%;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+}
+body .mainInicio .libro .divLibroUno .imgLibro {
+  width: 370px;
+  height: 400px;
+  margin-left: 5%;
+  object-fit: contain;
+}
+body .mainInicio .libro .divLibroUno .divTextoLibro .tituloLibro {
+  color: rgb(164, 164, 164);
+  overflow-y: hidden;
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+}
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   body {
@@ -1014,6 +1049,58 @@ body .mainInicio .galery .box:nth-child(4) {
   }
   body .mainInicio .galery .box:nth-child(4) {
     grid-column-start: span 1;
+  }
+  body .mainInicio .libro .divLibroUno {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .mainInicio .libro .divLibroUno .divHrLibro {
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
+  body .mainInicio .libro .divLibroUno .divHrLibro .hrLibro {
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+  }
+  body .mainInicio .libro .divLibroUno .divImgLibro {
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .mainInicio .libro .divLibroUno .divImgLibro .imgLibro {
+    width: 400px;
+    height: 370px;
+    margin: 0%;
+    padding: 0%;
+    object-fit: contain;
+  }
+  body .mainInicio .libro .divLibroUno .divTextoLibro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  body .mainInicio .libro .divLibroUno .divTextoLibro .tituloLibro {
+    color: rgb(164, 164, 164);
+    overflow-y: hidden;
+    font-family: "JetBrains Mono", monospace;
+    margin-top: 2%;
+  }
+  body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
+    color: rgb(164, 164, 164);
+    font-family: "JetBrains Mono", monospace;
+    margin: 0%;
+    margin-bottom: 2%;
   }
 }
 body {

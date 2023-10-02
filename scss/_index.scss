@@ -271,7 +271,48 @@ body {
                 grid-column-start: span 2;
             }
         }
+        .libro {
+            .divLibroUno {
+                margin: 0%;
+                padding: 0%;
 
+                .divHrLibro {
+                    margin: 0%;
+                    padding: 0%;
+                    margin-bottom: 1%;
+                    margin-top: 1%;
+
+                    .hrLibro {
+                        margin: 0%;
+                        padding: 0%;
+                        background-color: white;
+                        height: 2px;
+                        width: 100%;
+                    }
+                }
+
+                .imgLibro {
+                    width: 370px;
+                    height: 400px;
+                    margin-left: 5%;
+                    object-fit: contain;
+                }
+
+                .divTextoLibro {
+                    .tituloLibro {
+                        color: rgb(164, 164, 164);
+                        ;
+                        overflow-y: hidden;
+                        font-family: $fontexto;
+                    }
+
+                    .parrafoLibro {
+                        color: rgb(164, 164, 164);
+                        font-family: $fontexto;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -548,6 +589,66 @@ body {
 
                 .box:nth-child(4) {
                     grid-column-start: span 1;
+                }
+            }
+            .libro {
+                .divLibroUno {
+                    margin: 0%;
+                    padding: 0%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .divHrLibro {
+                        margin: 0%;
+                        padding: 0%;
+                        margin-bottom: 1%;
+                        margin-top: 1%;
+
+                        .hrLibro {
+                            margin: 0%;
+                            padding: 0%;
+                            background-color: white;
+                            height: 2px;
+                            width: 100%;
+                        }
+                    }
+
+                    .divImgLibro {
+                        padding: 0%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .imgLibro {
+                            width: 400px;
+                            height: 370px;
+                            margin: 0%;
+                            padding: 0%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .divTextoLibro {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        .tituloLibro {
+                            color: rgb(164, 164, 164);
+                            overflow-y: hidden;
+                            font-family: $fontexto;
+                            margin-top: 2%;
+                        }
+
+                        .parrafoLibro {
+                            color: rgb(164, 164, 164);
+                            font-family: $fontexto;
+                            margin: 0%;
+                            margin-bottom: 2%;
+                        }
+                    }
                 }
             }
         }
