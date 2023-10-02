@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Por cualquier consulta puedes comunicarte">
-    <meta name="keywords" content="músico, canciones, cantautor, solista, poeta, guitarrista, compositor, montevideo, uruguay, discos">
+    <meta name="keywords"
+        content="músico, canciones, cantautor, solista, poeta, guitarrista, compositor, montevideo, uruguay, discos">
     <title>Contacto | Diego Presa</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
@@ -47,10 +49,10 @@
         <section class="container">
             <div class="tituloPagina col-md-12 col-sm-12 d-flex justify-content-first">
                 <h1 class="subtituloPagina">CONTACTO</h1>
-              </div>
-              <div class="divHr col-md-12 col-sm-12 d-flex justify-content-first">
+            </div>
+            <div class="divHr col-md-12 col-sm-12 d-flex justify-content-first">
                 <hr class="hr">
-              </div>
+            </div>
         </section>
         <div class="divFormulario d-flex">
             <div class="divImgContacto col-md-6 col-sm-12 d-flex justify-content-center">
@@ -63,21 +65,20 @@
                     <label for="name">Nombre</label>
                 </div>
                 <div class="formularioContenido form-floating mb-3">
-                    <input name="email" autocomplete="email" type="email" class="form-control" id="email" placeholder="Email"
-                        required>
+                    <input name="email" autocomplete="email" type="email" class="form-control" id="email"
+                        placeholder="Email" required>
                     <label for="email">Email</label>
                 </div>
                 <div class="formularioContenido form-floating mb-3">
-                    <textarea name="message" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                        style="height: 100px" required></textarea>
+                    <textarea name="message" class="form-control" placeholder="Leave a comment here"
+                        id="floatingTextarea2" style="height: 100px" required></textarea>
                     <label for="floatingTextarea2">Deja tu mensaje</label>
                 </div>
                 <div class="divBotones">
                     <button id="buttonEnviar" type="submit" class="button btn btn-primary me-2">Enviar</button>
-                    <button id="buttonBorrar" type="submit" class="button btn btn-primary ms-2">Borrar</button>
                 </div>
             </form>
-            <div class="col-md-12 col-sm-12 d-flex justify-content-center divMailto">
+            <div class="col-md-12 col-sm-12 d-flex justify-content-first divMailto">
                 <a class="mailto" id="trucazo" href="mailto:diegopresamusica@gmail.com">mail</a>
             </div>
         </div>
@@ -102,19 +103,35 @@
         </section>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script>
-       const $form = document.querySelector('#form')
-       const $buttonMailto = document.querySelector('#trucazo')
-       $form.addEventListener('submit', handleSubmit)
-       function handleSubmit(event){
-        event.preventDefault()
-        const form = new FormData (this)
-        console.log(form.get('name'))
-        $buttonMailto.setAttribute('href', `mailto:diegopresamusica@gmail.com?subject=${form.get('name')} ${form.get('email')}&body= ${form.get('message')}`)
-        $buttonMailto.click()
-       }
-
+        const $nameInput = document.querySelector('#name');
+        const $emailInput = document.querySelector('#email');
+        const $messageInput = document.querySelector('#floatingTextarea2');
+        const $form = document.querySelector('#form')
+        const $buttonMailto = document.querySelector('#trucazo')
+        $form.addEventListener('submit', handleSubmit)
+        function handleSubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            console.log(form.get('name'))
+            $buttonMailto.setAttribute('href', `mailto:diegopresamusica@gmail.com?subject=${form.get('name')} ${form.get('email')}&body= ${form.get('message')}`)
+            $buttonMailto.click()
+        }
+        const buttonEnviar = document.getElementById('buttonEnviar');
+        buttonEnviar.addEventListener('click', function () {
+            $nameInput.required = false;
+            Toastify({
+                text: "Mensaje enviado",
+                duration: 3000,
+                position: "center",
+                style:{
+                    background: "white",
+                    color: "black"
+                }
+            }).showToast();
+        
+        });
     </script>
 </body>
-
 </html>
