@@ -112,11 +112,10 @@ body{
                     justify-content: center;
                     align-items: center;
                     .divHrNoticias {
-                        margin: 0%;
-                        padding: 0%;
-                        margin-bottom: 1%;
-                        margin-top: 1%;
-
+                        visibility: hidden;
+                        .hrNoticias{
+                            visibility: hidden;
+                        }
                     }
                     .divImgNoticias{
                         display: flex;

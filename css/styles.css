@@ -1327,10 +1327,10 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     align-items: center;
   }
   body .mainNoticias .noticias .divNoticiasUno .divHrNoticias {
-    margin: 0%;
-    padding: 0%;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    visibility: hidden;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
+    visibility: hidden;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
     display: flex;
