@@ -1332,13 +1332,6 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     margin-bottom: 1%;
     margin-top: 1%;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
-    margin: 0%;
-    padding: 0%;
-    background-color: white;
-    height: 2px;
-    width: 100%;
-  }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
     display: flex;
     justify-content: center;
