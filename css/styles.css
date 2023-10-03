@@ -500,6 +500,12 @@ body .mainContacto .divFormulario .formulario .button {
   color: white;
   font-family: "JetBrains Mono", monospace;
 }
+body .mainContacto .divMail {
+  overflow-y: hidden;
+}
+body .mainContacto .divMail .elMail {
+  overflow-y: hidden;
+}
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   body {

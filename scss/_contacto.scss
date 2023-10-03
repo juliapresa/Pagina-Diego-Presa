@@ -53,6 +53,12 @@ body {
             }
 
         }
+        .divMail{
+            overflow-y: hidden;
+            .elMail{
+                overflow-y: hidden;
+            }
+        }
     }
 }
 
