@@ -634,24 +634,17 @@ body .mainInicio .noticias .divNoticiasUno {
   margin: 0%;
   padding: 0%;
 }
-body .mainInicio .noticias .divNoticiasUno .divHrNoticias {
-  margin: 0%;
-  padding: 0%;
-  margin-bottom: 1%;
-  margin-top: 1%;
-}
-body .mainInicio .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
-  margin: 0%;
-  padding: 0%;
-  background-color: white;
-  height: 2px;
-  width: 100%;
-}
 body .mainInicio .noticias .divNoticiasUno .imgNoticias {
   width: 350px;
   height: 330px;
   margin-left: 5%;
   object-fit: cover;
+}
+body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasDos {
+  width: fit-content;
+  height: 330px;
+  margin-left: 5%;
+  object-fit: contain;
 }
 body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
   color: rgb(164, 164, 164);
@@ -917,6 +910,19 @@ body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
   body .mainInicio .noticias .divNoticiasUno .divImgNoticias .imgNoticias {
     width: 360px;
     height: 330px;
+    margin: 0%;
+    padding: 0%;
+    object-fit: contain;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 290px;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasDos {
     margin: 0%;
     padding: 0%;
     object-fit: contain;
