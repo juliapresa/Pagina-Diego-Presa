@@ -642,7 +642,7 @@ body .mainInicio .noticias .divNoticiasUno .imgNoticias {
 }
 body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasDos {
   width: fit-content;
-  height: 330px;
+  height: 380px;
   margin-left: 5%;
   object-fit: contain;
 }
@@ -1276,20 +1276,20 @@ body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
   width: 100%;
 }
 body .mainNoticias .noticias .divNoticiasUno .imgNoticias {
-  width: 350px;
-  height: 330px;
+  width: 400px;
+  height: 380px;
   margin-left: 5%;
   object-fit: cover;
 }
 body .mainNoticias .noticias .divNoticiasUno .imgNoticiasDos {
-  width: fit-content;
+  width: 350px;
   height: 330px;
   margin-left: 5%;
   object-fit: cover;
 }
 body .mainNoticias .noticias .divNoticiasUno .imgNoticiasTres {
-  width: 350px;
-  height: 330px;
+  width: 400px;
+  height: 380px;
   margin-left: 5%;
   object-fit: cover;
 }
@@ -1431,14 +1431,8 @@ body .mainVideo .divHr .hr {
 body .mainVideo .sectionVideoUno {
   margin-top: 2%;
 }
-body .mainVideo .sectionVideoUno .videoUno {
-  margin-left: 2%;
-}
 body .mainVideo .sectionVideoDos {
   margin-top: 2%;
-}
-body .mainVideo .sectionVideoDos .videoCuatro {
-  margin-left: 2%;
 }
 body .mainVideo .sectionVideoTres {
   margin-top: 2%;
@@ -1446,6 +1440,165 @@ body .mainVideo .sectionVideoTres {
 }
 body .mainVideo .sectionVideoTres .videoCinco {
   border: 1px white solid;
+}
+
+body {
+  width: 100vw;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+body .mainPrensa .tituloPagina .subtituloPagina {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.1rem;
+  overflow-y: hidden;
+}
+body .mainPrensa .divHr .hr {
+  color: white;
+  height: 2px;
+  width: 100%;
+}
+body .mainPrensa .notaUnoSection {
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+  margin-top: 5%;
+}
+body .mainPrensa .notaUnoSection .divBotonNotas {
+  margin: 0%;
+  padding: 0%;
+}
+body .mainPrensa .notaUnoSection .divBotonNotas .anclaNotas .botonNotas {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainPrensa .notaUnoSection .divBotonNotas .anclaNotas .botonNotas:hover {
+  text-decoration: underline;
+}
+body .mainPrensa .notaUnoSection .divNotaUno {
+  margin: 0%;
+  padding: 0%;
+  align-items: center;
+  text-align: center;
+}
+body .mainPrensa .notaUnoSection .divNotaUno .notaUnoImg {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+body .mainPrensa .notaDosSection {
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+  margin-top: 5%;
+}
+body .mainPrensa .notaDosSection .divBotonNotas {
+  margin: 0%;
+  padding: 0%;
+}
+body .mainPrensa .notaDosSection .divBotonNotas .anclaNotas .botonNotas {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainPrensa .notaDosSection .divBotonNotas .anclaNotas .botonNotas:hover {
+  text-decoration: underline;
+}
+body .mainPrensa .notaDosSection .divNotaDos {
+  margin: 0%;
+  padding: 0%;
+  align-items: center;
+  text-align: center;
+}
+body .mainPrensa .notaDosSection .divNotaDos .notaDosImg {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+body .mainPrensa .notaTresSection {
+  margin: 0%;
+  padding: 0%;
+  margin-top: 5%;
+  text-align: center;
+}
+body .mainPrensa .notaTresSection .divBotonNotas {
+  margin: 0%;
+  padding: 0%;
+}
+body .mainPrensa .notaTresSection .divBotonNotas .anclaNotas .botonNotas {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainPrensa .notaTresSection .divBotonNotas .anclaNotas .botonNotas:hover {
+  text-decoration: underline;
+}
+body .mainPrensa .notaTresSection .divNotaTres {
+  margin: 0%;
+  padding: 0%;
+  align-items: center;
+  text-align: center;
+}
+body .mainPrensa .notaTresSection .divNotaTres .notaTresImg {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+body .mainPrensa .notaCuatroSection {
+  margin: 0%;
+  padding: 0%;
+  margin-top: 5%;
+  text-align: center;
+}
+body .mainPrensa .notaCuatroSection .divBotonNotas {
+  margin: 0%;
+  padding: 0%;
+}
+body .mainPrensa .notaCuatroSection .divBotonNotas .anclaNotas .botonNotas {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+}
+body .mainPrensa .notaCuatroSection .divBotonNotas .anclaNotas .botonNotas:hover {
+  text-decoration: underline;
+}
+body .mainPrensa .notaCuatroSection .divNotaCuatro {
+  margin: 0%;
+  padding: 0%;
+  align-items: center;
+  text-align: center;
+}
+body .mainPrensa .notaCuatroSection .divNotaCuatro .notaCuatroImg {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body .tituloPagina {
+    display: flex;
+    justify-content: center;
+  }
+  body .tituloPagina .subtituloPagina {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.1rem;
+    overflow-y: hidden;
+  }
+  body .divHr .hr {
+    color: white;
+    height: 2px;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
