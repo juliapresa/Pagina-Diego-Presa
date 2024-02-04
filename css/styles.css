@@ -925,7 +925,7 @@ body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
   body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasDos {
     margin: 0%;
     padding: 0%;
-    object-fit: contain;
+    height: auto;
   }
   body .mainInicio .noticias .divNoticiasUno .divTextoNoticias {
     display: flex;
