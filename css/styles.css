@@ -294,6 +294,7 @@ footer .row .redesFooter .iconos {
   list-style: none;
   text-decoration: none;
   color: white;
+  overflow-y: hidden;
 }
 footer .row .redesFooter .iconos:hover {
   font-size: 2rem;
