@@ -102,9 +102,10 @@
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
-  background-image: url(../assets/img/header.jpg);
+  background-image: url(../assets/img/pruebados.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .headerIndex .row {
   width: 100%;
@@ -307,7 +308,7 @@ body {
   overflow-x: hidden;
 }
 body .mainConciertos .tituloPagina .subtituloPagina {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
   color: white;
@@ -458,7 +459,7 @@ body .mainConciertos .conciertos .divConciertosUno .divFechaBoton .boton:hover {
   }
 }
 body .mainContacto .tituloPagina .subtituloPagina {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
   color: white;
@@ -1126,7 +1127,7 @@ body .mainMusica {
   padding: 0%;
 }
 body .mainMusica .tituloPagina .subtituloPagina {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
   color: white;
@@ -1247,7 +1248,7 @@ body {
   overflow-x: hidden;
 }
 body .mainNoticias .tituloPagina .subtituloPagina {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
   color: white;
@@ -1306,6 +1307,23 @@ body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias 
 body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
+}
+body .mainNoticias .noticias .noticiasVeinticuatro .textoNoticiasVenticuatro {
+  display: flex;
+  justify-content: center;
+  color: white;
+  overflow-y: hidden;
+  font-family: "Castoro Titling", cursive;
+}
+body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro .imgNoticiasVenticuartro {
+  width: 30%;
+  height: 80%;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -1417,7 +1435,7 @@ body {
 }
 body .mainVideo .tituloPagina .subtituloPagina {
   margin: 0%;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
   color: white;
@@ -1450,7 +1468,7 @@ body {
   overflow-x: hidden;
 }
 body .mainPrensa .tituloPagina .subtituloPagina {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
   color: white;

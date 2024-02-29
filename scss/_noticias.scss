@@ -6,7 +6,7 @@ body{
     .mainNoticias{
         .tituloPagina {
             .subtituloPagina{
-                font-family: $fontexto;
+                font-family: $fontitulo;
                 font-size: 28px;
                 font-weight: 400;
                 color: white;
@@ -71,6 +71,25 @@ body{
                 .divFechaNoticias{
                     color: rgb(164, 164, 164);
                     font-family: $fontexto;
+                }
+            }
+            .noticiasVeinticuatro{
+                .textoNoticiasVenticuatro{
+                    display: flex;
+                    justify-content: center;
+                    color: white;
+                    overflow-y: hidden;
+                    font-family: $fontitulo;
+                }
+                .divImgNoticiasVenticuartro{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    .imgNoticiasVenticuartro{
+                        width: 30%;
+                        height: 80%;
+                    }
                 }
             }
         }
