@@ -7,7 +7,7 @@
     background-image: url(../assets/img/pruebados.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-attachment: fixed;
     .row {
         width: 100%;
         height: 80%;
@@ -84,7 +84,7 @@
 @media screen and (min-width: 0px) and (max-width: 768px) {
     .headerIndex {
         width: 100%;
-        height: 50vh;
+        height: 70vh;
         margin: 0%;
         padding: 0%;
         overflow-x: hidden;
@@ -93,7 +93,7 @@
         background-size: cover;
         background-position: center;
         display: flex;
-
+        background-attachment: local;
         .row {
             overflow-x: hidden;
             width: 100%;
