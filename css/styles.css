@@ -172,11 +172,11 @@
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .headerIndex {
     width: 100%;
-    height: 50vh;
+    height: 87vh;
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
-    background-image: url(../assets/img/header.jpg);
+    background-image: url(../assets/img/headerNew.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1425,6 +1425,23 @@ body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro .
     background-color: black;
     color: white;
     font-family: "JetBrains Mono", monospace;
+  }
+  body .mainNoticias .noticias .noticiasVeinticuatro .textoNoticiasVenticuatro {
+    display: flex;
+    justify-content: center;
+    color: white;
+    overflow-y: hidden;
+    font-family: "Castoro Titling", cursive;
+  }
+  body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro .imgNoticiasVenticuartro {
+    width: 70%;
+    height: 100%;
   }
 }
 body {

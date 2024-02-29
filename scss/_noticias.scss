@@ -204,6 +204,26 @@ body{
                             font-family: $fontexto;
                         }
                     }
+                   
+                }
+                .noticiasVeinticuatro{
+                    .textoNoticiasVenticuatro{
+                        display: flex;
+                        justify-content: center;
+                        color: white;
+                        overflow-y: hidden;
+                        font-family: $fontitulo;
+                    }
+                    .divImgNoticiasVenticuartro{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        .imgNoticiasVenticuartro{
+                            width: 70%;
+                            height: 100%;
+                        }
+                    }
                 }
             }
         }
