@@ -5,7 +5,6 @@ body {
 
     .mainInicio {
         width: 100vw;
-
         .biografia {
             margin: 0%;
             padding: 0%;
@@ -67,24 +66,21 @@ body {
             .divNoticiasUno {
                 margin: 0%;
                 padding: 0%;
-                .imgNoticias {
-                    width: 350px;
-                    height: 330px;
-                    margin-left: 5%;
-                    object-fit: cover;
-                }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 .divImgNoticiasDos{
-                    .imgNoticiasDos{
-                        width: fit-content;
-                        height: 380px;
-                        margin-left: 5%;
-                        object-fit: contain;
-                    }
+                   height: 95vh;
+                   width: 90%;
+                   overflow-y: hidden;
+                   margin-bottom: 2%;
+                 
                 }
                 .divTextoNoticias {
-                    .tituloNoticias {
+                    display: flex;
+                    justify-content: center;
+                    /*.tituloNoticias {
                         color: rgb(164, 164, 164);
-                        ;
                         overflow-y: hidden;
                         font-family: $fontexto;
                     }
@@ -92,13 +88,13 @@ body {
                     .parrafoNoticias {
                         color: rgb(164, 164, 164);
                         font-family: $fontexto;
-                    }
+                    }*/
                 }
 
-                .divFechaNoticias {
+                /*.divFechaNoticias {
                     color: rgb(164, 164, 164);
                     font-family: $fontexto;
-                }
+                }*/
 
                 .divBotonNoticias {
                     padding-right: 5%;
@@ -379,9 +375,14 @@ body {
                     margin: 0%;
                     padding: 0%;
                     display: flex;
-                    justify-content: center;
+                    flex-direction: column;
                     align-items: center;
-
+                    .divImgNoticiasDos{
+                        height: fit-content;
+                        width: 90%;
+                        overflow-y: hidden;
+                        margin-bottom: 2%;
+                    }
                     .divHrNoticias {
                         margin: 0%;
                         padding: 0%;
@@ -411,7 +412,7 @@ body {
                             object-fit: contain;
                         }
                     }
-                    .divImgNoticiasDos{
+                    /*.divImgNoticiasDos{
                         overflow-y: hidden;
                         overflow-x: hidden;
                         display: flex;
@@ -423,7 +424,7 @@ body {
                             padding: 0%;
                             height: auto;
                         }
-                    }
+                    }*/
                     .divTextoNoticias {
                         display: flex;
                         flex-direction: column;

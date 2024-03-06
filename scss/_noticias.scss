@@ -39,7 +39,14 @@ body{
                         width: 100%;
                     }
                 }
-                    .imgNoticias{
+                .divImgNoticias{
+                    display: flex;
+                    justify-content: center;
+                }
+                .divImgNoticiasMovil{
+                    display: none;
+                }
+                    /*.imgNoticias{
                         width: 400px;
                         height: 380px;
                         margin-left: 5%;
@@ -56,40 +63,39 @@ body{
                         height: 380px;
                         margin-left: 5%;
                         object-fit: cover;
-                    }
+                    }*/
                     .divTextoNoticias{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
                         .tituloNoticias{
                             color: rgb(164, 164, 164);;
                             overflow-y: hidden;
                             font-family: $fontexto;
+                            font-size: x-large;
+                            text-align: center;
+                            margin-top: 2%;
                         }
                         .parrafoNoticias{
+                            overflow-y: hidden;
                             color: rgb(164, 164, 164);
                             font-family: $fontexto;
+                        
+                            font-size: x-large;
+                        }
+                        .parrafoNoticiasDos{
+                            text-align: center;
+                            width: 80%;
+                            overflow-y: hidden;
+                            color: rgb(164, 164, 164);
+                            font-family: $fontexto;
+                            margin-top: 1%;
+                            font-size: large;
                         }
                     }
                 .divFechaNoticias{
                     color: rgb(164, 164, 164);
                     font-family: $fontexto;
-                }
-            }
-            .noticiasVeinticuatro{
-                .textoNoticiasVenticuatro{
-                    display: flex;
-                    justify-content: center;
-                    color: white;
-                    overflow-y: hidden;
-                    font-family: $fontitulo;
-                }
-                .divImgNoticiasVenticuartro{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                    .imgNoticiasVenticuartro{
-                        width: 30%;
-                        height: 80%;
-                    }
                 }
             }
         }
@@ -137,9 +143,8 @@ body{
                         }
                     }
                     .divImgNoticias{
-                        display: flex;
-                        justify-content: center;
-                        .imgNoticias {
+                     
+                        /*.imgNoticias {
                             width: 360px;
                             height: 330px;
                             margin: 0%;
@@ -166,6 +171,13 @@ body{
                             padding: 0%;
                             object-fit: contain;
                         }
+                    }*/
+                    .divImgNoticiasMovil{
+                        display: flex;
+                        justify-content: center;
+                        .imgNoticiasMovil{
+                            width: 90%;
+                        }
                     }
                     .divTextoNoticias {
                         display: flex;
@@ -177,6 +189,7 @@ body{
                             overflow-y: hidden;
                             font-family: $fontexto;
                             margin-top: 2%;
+                            text-align: center;
                         }
 
                         .parrafoNoticias {
@@ -228,4 +241,4 @@ body{
             }
         }
     }
-}
+}}

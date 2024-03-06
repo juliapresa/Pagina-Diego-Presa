@@ -172,7 +172,7 @@
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .headerIndex {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
@@ -636,31 +636,33 @@ body .mainInicio .divHr .hr {
 body .mainInicio .noticias .divNoticiasUno {
   margin: 0%;
   padding: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*.divFechaNoticias {
+      color: rgb(164, 164, 164);
+      font-family: $fontexto;
+  }*/
 }
-body .mainInicio .noticias .divNoticiasUno .imgNoticias {
-  width: 350px;
-  height: 330px;
-  margin-left: 5%;
-  object-fit: cover;
-}
-body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasDos {
-  width: fit-content;
-  height: 380px;
-  margin-left: 5%;
-  object-fit: contain;
-}
-body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
-  color: rgb(164, 164, 164);
+body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos {
+  height: 95vh;
+  width: 90%;
   overflow-y: hidden;
-  font-family: "JetBrains Mono", monospace;
+  margin-bottom: 2%;
 }
-body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
-  color: rgb(164, 164, 164);
-  font-family: "JetBrains Mono", monospace;
-}
-body .mainInicio .noticias .divNoticiasUno .divFechaNoticias {
-  color: rgb(164, 164, 164);
-  font-family: "JetBrains Mono", monospace;
+body .mainInicio .noticias .divNoticiasUno .divTextoNoticias {
+  display: flex;
+  justify-content: center;
+  /*.tituloNoticias {
+      color: rgb(164, 164, 164);
+      overflow-y: hidden;
+      font-family: $fontexto;
+  }
+
+  .parrafoNoticias {
+      color: rgb(164, 164, 164);
+      font-family: $fontexto;
+  }*/
 }
 body .mainInicio .noticias .divNoticiasUno .divBotonNoticias {
   padding-right: 5%;
@@ -888,8 +890,27 @@ body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
     margin: 0%;
     padding: 0%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    /*.divImgNoticiasDos{
+        overflow-y: hidden;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        height: 290px;
+        .imgNoticiasDos {
+            margin: 0%;
+            padding: 0%;
+            height: auto;
+        }
+    }*/
+  }
+  body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos {
+    height: fit-content;
+    width: 90%;
+    overflow-y: hidden;
+    margin-bottom: 2%;
   }
   body .mainInicio .noticias .divNoticiasUno .divHrNoticias {
     margin: 0%;
@@ -916,19 +937,6 @@ body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
     margin: 0%;
     padding: 0%;
     object-fit: contain;
-  }
-  body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    width: 95%;
-    height: 290px;
-  }
-  body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasDos {
-    margin: 0%;
-    padding: 0%;
-    height: auto;
   }
   body .mainInicio .noticias .divNoticiasUno .divTextoNoticias {
     display: flex;
@@ -1264,6 +1272,24 @@ body .mainNoticias .divHr .hr {
 body .mainNoticias .noticias .divNoticiasUno {
   margin: 0%;
   padding: 0%;
+  /*.imgNoticias{
+      width: 400px;
+      height: 380px;
+      margin-left: 5%;
+      object-fit: cover;
+  }
+  .imgNoticiasDos{
+      width: 350px;
+      height: 330px;
+      margin-left: 5%;
+      object-fit: cover;
+  }
+  .imgNoticiasTres{
+      width: 400px;
+      height: 380px;
+      margin-left: 5%;
+      object-fit: cover;
+  }*/
 }
 body .mainNoticias .noticias .divNoticiasUno .divHrNoticias {
   margin: 0%;
@@ -1278,53 +1304,44 @@ body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
   height: 2px;
   width: 100%;
 }
-body .mainNoticias .noticias .divNoticiasUno .imgNoticias {
-  width: 400px;
-  height: 380px;
-  margin-left: 5%;
-  object-fit: cover;
+body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
+  display: flex;
+  justify-content: center;
 }
-body .mainNoticias .noticias .divNoticiasUno .imgNoticiasDos {
-  width: 350px;
-  height: 330px;
-  margin-left: 5%;
-  object-fit: cover;
+body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasMovil {
+  display: none;
 }
-body .mainNoticias .noticias .divNoticiasUno .imgNoticiasTres {
-  width: 400px;
-  height: 380px;
-  margin-left: 5%;
-  object-fit: cover;
+body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
   color: rgb(164, 164, 164);
   overflow-y: hidden;
   font-family: "JetBrains Mono", monospace;
+  font-size: x-large;
+  text-align: center;
+  margin-top: 2%;
 }
 body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
+  overflow-y: hidden;
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
+  font-size: x-large;
+}
+body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticiasDos {
+  text-align: center;
+  width: 80%;
+  overflow-y: hidden;
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+  margin-top: 1%;
+  font-size: large;
 }
 body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
-}
-body .mainNoticias .noticias .noticiasVeinticuatro .textoNoticiasVenticuatro {
-  display: flex;
-  justify-content: center;
-  color: white;
-  overflow-y: hidden;
-  font-family: "Castoro Titling", cursive;
-}
-body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro .imgNoticiasVenticuartro {
-  width: 30%;
-  height: 80%;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -1365,55 +1382,62 @@ body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro .
     visibility: hidden;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
+    /*.imgNoticias {
+            width: 360px;
+            height: 330px;
+            margin: 0%;
+            padding: 0%;
+            object-fit: contain;
+        }
+        .imgNoticiasTres {
+            width: 360px;
+            height: 330px;
+            margin: 0%;
+            padding: 0%;
+            object-fit: contain;
+        }
+    }
+    .divImgNoticiasDos{
+        overflow-y: hidden;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        height: 290px;
+        .imgNoticiasDos {
+            margin: 0%;
+            padding: 0%;
+            object-fit: contain;
+        }
+    }*/
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divImgNoticiasMovil {
     display: flex;
     justify-content: center;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticias {
-    width: 360px;
-    height: 330px;
-    margin: 0%;
-    padding: 0%;
-    object-fit: contain;
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divImgNoticiasMovil .imgNoticiasMovil {
+    width: 90%;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasTres {
-    width: 360px;
-    height: 330px;
-    margin: 0%;
-    padding: 0%;
-    object-fit: contain;
-  }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    width: 95%;
-    height: 290px;
-  }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasDos {
-    margin: 0%;
-    padding: 0%;
-    object-fit: contain;
-  }
-  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divTextoNoticias {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divTextoNoticias .tituloNoticias {
     color: rgb(164, 164, 164);
     overflow-y: hidden;
     font-family: "JetBrains Mono", monospace;
     margin-top: 2%;
+    text-align: center;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divTextoNoticias .parrafoNoticias {
     color: rgb(164, 164, 164);
     font-family: "JetBrains Mono", monospace;
     margin: 0%;
     margin-bottom: 2%;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divFechaNoticias {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1421,26 +1445,26 @@ body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro .
     font-family: "JetBrains Mono", monospace;
     margin-top: 2%;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divBotonNoticias .botonNoticias {
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divBotonNoticias .botonNoticias {
     border: none;
     background-color: black;
     color: white;
     font-family: "JetBrains Mono", monospace;
   }
-  body .mainNoticias .noticias .noticiasVeinticuatro .textoNoticiasVenticuatro {
+  body .mainNoticias .noticias .divNoticiasUno .noticiasVeinticuatro .textoNoticiasVenticuatro {
     display: flex;
     justify-content: center;
     color: white;
     overflow-y: hidden;
     font-family: "Castoro Titling", cursive;
   }
-  body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro {
+  body .mainNoticias .noticias .divNoticiasUno .noticiasVeinticuatro .divImgNoticiasVenticuartro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro .imgNoticiasVenticuartro {
+  body .mainNoticias .noticias .divNoticiasUno .noticiasVeinticuatro .divImgNoticiasVenticuartro .imgNoticiasVenticuartro {
     width: 70%;
     height: 100%;
   }
