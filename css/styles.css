@@ -1309,9 +1309,6 @@ body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
   display: flex;
   justify-content: center;
 }
-body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasMovil {
-  display: none;
-}
 body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
   display: flex;
   flex-direction: column;
@@ -1375,15 +1372,9 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  body .mainNoticias .noticias .divNoticiasUno .divHrNoticias {
-    visibility: hidden;
-  }
-  body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
-    visibility: hidden;
-  }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
-    /*.imgNoticias {
+    /*.divImgNoticias{
+
+        .imgNoticias {
             width: 360px;
             height: 330px;
             margin: 0%;
@@ -1412,33 +1403,42 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
         }
     }*/
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divImgNoticiasMovil {
-    display: flex;
-    justify-content: center;
+  body .mainNoticias .noticias .divNoticiasUno .divHrNoticias {
+    visibility: hidden;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divImgNoticiasMovil .imgNoticiasMovil {
-    width: 90%;
+  body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
+    visibility: hidden;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divTextoNoticias {
+  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divTextoNoticias .tituloNoticias {
+  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
     color: rgb(164, 164, 164);
     overflow-y: hidden;
     font-family: "JetBrains Mono", monospace;
     margin-top: 2%;
+    font-size: large;
     text-align: center;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divTextoNoticias .parrafoNoticias {
+  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
     color: rgb(164, 164, 164);
     font-family: "JetBrains Mono", monospace;
     margin: 0%;
     margin-bottom: 2%;
+    font-size: large;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divFechaNoticias {
+  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticiasDos {
+    text-align: center;
+    width: 90%;
+    overflow-y: hidden;
+    color: rgb(164, 164, 164);
+    font-family: "JetBrains Mono", monospace;
+    font-size: medium;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1446,26 +1446,26 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     font-family: "JetBrains Mono", monospace;
     margin-top: 2%;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .divBotonNoticias .botonNoticias {
+  body .mainNoticias .noticias .divNoticiasUno .divBotonNoticias .botonNoticias {
     border: none;
     background-color: black;
     color: white;
     font-family: "JetBrains Mono", monospace;
   }
-  body .mainNoticias .noticias .divNoticiasUno .noticiasVeinticuatro .textoNoticiasVenticuatro {
+  body .mainNoticias .noticias .noticiasVeinticuatro .textoNoticiasVenticuatro {
     display: flex;
     justify-content: center;
     color: white;
     overflow-y: hidden;
     font-family: "Castoro Titling", cursive;
   }
-  body .mainNoticias .noticias .divNoticiasUno .noticiasVeinticuatro .divImgNoticiasVenticuartro {
+  body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  body .mainNoticias .noticias .divNoticiasUno .noticiasVeinticuatro .divImgNoticiasVenticuartro .imgNoticiasVenticuartro {
+  body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro .imgNoticiasVenticuartro {
     width: 70%;
     height: 100%;
   }

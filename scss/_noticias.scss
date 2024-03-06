@@ -43,9 +43,6 @@ body{
                     display: flex;
                     justify-content: center;
                 }
-                .divImgNoticiasMovil{
-                    display: none;
-                }
                     /*.imgNoticias{
                         width: 400px;
                         height: 380px;
@@ -142,9 +139,9 @@ body{
                             visibility: hidden;
                         }
                     }
-                    .divImgNoticias{
+                    /*.divImgNoticias{
                      
-                        /*.imgNoticias {
+                        .imgNoticias {
                             width: 360px;
                             height: 330px;
                             margin: 0%;
@@ -172,13 +169,7 @@ body{
                             object-fit: contain;
                         }
                     }*/
-                    .divImgNoticiasMovil{
-                        display: flex;
-                        justify-content: center;
-                        .imgNoticiasMovil{
-                            width: 90%;
-                        }
-                    }
+               
                     .divTextoNoticias {
                         display: flex;
                         flex-direction: column;
@@ -189,6 +180,7 @@ body{
                             overflow-y: hidden;
                             font-family: $fontexto;
                             margin-top: 2%;
+                            font-size: large;
                             text-align: center;
                         }
 
@@ -197,6 +189,15 @@ body{
                             font-family: $fontexto;
                             margin: 0%;
                             margin-bottom: 2%;
+                            font-size: large;
+                        }
+                        .parrafoNoticiasDos{
+                            text-align: center;
+                            width: 90%;
+                            overflow-y: hidden;
+                            color: rgb(164, 164, 164);
+                            font-family: $fontexto;
+                            font-size: medium;
                         }
                     }
 
@@ -241,4 +242,4 @@ body{
             }
         }
     }
-}}
+}
