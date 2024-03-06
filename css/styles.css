@@ -966,6 +966,7 @@ body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
     background-color: black;
     color: white;
     font-family: "JetBrains Mono", monospace;
+    margin-top: 20%;
   }
   body .mainInicio .videos .divBotonVideos .botonVideos {
     border: none;
