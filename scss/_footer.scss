@@ -18,19 +18,27 @@ footer{
         .redesFooter{
             margin: 0;
             padding: 0;
-            .iconos{
-                font-size: 1.5rem;
-                display: flex;
-                margin-left: 2%;
-                margin-right: 2%;
-                margin-bottom: 2%;
+            .iconosNoticias{
+                width: 100%;
                 list-style: none;
                 text-decoration: none;
-                color: white;
-                overflow-y: hidden;
-            }
-            .iconos:hover{
-               font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2%;
+                margin-top: 1%;
+                .iconos{
+                    font-size: 1.5rem;
+                    display: flex;
+                    margin-left: 2%;
+                    margin-right: 2%;
+                    list-style: none;
+                    text-decoration: none;
+                    color: white;
+                    overflow-y: hidden;
+                }
+                .iconos:hover{
+                   font-size: 1.6rem;
+                }
             }
         }
     }

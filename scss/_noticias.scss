@@ -42,6 +42,31 @@ body{
                 .divImgNoticias{
                     display: flex;
                     justify-content: center;
+                    margin: 0%;
+                    width: 90%;
+                }
+                .iconosNoticias{
+                    width: 100%;
+                    .iconosAncla{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        list-style: none;
+                        text-decoration: none;
+                        margin-bottom: 6%;
+                        margin-top: 2%;
+                        .iconos{
+                            font-size: 2rem;
+                            display: flex;
+                            list-style: none;
+                            text-decoration: none;
+                            color: white;
+                            overflow-y: hidden;
+                        }
+                        .iconos:hover{
+                           font-size: 2.1rem;
+                        }
+                    }
                 }
                     /*.imgNoticias{
                         width: 400px;

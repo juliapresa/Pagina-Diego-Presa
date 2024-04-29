@@ -70,16 +70,19 @@ body {
                 flex-direction: column;
                 align-items: center;
                 .divImgNoticiasDos{
-                   height: 95vh;
-                   width: 90%;
+                   height: 100vh;
+                   width: 95%;
                    overflow-y: hidden;
                    margin-bottom: 2%;
-                 
+                   .imgNoticiasPC{
+                    width: fit-content;
+                    height: 100vh;
+                }
                 }
                 .divTextoNoticias {
                     display: flex;
                     justify-content: center;
-                    /*.tituloNoticias {
+                    .tituloNoticias {
                         color: rgb(164, 164, 164);
                         overflow-y: hidden;
                         font-family: $fontexto;
@@ -88,14 +91,36 @@ body {
                     .parrafoNoticias {
                         color: rgb(164, 164, 164);
                         font-family: $fontexto;
-                    }*/
+                    }
                 }
 
                 /*.divFechaNoticias {
                     color: rgb(164, 164, 164);
                     font-family: $fontexto;
                 }*/
-
+                .iconosNoticias{
+                    width: 100%;
+                    .iconosAncla{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        list-style: none;
+                        text-decoration: none;
+                        margin-bottom: 6%;
+                        margin-top: 2%;
+                        .iconos{
+                            font-size: 2rem;
+                            display: flex;
+                            list-style: none;
+                            text-decoration: none;
+                            color: white;
+                            overflow-y: hidden;
+                        }
+                        .iconos:hover{
+                           font-size: 2.1rem;
+                        }
+                    }
+                }
                 .divBotonNoticias {
                     padding-right: 5%;
 
@@ -382,6 +407,10 @@ body {
                         width: 90%;
                         overflow-y: hidden;
                         margin-bottom: 2%;
+                        .imgNoticiasPC{
+                            width: fit-content;
+                            height: 50vh;
+                        }
                     }
                     .divHrNoticias {
                         margin: 0%;
