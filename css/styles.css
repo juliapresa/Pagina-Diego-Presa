@@ -958,16 +958,16 @@ body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
   }
   body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos {
     height: fit-content;
-    width: 90%;
+    width: 95vw;
     overflow-y: hidden;
     margin-bottom: 2%;
   }
   body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPC {
-    width: fit-content;
+    width: 65vw;
     height: 50vh;
   }
   body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCdos {
-    width: fit-content;
+    width: 65vw;
     height: 50vh;
     margin: 0%;
     margin-top: 2%;
