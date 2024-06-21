@@ -594,6 +594,13 @@ body {
 body .mainInicio {
   width: 100vw;
 }
+body .mainInicio .sectionVideoFlor {
+  margin-top: 5%;
+}
+body .mainInicio .sectionVideoFlor .videoFlor {
+  width: 100vw;
+  height: 100vh;
+}
 body .mainInicio .biografia {
   margin: 0%;
   padding: 0%;
@@ -654,13 +661,18 @@ body .mainInicio .noticias .divNoticiasUno {
 }
 body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos {
   height: 100vh;
-  width: 95%;
+  width: 100vw;
   overflow-y: hidden;
   margin-bottom: 2%;
 }
 body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPC {
   width: fit-content;
   height: 100vh;
+}
+body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCdos {
+  width: fit-content;
+  height: 100vh;
+  margin-left: 2%;
 }
 body .mainInicio .noticias .divNoticiasUno .divTextoNoticias {
   display: flex;
@@ -940,6 +952,10 @@ body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
         }
     }*/
   }
+  body .mainInicio .noticias .divNoticiasUno .divImgNoticias {
+    display: flex;
+    flex-direction: column;
+  }
   body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos {
     height: fit-content;
     width: 90%;
@@ -949,6 +965,12 @@ body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
   body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPC {
     width: fit-content;
     height: 50vh;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCdos {
+    width: fit-content;
+    height: 50vh;
+    margin: 0%;
+    margin-top: 2%;
   }
   body .mainInicio .noticias .divNoticiasUno .divHrNoticias {
     margin: 0%;
@@ -1347,7 +1369,10 @@ body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
   display: flex;
   justify-content: center;
   margin: 0%;
-  width: 90%;
+  width: 95vw;
+}
+body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPCdos {
+  margin-left: 2%;
 }
 body .mainNoticias .noticias .divNoticiasUno .iconosNoticias {
   width: 100%;
@@ -1471,6 +1496,14 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
   }
   body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
     visibility: hidden;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
+    display: flex;
+    flex-direction: column;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPCdos {
+    margin: 0%;
+    margin-top: 2%;
   }
   body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
     display: flex;

@@ -5,6 +5,13 @@ body {
 
     .mainInicio {
         width: 100vw;
+        .sectionVideoFlor{
+            margin-top: 5%;
+            .videoFlor{
+                width: 100vw;
+                height: 100vh;
+            }
+        }
         .biografia {
             margin: 0%;
             padding: 0%;
@@ -71,13 +78,18 @@ body {
                 align-items: center;
                 .divImgNoticiasDos{
                    height: 100vh;
-                   width: 95%;
+                   width: 100vw;
                    overflow-y: hidden;
                    margin-bottom: 2%;
                    .imgNoticiasPC{
                     width: fit-content;
                     height: 100vh;
-                }
+                    }
+                    .imgNoticiasPCdos{
+                        width: fit-content;
+                        height: 100vh;
+                        margin-left: 2%;
+                        }
                 }
                 .divTextoNoticias {
                     display: flex;
@@ -402,6 +414,10 @@ body {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    .divImgNoticias{
+                        display: flex;
+                        flex-direction: column;
+                    }
                     .divImgNoticiasDos{
                         height: fit-content;
                         width: 90%;
@@ -410,6 +426,12 @@ body {
                         .imgNoticiasPC{
                             width: fit-content;
                             height: 50vh;
+                        }
+                        .imgNoticiasPCdos{
+                            width: fit-content;
+                            height: 50vh;
+                            margin: 0%;
+                            margin-top: 2%;
                         }
                     }
                     .divHrNoticias {
