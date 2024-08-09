@@ -47,6 +47,12 @@ body{
                     .imgNoticiasPCdos{
                         margin-left: 2%;
                     }
+                }
+                .divImgNoticiasDos{
+                    display: flex;
+                    justify-content: center;
+                    margin: 0%;
+                    width: 95vw;
                     .imgNoticiasPCTres{
                         width: 800px;
                     }
@@ -173,11 +179,18 @@ body{
                     .divImgNoticias{
                         display: flex;
                         flex-direction: column;  
-                        align-items: center;
+                       
                         .imgNoticiasPCdos{
                             margin: 0%;
                             margin-top: 2%;
                         }
+                       
+                    }
+                    .divImgNoticiasDos{
+                        display: flex;
+                        flex-direction: column;  
+                        align-items: center;
+                       
                         .imgNoticiasPCTres{
                             width: 400px;
                         }

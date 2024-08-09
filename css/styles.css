@@ -1374,7 +1374,13 @@ body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
 body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPCdos {
   margin-left: 2%;
 }
-body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPCTres {
+body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos {
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  width: 95vw;
+}
+body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCTres {
   width: 800px;
 }
 body .mainNoticias .noticias .divNoticiasUno .iconosNoticias {
@@ -1503,13 +1509,17 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPCdos {
     margin: 0%;
     margin-top: 2%;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPCTres {
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCTres {
     width: 400px;
   }
   body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
