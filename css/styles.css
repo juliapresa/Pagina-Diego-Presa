@@ -1009,12 +1009,14 @@ body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
     overflow-y: hidden;
     font-family: "JetBrains Mono", monospace;
     margin-top: 2%;
+    text-align: center;
   }
   body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
     color: rgb(164, 164, 164);
     font-family: "JetBrains Mono", monospace;
     margin: 0%;
     margin-bottom: 2%;
+    text-align: center;
   }
   body .mainInicio .noticias .divNoticiasUno .divFechaNoticias {
     color: rgb(164, 164, 164);
