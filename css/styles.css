@@ -873,6 +873,15 @@ body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
 }
+body .divPortfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+body .aPortfolio {
+  text-decoration: none;
+  color: rgb(164, 164, 164);
+}
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   body {
