@@ -1659,6 +1659,7 @@ body .mainPrensa .notaUnoSection .divBotonNotas {
   padding: 0%;
 }
 body .mainPrensa .notaUnoSection .divBotonNotas .botonNotas {
+  text-decoration: none;
   border: none;
   background-color: black;
   color: white;
@@ -1689,6 +1690,7 @@ body .mainPrensa .notaDosSection .divBotonNotas {
   padding: 0%;
 }
 body .mainPrensa .notaDosSection .divBotonNotas .botonNotas {
+  text-decoration: none;
   border: none;
   background-color: black;
   color: white;
@@ -1719,6 +1721,7 @@ body .mainPrensa .notaTresSection .divBotonNotas {
   padding: 0%;
 }
 body .mainPrensa .notaTresSection .divBotonNotas .botonNotas {
+  text-decoration: none;
   border: none;
   background-color: black;
   color: white;
@@ -1749,6 +1752,7 @@ body .mainPrensa .notaCuatroSection .divBotonNotas {
   padding: 0%;
 }
 body .mainPrensa .notaCuatroSection .divBotonNotas .botonNotas {
+  text-decoration: none;
   border: none;
   background-color: black;
   color: white;
