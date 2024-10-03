@@ -1658,13 +1658,13 @@ body .mainPrensa .notaUnoSection .divBotonNotas {
   margin: 0%;
   padding: 0%;
 }
-body .mainPrensa .notaUnoSection .divBotonNotas .anclaNotas .botonNotas {
+body .mainPrensa .notaUnoSection .divBotonNotas .botonNotas {
   border: none;
   background-color: black;
   color: white;
   font-family: "JetBrains Mono", monospace;
 }
-body .mainPrensa .notaUnoSection .divBotonNotas .anclaNotas .botonNotas:hover {
+body .mainPrensa .notaUnoSection .divBotonNotas .botonNotas:hover {
   text-decoration: underline;
 }
 body .mainPrensa .notaUnoSection .divNotaUno {
@@ -1688,13 +1688,13 @@ body .mainPrensa .notaDosSection .divBotonNotas {
   margin: 0%;
   padding: 0%;
 }
-body .mainPrensa .notaDosSection .divBotonNotas .anclaNotas .botonNotas {
+body .mainPrensa .notaDosSection .divBotonNotas .botonNotas {
   border: none;
   background-color: black;
   color: white;
   font-family: "JetBrains Mono", monospace;
 }
-body .mainPrensa .notaDosSection .divBotonNotas .anclaNotas .botonNotas:hover {
+body .mainPrensa .notaDosSection .divBotonNotas .botonNotas:hover {
   text-decoration: underline;
 }
 body .mainPrensa .notaDosSection .divNotaDos {
@@ -1718,13 +1718,13 @@ body .mainPrensa .notaTresSection .divBotonNotas {
   margin: 0%;
   padding: 0%;
 }
-body .mainPrensa .notaTresSection .divBotonNotas .anclaNotas .botonNotas {
+body .mainPrensa .notaTresSection .divBotonNotas .botonNotas {
   border: none;
   background-color: black;
   color: white;
   font-family: "JetBrains Mono", monospace;
 }
-body .mainPrensa .notaTresSection .divBotonNotas .anclaNotas .botonNotas:hover {
+body .mainPrensa .notaTresSection .divBotonNotas .botonNotas:hover {
   text-decoration: underline;
 }
 body .mainPrensa .notaTresSection .divNotaTres {
@@ -1748,13 +1748,13 @@ body .mainPrensa .notaCuatroSection .divBotonNotas {
   margin: 0%;
   padding: 0%;
 }
-body .mainPrensa .notaCuatroSection .divBotonNotas .anclaNotas .botonNotas {
+body .mainPrensa .notaCuatroSection .divBotonNotas .botonNotas {
   border: none;
   background-color: black;
   color: white;
   font-family: "JetBrains Mono", monospace;
 }
-body .mainPrensa .notaCuatroSection .divBotonNotas .anclaNotas .botonNotas:hover {
+body .mainPrensa .notaCuatroSection .divBotonNotas .botonNotas:hover {
   text-decoration: underline;
 }
 body .mainPrensa .notaCuatroSection .divNotaCuatro {
