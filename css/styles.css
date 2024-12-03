@@ -286,6 +286,7 @@ footer .row {
 footer .row .redesFooter {
   margin: 0;
   padding: 0;
+  height: 15vh;
 }
 footer .row .redesFooter .iconosNoticias {
   width: 100%;
@@ -382,9 +383,6 @@ body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFecha
   width: fit-content;
   height: fit-content;
 }
-body .mainConciertos .conciertos .divConciertosUno .divFechaBoton .boton:hover {
-  color: rgb(138, 30, 30);
-}
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   body {
@@ -463,9 +461,6 @@ body .mainConciertos .conciertos .divConciertosUno .divFechaBoton .boton:hover {
     width: fit-content;
     height: fit-content;
   }
-  body .mainConciertos .conciertos .divConciertosUno .divFechaBoton .boton:hover {
-    color: rgb(138, 30, 30);
-  }
 }
 body .mainContacto .tituloPagina .subtituloPagina {
   font-family: "Castoro Titling", cursive;
@@ -515,7 +510,15 @@ body .mainContacto .divMail {
   overflow-y: hidden;
 }
 body .mainContacto .divMail .elMail {
+  font-size: xx-large;
   overflow-y: hidden;
+  text-decoration: none;
+  color: rgb(194, 190, 190);
+}
+body .mainContacto .divMail .elMail:hover {
+  overflow-y: hidden;
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -584,6 +587,20 @@ body .mainContacto .divMail .elMail {
     border: 1px solid white;
     color: white;
     font-family: "JetBrains Mono", monospace;
+  }
+  body .mainContacto .divMail {
+    overflow-y: hidden;
+  }
+  body .mainContacto .divMail .elMail {
+    font-size: medium;
+    overflow-y: hidden;
+    text-decoration: none;
+    color: rgb(194, 190, 190);
+  }
+  body .mainContacto .divMail .elMail:hover {
+    overflow-y: hidden;
+    text-decoration: none;
+    color: white;
   }
 }
 body {
@@ -660,18 +677,18 @@ body .mainInicio .noticias .divNoticiasUno {
   }*/
 }
 body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos {
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
   overflow-y: hidden;
   margin-bottom: 2%;
 }
 body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPC {
   width: fit-content;
-  height: 100vh;
+  height: 70vh;
 }
 body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCdos {
   width: fit-content;
-  height: 100vh;
+  height: 70vh;
   margin-left: 2%;
 }
 body .mainInicio .noticias .divNoticiasUno .divTextoNoticias {
@@ -733,63 +750,38 @@ body .mainInicio .contenedorDiscos {
   padding: 0%;
   margin-top: 3%;
   margin-bottom: 5%;
-}
-body .mainInicio .contenedorDiscos .textoDiscosTitulo {
-  margin: 0%;
-  margin-top: 1%;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 17px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-}
-body .mainInicio .contenedorDiscos .textoDiscosTitulo:hover {
-  color: rgb(138, 30, 30);
-}
-body .mainInicio .contenedorDiscos .textoDiscos {
-  overflow-y: hidden;
-  color: white;
-  margin: 0%;
-  margin-top: 1%;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  height: 70vh;
 }
 body .mainInicio .contenedorDiscos .ancla {
   text-decoration: none;
 }
-body .mainInicio .contenedorDiscos .ancla .textoDiscosTituloBuceo {
-  margin: 0%;
-  margin-top: 1%;
+body .mainInicio .contenedorDiscos .ancla .discos {
+  width: auto;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+body .mainInicio .contenedorDiscos .ancla .discos:hover {
+  width: auto;
+  height: 53vh;
+}
+body .mainInicio .contenedorDiscos .ancla .textoDiscosTitulo {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
   font-family: "JetBrains Mono", monospace;
   font-size: 17px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  overflow-y: hidden;
-}
-body .mainInicio .contenedorDiscos .ancla .textoDiscosTituloBuceo:hover {
-  color: rgb(85, 24, 24);
-}
-body .mainInicio .contenedorDiscos .ancla .divTextos .textoDiscosTitulo {
   margin: 0%;
   margin-top: 1%;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 18px;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: white;
 }
-body .mainInicio .contenedorDiscos .ancla .divTextos .textoDiscosTitulo:hover {
+body .mainInicio .contenedorDiscos .ancla .textoDiscosTitulo:hover {
   color: rgb(138, 30, 30);
 }
-body .mainInicio .contenedorDiscos .ancla .textoDiscos {
+body .mainInicio .contenedorDiscos .divTextos .textoDiscos {
+  overflow-y: hidden;
   color: white;
   margin: 0%;
   margin-top: 1%;
@@ -798,19 +790,6 @@ body .mainInicio .contenedorDiscos .ancla .textoDiscos {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-body .mainInicio .contenedorDiscos .ancla .textoDiscos:hover {
-  color: rgb(85, 24, 24);
-}
-body .mainInicio .contenedorDiscos .discos {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: space-between;
-}
-body .mainInicio .contenedorDiscos .discos:hover {
-  width: 320px;
-  height: 320px;
 }
 body .mainInicio .divBotonMusica {
   padding-right: 5%;
@@ -859,9 +838,9 @@ body .mainInicio .libro .divLibroUno .divHrLibro .hrLibro {
   width: 100%;
 }
 body .mainInicio .libro .divLibroUno .imgLibro {
-  width: 370px;
-  height: 400px;
-  margin-left: 5%;
+  width: auto;
+  height: 70vh;
+  margin-left: 10vw;
   object-fit: contain;
 }
 body .mainInicio .libro .divLibroUno .divTextoLibro .tituloLibro {
@@ -1224,26 +1203,14 @@ body .mainMusica .divHr .hr {
   width: 100%;
 }
 body .mainMusica .contenedorDiscos {
+  overflow: hidden;
   margin: 0%;
   padding: 0%;
   margin-top: 3%;
-  margin-bottom: 5%;
-}
-body .mainMusica .contenedorDiscos .textoDiscosTitulo {
-  margin: 0%;
-  margin-top: 1%;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 17px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-}
-body .mainMusica .contenedorDiscos .textoDiscosTitulo:hover {
-  color: rgb(138, 30, 30);
+  height: 60vh;
 }
 body .mainMusica .contenedorDiscos .textoDiscos {
-  overflow-y: hidden;
+  overflow: hidden;
   color: white;
   margin: 0%;
   margin-top: 1%;
@@ -1253,24 +1220,24 @@ body .mainMusica .contenedorDiscos .textoDiscos {
   flex-direction: column;
   text-align: center;
 }
+body .mainMusica .contenedorDiscos .textoDiscos:hover {
+  color: rgb(85, 24, 24);
+}
 body .mainMusica .contenedorDiscos .ancla {
   text-decoration: none;
 }
-body .mainMusica .contenedorDiscos .ancla .textoDiscosTituloBuceo {
-  margin: 0%;
-  margin-top: 1%;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 17px;
+body .mainMusica .contenedorDiscos .ancla .discos {
+  width: auto;
+  height: 45vh;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  overflow-y: hidden;
+  justify-content: space-between;
 }
-body .mainMusica .contenedorDiscos .ancla .textoDiscosTituloBuceo:hover {
-  color: rgb(85, 24, 24);
+body .mainMusica .contenedorDiscos .ancla .discos:hover {
+  width: auto;
+  height: 47vh;
 }
-body .mainMusica .contenedorDiscos .ancla .divTextos .textoDiscosTitulo {
+body .mainMusica .contenedorDiscos .ancla .textoDiscosTitulo {
+  overflow: hidden;
   margin: 0%;
   margin-top: 1%;
   font-family: "JetBrains Mono", monospace;
@@ -1281,31 +1248,23 @@ body .mainMusica .contenedorDiscos .ancla .divTextos .textoDiscosTitulo {
   text-align: center;
   color: white;
 }
-body .mainMusica .contenedorDiscos .ancla .divTextos .textoDiscosTitulo:hover {
+body .mainMusica .contenedorDiscos .ancla .textoDiscosTitulo:hover {
   color: rgb(138, 30, 30);
 }
-body .mainMusica .contenedorDiscos .ancla .textoDiscos {
-  color: white;
+body .mainMusica .contenedorDiscos .ancla .textoDiscosTituloBuceo {
+  overflow: hidden;
   margin: 0%;
   margin-top: 1%;
   font-family: "JetBrains Mono", monospace;
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   text-align: center;
+  color: white;
 }
-body .mainMusica .contenedorDiscos .ancla .textoDiscos:hover {
-  color: rgb(85, 24, 24);
-}
-body .mainMusica .contenedorDiscos .discos {
-  width: 350px;
-  height: 350px;
-  display: flex;
-  justify-content: space-between;
-}
-body .mainMusica .contenedorDiscos .discos:hover {
-  width: 354px;
-  height: 354px;
+body .mainMusica .contenedorDiscos .ancla .textoDiscosTituloBuceo:hover {
+  color: rgb(138, 30, 30);
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -1382,7 +1341,13 @@ body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
   margin: 0%;
   width: 95vw;
 }
+body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPC {
+  width: 35vw;
+  height: auto;
+}
 body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPCdos {
+  width: 35vw;
+  height: auto;
   margin-left: 2%;
 }
 body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos {
@@ -1392,7 +1357,8 @@ body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos {
   width: 95vw;
 }
 body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCTres {
-  width: 800px;
+  width: 40vw;
+  height: auto;
 }
 body .mainNoticias .noticias .divNoticiasUno .iconosNoticias {
   width: 100%;
@@ -1520,10 +1486,20 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPC {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 5%;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPCdos {
+    width: 80vw;
+    height: auto;
+    margin-left: 0%;
     margin: 0%;
-    margin-top: 2%;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos {
     display: flex;
@@ -1531,13 +1507,15 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     align-items: center;
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCTres {
-    width: 400px;
+    width: 80vw;
+    height: auto;
   }
   body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 95vw;
   }
   body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
     color: rgb(164, 164, 164);

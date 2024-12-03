@@ -24,25 +24,13 @@ body {
             }
         }
         .contenedorDiscos {
+            overflow: hidden;
             margin: 0%;
             padding: 0%;
             margin-top: 3%;
-            margin-bottom: 5%;
-            .textoDiscosTitulo{
-                margin: 0%;
-                margin-top: 1%;
-                font-family: $fontexto;
-                font-size: 17px;
-                display: flex;
-                flex-direction: column;
-                text-align: center;   
-                color: white;
-            }
-            .textoDiscosTitulo:hover{
-                color: rgb(138, 30, 30);
-            }
+            height: 60vh;
             .textoDiscos {
-                overflow-y: hidden;
+                overflow: hidden;
                 color: white;
                 margin: 0%;
                 margin-top: 1%;
@@ -52,62 +40,51 @@ body {
                 flex-direction: column;
                 text-align: center;
             }
+            .textoDiscos:hover{
+                color: rgb(85, 24, 24);
+            }
             .ancla{
                 text-decoration: none;
-                .textoDiscosTituloBuceo{
+                .discos {
+                    width: auto;
+                    height: 45vh;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .discos:hover{
+                    width: auto;
+                    height: 47vh;
+                }
+                .textoDiscosTitulo{
+                    overflow: hidden;
                     margin: 0%;
                     margin-top: 1%;
                     font-family: $fontexto;
-                    font-size: 17px;
+                    font-size: 18px;
+                    font-weight: bold;
                     display: flex;
                     flex-direction: column;
                     text-align: center;   
                     color: white;
-                    overflow-y: hidden;
-
                 }
-                .textoDiscosTituloBuceo:hover{
-                    color: rgb(85, 24, 24);
+                .textoDiscosTitulo:hover{
+                    color: rgb(138, 30, 30);
                 }
-                .divTextos{
-                    .textoDiscosTitulo{
-                        margin: 0%;
-                        margin-top: 1%;
-                        font-family: $fontexto;
-                        font-size: 18px;
-                        font-weight: bold;
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;   
-                        color: white;
-                    }
-                    .textoDiscosTitulo:hover{
-                        color: rgb(138, 30, 30);
-                    }
-                }
-                .textoDiscos {
-                    color: white;
+                .textoDiscosTituloBuceo{
+                    overflow: hidden;
                     margin: 0%;
                     margin-top: 1%;
                     font-family: $fontexto;
-                    font-size: 15px;
+                    font-size: 17px;
+                    font-weight: bold;
                     display: flex;
                     flex-direction: column;
-                    text-align: center;
+                    text-align: center;   
+                    color: white;
                 }
-                .textoDiscos:hover{
-                    color: rgb(85, 24, 24);
+                .textoDiscosTituloBuceo:hover{
+                    color: rgb(138, 30, 30);
                 }
-            }
-            .discos {
-                width: 350px;
-                height: 350px;
-                display: flex;
-                justify-content: space-between;
-            }
-            .discos:hover{
-                width: 354px;
-                height: 354px;
             }
         }
 

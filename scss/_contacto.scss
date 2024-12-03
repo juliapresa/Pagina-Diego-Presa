@@ -35,13 +35,13 @@ body {
                 align-items: center;
                 background-color: black;
                 .formularioContenido {
+                    width: 95%;
+                    font-family: $fontexto;
+                    color: white;
                     .form-control{
                         background-color: black;
                         color: white;
                     }
-                    width: 95%;
-                    font-family: $fontexto;
-                    color: white;
                 }
 
                 .button {
@@ -56,7 +56,15 @@ body {
         .divMail{
             overflow-y: hidden;
             .elMail{
+                font-size: xx-large;
                 overflow-y: hidden;
+                text-decoration: none;
+                color: rgb(194, 190, 190);
+            }
+            .elMail:hover{
+                overflow-y: hidden;
+                text-decoration: none;
+                color: white;
             }
         }
     }
@@ -114,13 +122,13 @@ body {
                     display: flex;
                     justify-content: center;
                     .formularioContenido {
+                        width: 95%;
+                        font-family: $fontexto;
+                        color: white;
                         .form-control{
                             background-color: black;
                             color: white;
                         }
-                        width: 95%;
-                        font-family: $fontexto;
-                        color: white;
                     }
     
                     .button {
@@ -131,6 +139,20 @@ body {
                     }
                 }
     
+            }
+            .divMail{
+                overflow-y: hidden;
+                .elMail{
+                    font-size: medium;
+                    overflow-y: hidden;
+                    text-decoration: none;
+                    color: rgb(194, 190, 190);
+                }
+                .elMail:hover{
+                    overflow-y: hidden;
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
     }

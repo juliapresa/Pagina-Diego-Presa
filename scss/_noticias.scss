@@ -44,7 +44,13 @@ body{
                     justify-content: center;
                     margin: 0%;
                     width: 95vw;
+                    .imgNoticiasPC{
+                        width: 35vw;
+                        height: auto;
+                    }
                     .imgNoticiasPCdos{
+                        width: 35vw;
+                        height: auto;
                         margin-left: 2%;
                     }
                 }
@@ -54,7 +60,8 @@ body{
                     margin: 0%;
                     width: 95vw;
                     .imgNoticiasPCTres{
-                        width: 800px;
+                        width: 40vw;
+                        height: auto;
                     }
                 }
                 .iconosNoticias{
@@ -178,11 +185,20 @@ body{
                     }
                     .divImgNoticias{
                         display: flex;
-                        flex-direction: column;  
-                       
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 5%;
+                        .imgNoticiasPC{
+                            width: 80vw;
+                            height: auto;
+                            margin-bottom: 5%;
+                        }
                         .imgNoticiasPCdos{
+                            width: 80vw;
+                            height: auto;
+                            margin-left: 0%;
                             margin: 0%;
-                            margin-top: 2%;
                         }
                        
                     }
@@ -190,9 +206,9 @@ body{
                         display: flex;
                         flex-direction: column;  
                         align-items: center;
-                       
                         .imgNoticiasPCTres{
-                            width: 400px;
+                            width: 80vw;
+                            height: auto;
                         }
                     }
                     /*.divImgNoticias{
@@ -231,6 +247,7 @@ body{
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        width: 95vw;
                         .tituloNoticias {
                             color: rgb(164, 164, 164);
                             overflow-y: hidden;
