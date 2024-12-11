@@ -50,23 +50,29 @@
     .redesHeader {
         margin: 0%;
         padding: 0%;
-        margin-top: 1%;
-        height: 20%;
-
-        .iconos {
-            font-size: 25px;
-            display: flex;
-            margin-top: 2%;
-            margin-left: 2%;
-            margin-right: 2%;
-            margin-bottom: 2%;
-            list-style: none;
-            text-decoration: none;
-            color: white;
-        }
-
-        .iconos:hover {
-            font-size: 35px;
+        height: 10%;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        .divRedes{
+            width: 5vw;
+            height: 5vh;
+            .iconos {
+                overflow: hidden;
+                display: flex;
+                margin-top: 2%;
+                margin-left: 2%;
+                margin-right: 2%;
+                margin-bottom: 2%;
+                font-size: 25px;
+                list-style: none;
+                text-decoration: none;
+                color: white;
+            }
+    
+            .iconos:hover {
+                font-size: 30px;
+            }
         }
     }
 

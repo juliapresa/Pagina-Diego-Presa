@@ -5,13 +5,13 @@ body {
 
     .mainInicio {
         width: 100vw;
-        .sectionVideoFlor{
-            margin-top: 5%;
-            .videoFlor{
-                width: 100vw;
-                height: 100vh;
-            }
-        }
+        // .sectionVideoFlor{
+        //     margin-top: 5%;
+        //     .videoFlor{
+        //         width: 100vw;
+        //         height: 100vh;
+        //     }
+        // }
         .biografia {
             margin: 0%;
             padding: 0%;
@@ -31,6 +31,7 @@ body {
                     font-size: 17px;
                     text-indent: 0cqmax;
                     color: rgb(164, 164, 164);
+                    text-align: justify;
                 }
             }
 
@@ -44,13 +45,13 @@ body {
                     font-family: $fontexto;
                     font-size: 17px;
                     color: rgb(164, 164, 164);
+                    text-align: justify;
                 }
             }
         }
 
         .tituloPagina {
-            margin-top: 10%;
-
+            margin-top: 8%;
             .subtituloPagina {
                 font-family: $fontexto;
                 font-size: 23px;
@@ -58,6 +59,7 @@ body {
                 color: white;
                 letter-spacing: 0.1rem;
                 overflow-y: hidden;
+                margin-left: 2%;
             }
         }
 
