@@ -712,12 +712,13 @@ body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
   font-family: "JetBrains Mono", monospace;
 }
 body .mainInicio .noticias .divNoticiasUno .iconosNoticias {
-  width: 100%;
+  width: 50%;
+  height: 15vh;
 }
 body .mainInicio .noticias .divNoticiasUno .iconosNoticias .iconosAncla {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 50%;
   list-style: none;
   text-decoration: none;
   margin-bottom: 6%;
@@ -1373,18 +1374,20 @@ body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCTr
 }
 body .mainNoticias .noticias .divNoticiasUno .iconosNoticias {
   width: 100%;
-  height: 30vh;
+  height: fit-content;
 }
 body .mainNoticias .noticias .divNoticiasUno .iconosNoticias .iconosAncla {
   display: flex;
   justify-content: center;
   width: 100%;
+  height: fit-content;
   list-style: none;
   text-decoration: none;
-  padding: 5%;
+  padding: 3%;
 }
 body .mainNoticias .noticias .divNoticiasUno .iconosNoticias .iconosAncla .iconos {
   font-size: 2rem;
+  height: fit-content;
   display: flex;
   list-style: none;
   text-decoration: none;
@@ -1417,7 +1420,7 @@ body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias 
 }
 body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticiasDos {
   text-align: center;
-  width: 80%;
+  width: 85%;
   overflow-y: hidden;
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;

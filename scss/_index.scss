@@ -113,11 +113,12 @@ body {
                     font-family: $fontexto;
                 }*/
                 .iconosNoticias{
-                    width: 100%;
+                    width: 50%;
+                    height: 15vh;
                     .iconosAncla{
                         display: flex;
                         justify-content: center;
-                        width: 100%;
+                        width: 50%;
                         list-style: none;
                         text-decoration: none;
                         margin-bottom: 6%;

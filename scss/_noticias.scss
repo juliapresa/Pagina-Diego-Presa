@@ -66,16 +66,18 @@ body{
                 }
                 .iconosNoticias{
                     width: 100%;
-                    height: 30vh;
+                    height: fit-content;
                     .iconosAncla{
                         display: flex;
                         justify-content: center;
                         width: 100%;
+                        height: fit-content;
                         list-style: none;
                         text-decoration: none;
-                        padding: 5%;
+                        padding: 3%;
                         .iconos{
                             font-size: 2rem;
+                            height: fit-content;
                             display: flex;
                             list-style: none;
                             text-decoration: none;
@@ -127,7 +129,7 @@ body{
                         }
                         .parrafoNoticiasDos{
                             text-align: center;
-                            width: 80%;
+                            width: 85%;
                             overflow-y: hidden;
                             color: rgb(164, 164, 164);
                             font-family: $fontexto;
