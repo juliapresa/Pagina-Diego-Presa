@@ -75,23 +75,34 @@ body {
             .divNoticiasUno {
                 margin: 0%;
                 padding: 0%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 .divImgNoticiasDos{
                    height: fit-content;
                    width: 100vw;
                    overflow-y: hidden;
                    margin-bottom: 2%;
                    .imgNoticiasPC{
-                    width: fit-content;
-                    height: 70vh;
+                    width: 35vw;
+                    height: auto;
                     }
                     .imgNoticiasPCdos{
-                        width: fit-content;
-                        height: 70vh;
+                        width: 35vw;
+                        height: auto;
                         margin-left: 2%;
                         }
+                }
+                .divHrNoticias {
+                    margin: 0%;
+                    padding: 0%;
+                    margin-bottom: 1%;
+                    margin-top: 1%;
+
+                    .hrNoticias {
+                        margin: 0%;
+                        padding: 0%;
+                        background-color: white;
+                        height: 2px;
+                        width: 100%;
+                    }
                 }
                 .divTextoNoticias {
                     display: flex;
@@ -372,28 +383,33 @@ body {
             }
 
             .noticias {
+                width: 100vw;
+                margin: 0%;
+                padding: 0%;
                 .divNoticiasUno {
                     margin: 0%;
                     padding: 0%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    width: 100vw;
                     .divImgNoticias{
+                        width: 100vw;
+                        height: fit-content;
                         display: flex;
                         flex-direction: column;
                     }
                     .divImgNoticiasDos{
                         height: fit-content;
-                        width: 95vw;
+                        width: 100vw;
+                        margin: 0%;
+                        padding: 0%;
                         overflow-y: hidden;
                         margin-bottom: 2%;
                         .imgNoticiasPC{
                             width: 80vw;
-                            height: 50vh;
+                            height: auto;
                         }
                         .imgNoticiasPCdos{
                             width: 80vw;
-                            height: 50vh;
+                            height: auto;
                             margin: 0%;
                             margin-top: 2%;
                         }
@@ -415,43 +431,26 @@ body {
 
                     .divImgNoticias {
                         padding: 0%;
+                        margin: 0%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-
-                        .imgNoticias {
-                            width: 360px;
-                            height: 330px;
-                            margin: 0%;
-                            padding: 0%;
-                            object-fit: contain;
-                        }
                     }
-                    /*.divImgNoticiasDos{
-                        overflow-y: hidden;
-                        overflow-x: hidden;
-                        display: flex;
-                        justify-content: center;
-                        width: 95%;
-                        height: 290px;
-                        .imgNoticiasDos {
-                            margin: 0%;
-                            padding: 0%;
-                            height: auto;
-                        }
-                    }*/
                     .divTextoNoticias {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-
+                        margin: 0%;
+                        padding: 0%;
+                        width: 100vw;
                         .tituloNoticias {
                             color: rgb(164, 164, 164);
                             overflow-y: hidden;
                             font-family: $fontexto;
                             margin-top: 2%;
                             text-align: center;
+                            font-size: large;
                         }
 
                         .parrafoNoticias {
