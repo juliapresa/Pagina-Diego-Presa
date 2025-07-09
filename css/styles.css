@@ -695,6 +695,10 @@ body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCdos 
   height: auto;
   margin-left: 2%;
 }
+body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCGrande {
+  width: 70vw;
+  height: auto;
+}
 body .mainInicio .noticias .divNoticiasUno .divHrNoticias {
   margin: 0%;
   padding: 0%;
@@ -971,6 +975,10 @@ body .aPortfolio {
     height: auto;
     margin: 0%;
     margin-top: 2%;
+  }
+  body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCGrande {
+    width: 95vw;
+    height: auto;
   }
   body .mainInicio .noticias .divNoticiasUno .divHrNoticias {
     margin: 0%;
@@ -1374,6 +1382,10 @@ body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCTr
   width: 35vw;
   height: auto;
 }
+body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCCuatro {
+  width: 70vw;
+  height: auto;
+}
 body .mainNoticias .noticias .divNoticiasUno .iconosNoticias {
   width: 100%;
   height: fit-content;
@@ -1422,7 +1434,46 @@ body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias 
 }
 body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticiasDos {
   text-align: center;
+  width: 80%;
+  overflow-y: hidden;
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+  margin-top: 1%;
+  font-size: large;
+}
+body .mainNoticias .noticias .divNoticiasUno .divTextoNoticiasTres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+}
+body .mainNoticias .noticias .divNoticiasUno .divTextoNoticiasTres .tituloNoticias {
+  color: rgb(164, 164, 164);
+  overflow-y: hidden;
+  font-family: "JetBrains Mono", monospace;
+  font-size: x-large;
+  text-align: center;
+  margin-top: 2%;
+}
+body .mainNoticias .noticias .divNoticiasUno .divTextoNoticiasTres .parrafoNoticias {
+  text-align: center;
+  overflow-y: hidden;
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+  font-size: x-large;
+}
+body .mainNoticias .noticias .divNoticiasUno .divTextoNoticiasTres .parrafoNoticiasDos {
+  text-align: center;
   width: 85%;
+  overflow-y: hidden;
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+  margin-top: 1%;
+  font-size: large;
+}
+body .mainNoticias .noticias .divNoticiasUno .divTextoNoticiasTres .parrafoNoticiasTres {
+  text-align: center;
+  width: 100%;
   overflow-y: hidden;
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
@@ -1531,6 +1582,10 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
   }
   body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCTres {
     width: 80vw;
+    height: auto;
+  }
+  body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCCuatro {
+    width: 95vw;
     height: auto;
   }
   body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
