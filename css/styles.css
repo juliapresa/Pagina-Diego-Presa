@@ -362,7 +362,7 @@ body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos {
   padding: 0%;
   margin: 0%;
   margin-left: 8%;
-  width: 50%;
+  width: 45%;
   height: fit-content;
 }
 body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos .tituloConciertos {
@@ -727,7 +727,7 @@ body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
 }
 body .mainInicio .noticias .divNoticiasUno .iconosNoticias {
   width: 50%;
-  height: 15vh;
+  height: fit-content;
 }
 body .mainInicio .noticias .divNoticiasUno .iconosNoticias .iconosAncla {
   display: flex;
@@ -735,7 +735,7 @@ body .mainInicio .noticias .divNoticiasUno .iconosNoticias .iconosAncla {
   width: 50%;
   list-style: none;
   text-decoration: none;
-  margin-bottom: 6%;
+  margin-bottom: 1rem;
   margin-top: 2%;
 }
 body .mainInicio .noticias .divNoticiasUno .iconosNoticias .iconosAncla .iconos {
@@ -772,7 +772,7 @@ body .mainInicio .contenedorDiscos {
   padding: 0%;
   margin-top: 3%;
   margin-bottom: 5%;
-  height: 70vh;
+  height: fit-content;
 }
 body .mainInicio .contenedorDiscos .ancla {
   text-decoration: none;
