@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://www.diegopresa.com/pages/noticias">
 </head>
 <body>
     <header class="header container-fluid">
-        <div class="row">
+        <div data-aos="fade-up" class="row">
             <div class="contenedorLogo col-md-6 col-sm-12 d-flex justify-content-start">
                 <a title="logo" href="../index.html"><img class="imgLogo" src="../assets/img/logoDos.jpg" alt="logo" title="logo"></a>
             </div>
@@ -45,13 +46,13 @@
     <main class="mainNoticias">
         <section class="container">
             <div class="tituloPagina col-md-12 col-sm-12 d-flex justify-content-first">
-                <h1 class="subtituloPagina">NOTICIAS</h1>
+                <h1 data-aos="zoom-in" class="subtituloPagina">NOTICIAS</h1>
               </div>
               <div class="divHr col-md-12 col-sm-12 d-flex justify-content-first">
                 <hr class="hr">
               </div>
         </section>
-        <section class="noticias d-flex col-md-12 col-sm-12 row">
+        <section data-aos="fade-up" class="noticias d-flex col-md-12 col-sm-12 row">
             <div class="divNoticiasUno col-md-12 col-sm-12 d-flex flex-column align-items-center">
                 <div class="divImgNoticiasDos col-md-12 col-sm-12 d-flex justify-content-center">
                     <img class="imgNoticiasPCCuatro" src="../assets/img/mexicoPc.jpg" alt="foto" title="noticia">
@@ -67,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section class="noticias d-flex col-md-12 col-sm-12 row">
+        <section data-aos="fade-up" class="noticias d-flex col-md-12 col-sm-12 row">
             <div class="divNoticiasUno d-flex row col-md-12 col-sm-12 d-flex flex-column align-items-center">
                 <!-- <div class="divHrNoticias col-md-12 col-sm-12 d-flex justify-content-center"><hr class="hrNoticias"></div> -->
                 <div class="col-md-12 col-sm-12 divImgNoticiasDos d-flex justify-content-center">
@@ -87,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section class="noticias d-flex col-md-12 col-sm-12 row">
+        <section data-aos="fade-up" class="noticias d-flex col-md-12 col-sm-12 row">
             <div class="divNoticiasUno d-flex row col-md-12 col-sm-12 d-flex flex-column align-items-center">
                 <!---<div class="divHrNoticias col-md-12 col-sm-12 d-flex justify-content-center"><hr class="hrNoticias"></div>-->
                 <div class="col-md-6 col-sm-12 divImgNoticias d-flex justify-content-center">
@@ -125,6 +126,13 @@
         <p class="aPortfolio">© 2024. Todos los derechos reservados</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000, // duración de la animación en milisegundos
+        once: true      // la animación se ejecuta solo una vez
+    });
+    </script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

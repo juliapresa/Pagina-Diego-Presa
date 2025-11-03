@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://www.diegopresa.com/pages/prensa">
 </head>
 <body>
     <header class="header container-fluid">
-        <div class="row">
+        <div data-aos="fade-up" class="row">
             <div class="contenedorLogo col-md-6 col-sm-12 d-flex justify-content-start">
                 <a title="logo" href="../index.html"><img class="imgLogo" src="../assets/img/logoDos.jpg" alt="logo" title="logo"></a>
             </div>
@@ -45,13 +46,13 @@
     <main class="mainPrensa">
         <div class="container">
             <div class="tituloPagina col-md-12 col-sm-12 d-flex justify-content-first">
-                <h1 class="subtituloPagina">PRENSA</h1>
+                <h1 data-aos="zoom-in" class="subtituloPagina">PRENSA</h1>
             </div>
             <div class="divHr col-md-12 col-sm-12 d-flex justify-content-first">
                 <hr class="hr">
             </div>
         </div>
-        <div class="notaDosSection d-flex row col-md-12 col-sm-12">
+        <div data-aos="fade-up" class="notaDosSection d-flex row col-md-12 col-sm-12">
             <div class="divNotaDos">
                 <img title="notas" class="notaDosImg" src="../assets/img/notaDos.jpg" alt="prensa">
             </div>
@@ -59,7 +60,7 @@
                 <a title="notas" class="botonNotas" target="_blank" href="../assets/img/notaDospdf.pdf">PRESIONA PARA VER NOTA COMPLETA</a>
             </div>
         </div>
-        <div class="notaTresSection d-flex row col-md-12 col-sm-12">
+        <div data-aos="fade-up" class="notaTresSection d-flex row col-md-12 col-sm-12">
             <div class="divNotaTres">
                 <img title="notas"  class="notaTresImg" src="../assets/img/notaTres.jpg" alt="prensa">
             </div>
@@ -67,7 +68,7 @@
                 <a title="notas" class="botonNotas" target="_blank" href="../assets/img/notaTrespdf.pdf">PRESIONA PARA VER NOTA COMPLETA</a>
             </div>
         </div>
-        <div class="notaUnoSection d-flex row col-md-12 col-sm-12">
+        <div data-aos="fade-up" class="notaUnoSection d-flex row col-md-12 col-sm-12">
             <div class="divNotaUno">
                 <img title="notas" class="notaUnoImg" src="../assets/img/notaUno.jpg" alt="prensa">
             </div>
@@ -75,7 +76,7 @@
                 <a title="notas" class="botonNotas" target="_blank" href="../assets/img/notaUnopdf.pdf">PRESIONA PARA VER NOTA COMPLETA</a>
             </div>
         </div>
-        <div class="notaCuatroSection d-flex row col-md-12 col-sm-12">
+        <div data-aos="fade-up" class="notaCuatroSection d-flex row col-md-12 col-sm-12">
             <div class="divNotaCuatro">
                 <img title="notas" class="notaCuatroImg" src="../assets/img/notaCuatro.jpg" alt="prensa">
             </div>
@@ -106,6 +107,13 @@
             <p class="aPortfolio">© 2024. Todos los derechos reservados</p>
           </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000, // duración de la animación en milisegundos
+        once: true      // la animación se ejecuta solo una vez
+    });
+    </script>
       <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

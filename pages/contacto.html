@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://www.diegopresa.com/pages/contacto">
 </head>
 
 <body>
     <header class="header container-fluid">
-        <div class="row">
+        <div data-aos="fade-up" class="row">
             <div class="contenedorLogo col-md-6 col-sm-12 d-flex justify-content-start">
                 <a title="logo" href="../index.html"><img class="imgLogo" src="../assets/img/logoDos.jpg" alt="logo" title="logo"></a>
             </div>
@@ -49,13 +50,13 @@
     <main class="mainContacto">
         <div class="container">
             <div class="tituloPagina col-md-12 col-sm-12 d-flex justify-content-first">
-                <h1 class="subtituloPagina">CONTACTO</h1>
+                <h1 data-aos="zoom-in" class="subtituloPagina">CONTACTO</h1>
             </div>
             <div class="divHr col-md-12 col-sm-12 d-flex justify-content-first">
                 <hr class="hr">
             </div>
         </div>
-        <div class="divFormulario d-flex">
+        <div data-aos="fade-up" class="divFormulario d-flex">
             <div class="divImgContacto col-md-6 col-sm-12 d-flex justify-content-center">
                 <img class="imgContacto" src="../assets/img/rojo.jpg" alt="foto" title="foto">
             </div>
@@ -80,7 +81,7 @@
                 </div>
             </form>
         </div>
-        <div class="divMail d-flex col-md-12 col-sm-12 justify-content-center">
+        <div data-aos="fade-up" class="divMail d-flex col-md-12 col-sm-12 justify-content-center">
             <a href="mailto:diegopresamusica@gmail.com" class="elMail">
                 diegopresamusica@gmail.com
             </a>
@@ -108,6 +109,13 @@
             <p class="aPortfolio">© 2024. Todos los derechos reservados</p>
           </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000, // duración de la animación en milisegundos
+        once: true      // la animación se ejecuta solo una vez
+    });
+    </script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
