@@ -3,16 +3,9 @@ body {
     overflow-x: hidden;
     background-color: black;
 
-    .mainInicio {
+    .main-index {
         width: 100vw;
-        // .sectionVideoFlor{
-        //     margin-top: 5%;
-        //     .videoFlor{
-        //         width: 100vw;
-        //         height: 100vh;
-        //     }
-        // }
-        .biografia {
+        .biography {
             margin: 0%;
             padding: 0%;
             margin-top: 2%;
@@ -20,12 +13,12 @@ body {
             width: 100%;
             justify-content: center;
 
-            .divTextoUno {
+            .div-text {
                 margin: 0%;
                 padding: 0%;
                 width: 80%;
 
-                .textoUno {
+                p {
                     letter-spacing: 0.1rem;
                     font-family: $fontexto;
                     font-size: 17px;
@@ -34,25 +27,11 @@ body {
                     text-align: justify;
                 }
             }
-
-            .divTextoDos {
-                padding: 0%;
-                margin: 0%;
-                width: 80%;
-
-                .textoDos {
-                    letter-spacing: 0.1rem;
-                    font-family: $fontexto;
-                    font-size: 17px;
-                    color: rgb(164, 164, 164);
-                    text-align: justify;
-                }
-            }
         }
 
-        .tituloPagina {
-            margin-top: 8%;
-            .subtituloPagina {
+        .div-title {
+            margin-top: 5%;
+            h1, h2 {
                 font-family: $fontexto;
                 font-size: 23px;
                 font-weight: 400;
@@ -63,74 +42,55 @@ body {
             }
         }
 
-        .divHr {
-            .hr {
+        .div-hr {
+            hr {
                 color: white;
                 height: 2px;
                 width: 100%;
             }
         }
 
-        .noticias {
-            .divNoticiasUno {
+        .news {
+            .div-news {
                 margin: 0%;
                 padding: 0%;
-                .divImgNoticiasDos{
+                .div-img-news{
                    height: fit-content;
                    width: 100vw;
                    overflow-y: hidden;
                    margin-bottom: 2%;
-                   .imgNoticiasPC{
+                   .img-news{
                     width: 35vw;
                     height: auto;
                     }
-                    .imgNoticiasPCdos{
+                    .img-news-two{
                         width: 35vw;
                         height: auto;
                         margin-left: 2%;
                     }
-                    .imgNoticiasPCGrande{
+                    .img-news-large{
                         width: 70vw;
                         height: auto;
                     }
                 }
-                .divHrNoticias {
-                    margin: 0%;
-                    padding: 0%;
-                    margin-bottom: 1%;
-                    margin-top: 1%;
-
-                    .hrNoticias {
-                        margin: 0%;
-                        padding: 0%;
-                        background-color: white;
-                        height: 2px;
-                        width: 100%;
-                    }
-                }
-                .divTextoNoticias {
+                .div-text-news {
                     display: flex;
                     justify-content: center;
-                    .tituloNoticias {
+                    h3 {
                         color: rgb(164, 164, 164);
                         overflow-y: hidden;
                         font-family: $fontexto;
                     }
 
-                    .parrafoNoticias {
+                    p {
                         color: rgb(164, 164, 164);
                         font-family: $fontexto;
                     }
                 }
-
-                /*.divFechaNoticias {
-                    color: rgb(164, 164, 164);
-                    font-family: $fontexto;
-                }*/
-                .iconosNoticias{
+                .div-links-news {
                     width: 50%;
                     height: fit-content;
-                    .iconosAncla{
+                    a {
                         display: flex;
                         justify-content: center;
                         width: 50%;
@@ -138,7 +98,7 @@ body {
                         text-decoration: none;
                         margin-bottom: 1rem;
                         margin-top: 2%;
-                        .iconos{
+                        i {
                             font-size: 2rem;
                             display: flex;
                             list-style: none;
@@ -146,57 +106,57 @@ body {
                             color: white;
                             overflow-y: hidden;
                         }
-                        .iconos:hover{
+                        i:hover{
                            font-size: 2.1rem;
                         }
                     }
                 }
-                .divBotonNoticias {
+                .div-button-news {
                     padding-right: 5%;
-
-                    .botonNoticias {
+                    button {
                         border: none;
                         background-color: black;
                         color: white;
                         font-family: $fontexto;
                     }
                 }
-            }
-        }
+                .div-hr-large {
+                    margin: 0%;
+                    padding: 0%;
+                    margin-bottom: 1%;
+                    margin-top: 1%;
 
-        .videos {
-            .divBotonVideos {
-                padding-right: 5%;
-
-                .botonVideos {
-                    border: none;
-                    background-color: black;
-                    color: white;
-                    font-family: $fontexto;
+                    hr {
+                        margin: 0%;
+                        padding: 0%;
+                        background-color: white;
+                        height: 2px;
+                        width: 100%;
+                    }
                 }
             }
         }
 
-        .contenedorDiscos {
+        .div-records {
             margin: 0%;
             padding: 0%;
             margin-top: 3%;
             margin-bottom: 5%;
             height: fit-content;
-            .ancla {
+            a {
                 text-decoration: none;
-                .discos {
+                img {
                     width: auto;
                     height: 50vh;
                     display: flex;
                     justify-content: space-between;
                 }
     
-                .discos:hover {
+                img:hover {
                     width: auto;
                     height: 53vh;
                 }
-                .textoDiscosTitulo {
+                h3 {
                     overflow: hidden;
                     display: flex;
                     flex-direction: column;
@@ -209,12 +169,12 @@ body {
                     margin-top: 1%;
                 }
     
-                .textoDiscosTitulo:hover {
+                h3:hover {
                     color: rgb(138, 30, 30);
                 }
             }
-            .divTextos {
-                .textoDiscos {
+            .div-text-music {
+                h4, h5 {
                     overflow-y: hidden;
                     color: white;
                     margin: 0%;
@@ -227,11 +187,10 @@ body {
                 }
             }
         }
-
-        .divBotonMusica {
+        .div-button-music{
             padding-right: 5%;
 
-            .botonMusica {
+            button {
                 border: none;
                 background-color: black;
                 color: white;
@@ -239,91 +198,66 @@ body {
             }
         }
 
-.galery {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 250px;
-  grid-gap: 20px;
-  padding: 100px 0;
+        .videos {
+            .div-button-videos {
+                padding-right: 5%;
 
-  .box {
-    overflow: hidden; // importante para que el zoom no se salga
+                button {
+                    border: none;
+                    background-color: black;
+                    color: white;
+                    font-family: $fontexto;
+                }
+            }
+        }
 
-    .imgGalery {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease; // transición suave
-
-      &:hover {
-        transform: scale(1.07); // el zoom
-      }
-    }
-  }
-
-  .box:nth-child(1) {
-    grid-column-start: span 2;
-  }
-
-  .box:nth-child(4) {
-    grid-column-start: span 2;
-  }
-}
-
-        .libro {
-            .divLibroUno {
+        .book {
+            .div-book {
                 margin: 0%;
                 padding: 0%;
-
-                .divHrLibro {
-                    margin: 0%;
-                    padding: 0%;
-                    margin-bottom: 1%;
-                    margin-top: 1%;
-
-                    .hrLibro {
-                        margin: 0%;
-                        padding: 0%;
-                        background-color: white;
-                        height: 2px;
-                        width: 100%;
-                    }
-                }
-
-                .imgLibro {
+                img {
                     width: auto;
                     height: 70vh;
                     margin-left: 10vw;
                     object-fit: contain;
                 }
-
-                .divTextoLibro {
-                    .tituloLibro {
+                .div-text-book {
+                    h3 {
                         color: rgb(164, 164, 164);
                         ;
                         overflow-y: hidden;
                         font-family: $fontexto;
                     }
 
-                    .parrafoLibro {
+                    p {
                         color: rgb(164, 164, 164);
                         font-family: $fontexto;
                     }
                 }
             }
         }
-    }
-    .divPortfolio{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1%;
-    }
-    .aPortfolio{
-        text-decoration: none;
-        color: rgb(164, 164, 164);
 
+        .galery {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 250px;
+            grid-gap: 20px;
+            padding: 100px 0;
+            .box {
+                overflow: hidden;
+                img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.4s ease;
+                &:hover {transform: scale(1.07);}
+                }
+            }
+            .box:nth-child(1) {grid-column-start: span 2;}
+            .box:nth-child(4) {grid-column-start: span 2;}
+        }
     }
 }
 
@@ -333,7 +267,7 @@ body {
         overflow-x: hidden;
         background-color: black;
 
-        .mainInicio {
+        .main-index {
             overflow-x: hidden;
             margin: 0%;
             padding: 0%;
@@ -341,48 +275,31 @@ body {
             margin-bottom: 2%;
             width: 100%;
 
-            .biografia {
-                .divTextoUno {
+            .biography {
+                .div-text {
                     margin: 0%;
                     padding: 0%;
                     width: 90%;
                     height: 50%;
                     overflow-x: hidden;
 
-                    .textoUno {
+                    p {
                         font-family: $fontexto;
                         font-size: 13px;
                         color: rgb(164, 164, 164);
                         letter-spacing: 0rem;
                     }
                 }
-
-                .divTextoDos {
-                    visibility: hidden;
-                    margin: 0%;
-                    padding: 0%;
-                    width: 100%;
-                    height: 1%;
-                    overflow-x: hidden;
-
-                    .textoDos {
-                        font-family: $fontexto;
-                        font-size: 1px;
-                        color: rgb(164, 164, 164);
-                        letter-spacing: 0rem;
-                    }
-                }
             }
 
-            .sectionTitulos {
+            .section-title {
                 margin-top: 10%;
-                .tituloPagina {
+                .div-title {
                     overflow-x: hidden;
                     margin-top: 5%;
                     justify-content: center;
                     align-items: center;
-
-                    .subtituloPagina {
+                    h2 {
                         font-family: $fontexto;
                         font-size: 23px;
                         font-weight: 400;
@@ -394,49 +311,48 @@ body {
 
             }
 
-            .noticias {
+            .news {
                 width: 100vw;
                 margin: 0%;
                 padding: 0%;
-                .divNoticiasUno {
+                .div-news {
                     margin: 0%;
                     padding: 0%;
                     width: 100vw;
-                    .divImgNoticias{
+                    .div-img-news{
                         width: 100vw;
                         height: fit-content;
                         display: flex;
                         flex-direction: column;
                     }
-                    .divImgNoticiasDos{
+                    .div-img-news-two{
                         height: fit-content;
                         width: 100vw;
                         margin: 0%;
                         padding: 0%;
                         overflow-y: hidden;
                         margin-bottom: 2%;
-                        .imgNoticiasPC{
+                        .img-news{
                             width: 80vw;
                             height: auto;
                         }
-                        .imgNoticiasPCdos{
+                        .img-news-two{
                             width: 80vw;
                             height: auto;
                             margin: 0%;
                             margin-top: 2%;
                         }
-                        .imgNoticiasPCGrande{
+                        .img-news-large{
                         width: 95vw;
                         height: auto;
                         }
                     }
-                    .divHrNoticias {
+                    .div-hr-large{
                         margin: 0%;
                         padding: 0%;
                         margin-bottom: 1%;
                         margin-top: 1%;
-
-                        .hrNoticias {
+                        hr {
                             margin: 0%;
                             padding: 0%;
                             background-color: white;
@@ -445,14 +361,14 @@ body {
                         }
                     }
 
-                    .divImgNoticias {
+                    .div-img-news {
                         padding: 0%;
                         margin: 0%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
-                    .divTextoNoticias {
+                    .div-text-news {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -460,7 +376,7 @@ body {
                         margin: 0%;
                         padding: 0%;
                         width: 100vw;
-                        .tituloNoticias {
+                        h3 {
                             color: rgb(164, 164, 164);
                             overflow-y: hidden;
                             font-family: $fontexto;
@@ -468,8 +384,7 @@ body {
                             text-align: center;
                             font-size: large;
                         }
-
-                        .parrafoNoticias {
+                        p {
                             color: rgb(164, 164, 164);
                             font-family: $fontexto;
                             margin: 0%;
@@ -477,15 +392,8 @@ body {
                             text-align: center;
                         }
                     }
-
-                    .divFechaNoticias {
-                        color: rgb(164, 164, 164);
-                        font-family: $fontexto;
-                        margin-top: 2%;
-                    }
-
-                    .divBotonNoticias {
-                        .botonNoticias {
+                    .div-button-news {
+                        button {
                             border: none;
                             background-color: black;
                             color: white;
@@ -499,8 +407,8 @@ body {
             .videos {
                 margin-left: 2%;
                 margin-right: 2%;
-                .divBotonVideos {
-                    .botonVideos {
+                .div-button-videos {
+                    button {
                         border: none;
                         background-color: black;
                         color: white;
@@ -509,78 +417,39 @@ body {
                 }
             }
 
-            .contenedorDiscos {
+            .div-records {
                 margin: 0%;
                 padding: 0%;
                 margin-top: 3%;
                 margin-bottom: 5%;
-
-                .textoDiscosTitulo {
-                    margin: 0%;
-                    margin-top: 1%;
-                    font-family: $fontexto;
-                    font-size: 18px;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    color: white;
-                }
-
-                .textoDiscosTitulo:hover {
-                    color: rgb(138, 30, 30);
-                }
-
-                .textoDiscos {
-                    overflow-y: hidden;
-                    color: white;
-                    margin: 0%;
-                    margin-top: 1%;
-                    font-family: $fontexto;
-                    font-size: 15px;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                }
-
-                .ancla {
+                a {
                     text-decoration: none;
-
-                    .textoDiscosTituloBuceo {
+                    img {
+                    width: 300px;
+                    height: 300px;
+                    display: flex;
+                    justify-content: space-between;
+                    }
+                    img:hover {
+                        width: 320px;
+                        height: 320px;
+                    }
+                    h3 {
                         margin: 0%;
                         margin-top: 1%;
                         font-family: $fontexto;
-                        font-size: 17px;
+                        font-size: 18px;
                         display: flex;
                         flex-direction: column;
                         text-align: center;
                         color: white;
-                        overflow-y: hidden;
-
                     }
-
-                    .textoDiscosTituloBuceo:hover {
-                        color: rgb(85, 24, 24);
+                    h3:hover {
+                        color: rgb(138, 30, 30);
                     }
-
-                    .divTextos {
-                        .textoDiscosTitulo {
-                            margin: 0%;
-                            margin-top: 1%;
-                            font-family: $fontexto;
-                            font-size: 18px;
-                            font-weight: bold;
-                            display: flex;
-                            flex-direction: column;
-                            text-align: center;
-                            color: white;
-                        }
-
-                        .textoDiscosTitulo:hover {
-                            color: rgb(138, 30, 30);
-                        }
-                    }
-
-                    .textoDiscos {
+                }
+                .div-text-music {
+                    h4, h5 {
                         color: white;
                         margin: 0%;
                         margin-top: 1%;
@@ -590,27 +459,11 @@ body {
                         flex-direction: column;
                         text-align: center;
                     }
-
-                    .textoDiscos:hover {
-                        color: rgb(85, 24, 24);
-                    }
-                }
-
-                .discos {
-                    width: 300px;
-                    height: 300px;
-                    display: flex;
-                    justify-content: space-between;
-                }
-
-                .discos:hover {
-                    width: 320px;
-                    height: 320px;
                 }
             }
 
-            .divBotonMusica {
-                .botonMusica {
+            .div-button-music {
+                button {
                     border: none;
                     background-color: black;
                     color: white;
@@ -618,48 +471,20 @@ body {
                 }
             }
 
-            .galery {
-                padding: 30px;
-                grid-template-columns: repeat(1, 1fr);
 
-                .box:nth-child(1) {
-                    grid-column-start: span 1;
-                }
-
-                .box:nth-child(4) {
-                    grid-column-start: span 1;
-                }
-            }
-            .libro {
-                .divLibroUno {
+            .book {
+                .div-book {
                     margin: 0%;
                     padding: 0%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
-                    .divHrLibro {
-                        margin: 0%;
-                        padding: 0%;
-                        margin-bottom: 1%;
-                        margin-top: 1%;
-
-                        .hrLibro {
-                            margin: 0%;
-                            padding: 0%;
-                            background-color: white;
-                            height: 2px;
-                            width: 100%;
-                        }
-                    }
-
-                    .divImgLibro {
+                    .div-img-book{
                         padding: 0%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-
-                        .imgLibro {
+                        img {
                             width: 400px;
                             height: 370px;
                             margin: 0%;
@@ -667,21 +492,19 @@ body {
                             object-fit: contain;
                         }
                     }
-
-                    .divTextoLibro {
+                    .div-text-book {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
                         text-align: center;
-                        .tituloLibro {
+                        h3 {
                             color: rgb(164, 164, 164);
                             overflow-y: hidden;
                             font-family: $fontexto;
                             margin-top: 2%;
                         }
-
-                        .parrafoLibro {
+                        p {
                             color: rgb(164, 164, 164);
                             font-family: $fontexto;
                             margin: 0%;
@@ -689,6 +512,14 @@ body {
                         }
                     }
                 }
+            }
+            
+            .galery {
+                padding: 30px;
+                grid-template-columns: repeat(1, 1fr);
+
+                .box:nth-child(1) {grid-column-start: span 1;}
+                .box:nth-child(4) {grid-column-start: span 1;}
             }
         }
     }

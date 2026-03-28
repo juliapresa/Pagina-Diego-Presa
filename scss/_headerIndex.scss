@@ -1,4 +1,4 @@
-.headerIndex {
+.index-header {
     width: 100%;
     height: 100vh;
     margin: 0%;
@@ -14,19 +14,19 @@
         margin: 0%;
         padding: 0%;
 
-        .contenedorLogo {
+        .logo-container {
             margin: 0%;
             padding: 0%;
             width: 50%;
             height: fit-content;
 
-            .imgLogo {
+            img {
                 width: 70px;
                 height: 90px;
             }
         }
 
-        .contenedorNav {
+        .nav-container {
             margin: 0%;
             padding: 0%;
             width: 50%;
@@ -35,29 +35,29 @@
             font-size: 17px;
             margin-top: 1%;
             color: white;
-
-            .nav-link {
+            
+            a {
                 color: white;
             }
 
-            .nav-link:hover {
+            a:hover {
                 text-decoration: underline;
                 color: white;
             }
         }
     }
 
-    .redesHeader {
+    .header-links {
         margin: 0%;
         padding: 0%;
         height: 10%;
         width: 100vw;
         position: absolute;
         bottom: 0;
-        .divRedes{
+        .div-links{
             width: 5vw;
             height: 5vh;
-            .iconos {
+            a, i {
                 overflow: hidden;
                 display: flex;
                 margin-top: 2%;
@@ -70,25 +70,15 @@
                 color: white;
             }
     
-            .iconos:hover {
+            a, i:hover {
                 font-size: 30px;
             }
-        }
-    }
-
-    .contenedorLogo {
-        margin: 0%;
-        padding: 0%;
-
-        .imgLogo {
-            width: 70px;
-            height: 90px;
         }
     }
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-    .headerIndex {
+    .index-header {
         width: 100%;
         height: 100vh;
         margin: 0%;
@@ -107,93 +97,58 @@
             margin: 0%;
             padding: 0%;
 
-            .contenedorLogo {
+            .logo-container {
                 margin: 0%;
                 padding: 0%;
                 width: 50%;
                 height: fit-content;
     
-                .imgLogo {
+                img {
                     width: 70px;
                     height: 90px;
                 }
             }
-
-            .contenedorNav {
-                margin: 0%;
-                padding: 0%;
+            .nav-container {
                 width: 50%;
                 height: fit-content;
+                margin: 0%;
+                padding: 0%;
                 font-family: $fontexto;
-                font-size: 15px;
-                margin-top: 1%;
+                font-size: 13px;
                 color: white;
-    
-                .nav-link {
+                display: flex;
+                justify-content: center;
+
+                .navbar-toggler {
+                    display: flex;
+                    justify-content: end;
+                    background-color: white;
+                }
+
+                a {
+                    display: flex;
+                    justify-content: end;
                     color: white;
                 }
-    
-                .nav-link:hover {
+
+                a:hover {
                     text-decoration: underline;
                     color: white;
                 }
             }
         }
-    }
 
-    .redesHeader {
-       display: flex;
-       flex-direction: column;
-       visibility: hidden;
-        .iconos {
-            font-size: 20px;
-            list-style: none;
-            text-decoration: none;
-            color: white;
-            margin: 0 10px;
-        }
-    }
-
-    .contenedorNav {
-        width: 50%;
-        height: fit-content;
-        margin: 0%;
-        padding: 0%;
-        font-family: $fontexto;
-        font-size: 13px;
-        color: white;
+        .header-links {
         display: flex;
-        justify-content: center;
-
-        .navbar-toggler {
-            display: flex;
-            justify-content: end;
-        }
-
-        .nav-link {
-            display: flex;
-            justify-content: end;
-            color: white;
-        }
-
-        .nav-link:hover {
-            text-decoration: underline;
-            color: white;
-        }
-
-        .navbar-toggler {
-            background-color: white;
-        }
-    }
-
-    .contenedorLogo {
-        margin: 0%;
-        padding: 0%;
-        height: fit-content;
-
-        .imgLogo {
-            width: 70px;
-            height: 90px;
+        flex-direction: column;
+        visibility: hidden;
+            a, i {
+                font-size: 20px;
+                list-style: none;
+                text-decoration: none;
+                color: white;
+                margin: 0 10px;
+            }
         }
     }
 }

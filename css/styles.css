@@ -22,14 +22,14 @@
   top: 0;
   z-index: 10;
 }
-.header .row .contenedorLogo {
+.header .row .logo-container {
   height: fit-content;
 }
-.header .row .contenedorLogo .imgLogo {
+.header .row .logo-container img {
   width: 70px;
   height: 90px;
 }
-.header .row .contenedorNav {
+.header .row .nav-container {
   margin: 0%;
   margin-top: 1%;
   padding: 0%;
@@ -38,10 +38,10 @@
   font-size: 17px;
   color: white;
 }
-.header .row .contenedorNav .nav-link {
+.header .row .nav-container .nav-link {
   color: white;
 }
-.header .row .contenedorNav .nav-link:hover {
+.header .row .nav-container .nav-link:hover {
   text-decoration: underline;
 }
 
@@ -59,16 +59,16 @@
     padding: 0%;
     background-color: black;
   }
-  .header .row .contenedorLogo {
+  .header .row .logo-container {
     width: 50%;
     margin: 0%;
     padding: 0%;
   }
-  .header .row .contenedorLogo .imgLogo {
+  .header .row .logo-container img {
     width: 70px;
     height: 90px;
   }
-  .header .row .contenedorNav {
+  .header .row .nav-container {
     justify-content: end;
     width: 50%;
     margin: 0%;
@@ -80,23 +80,21 @@
     display: flex;
     justify-content: center;
   }
-  .header .row .contenedorNav .navbar-toggler {
+  .header .row .nav-container .navbar-toggler {
     display: flex;
     justify-content: end;
+    background-color: white;
   }
-  .header .row .contenedorNav .nav-link {
+  .header .row .nav-container a, .header .row .nav-container i {
     display: flex;
     justify-content: end;
     color: white;
   }
-  .header .row .contenedorNav .nav-link:hover {
+  .header .row .nav-container a, .header .row .nav-container i:hover {
     text-decoration: underline;
   }
-  .header .row .contenedorNav .navbar-toggler {
-    background-color: white;
-  }
 }
-.headerIndex {
+.index-header {
   width: 100%;
   height: 100vh;
   margin: 0%;
@@ -107,23 +105,23 @@
   background-size: cover;
   background-attachment: fixed;
 }
-.headerIndex .row {
+.index-header .row {
   width: 100%;
   height: 80%;
   margin: 0%;
   padding: 0%;
 }
-.headerIndex .row .contenedorLogo {
+.index-header .row .logo-container {
   margin: 0%;
   padding: 0%;
   width: 50%;
   height: fit-content;
 }
-.headerIndex .row .contenedorLogo .imgLogo {
+.index-header .row .logo-container img {
   width: 70px;
   height: 90px;
 }
-.headerIndex .row .contenedorNav {
+.index-header .row .nav-container {
   margin: 0%;
   padding: 0%;
   width: 50%;
@@ -133,14 +131,14 @@
   margin-top: 1%;
   color: white;
 }
-.headerIndex .row .contenedorNav .nav-link {
+.index-header .row .nav-container a {
   color: white;
 }
-.headerIndex .row .contenedorNav .nav-link:hover {
+.index-header .row .nav-container a:hover {
   text-decoration: underline;
   color: white;
 }
-.headerIndex .redesHeader {
+.index-header .header-links {
   margin: 0%;
   padding: 0%;
   height: 10%;
@@ -148,11 +146,11 @@
   position: absolute;
   bottom: 0;
 }
-.headerIndex .redesHeader .divRedes {
+.index-header .header-links .div-links {
   width: 5vw;
   height: 5vh;
 }
-.headerIndex .redesHeader .divRedes .iconos {
+.index-header .header-links .div-links a, .index-header .header-links .div-links i {
   overflow: hidden;
   display: flex;
   margin-top: 2%;
@@ -164,20 +162,12 @@
   text-decoration: none;
   color: white;
 }
-.headerIndex .redesHeader .divRedes .iconos:hover {
+.index-header .header-links .div-links a, .index-header .header-links .div-links i:hover {
   font-size: 30px;
-}
-.headerIndex .contenedorLogo {
-  margin: 0%;
-  padding: 0%;
-}
-.headerIndex .contenedorLogo .imgLogo {
-  width: 70px;
-  height: 90px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .headerIndex {
+  .index-header {
     width: 100%;
     height: 100vh;
     margin: 0%;
@@ -190,53 +180,24 @@
     display: flex;
     background-attachment: local;
   }
-  .headerIndex .row {
+  .index-header .row {
     overflow-x: hidden;
     width: 100%;
     height: 80%;
     margin: 0%;
     padding: 0%;
   }
-  .headerIndex .row .contenedorLogo {
+  .index-header .row .logo-container {
     margin: 0%;
     padding: 0%;
     width: 50%;
     height: fit-content;
   }
-  .headerIndex .row .contenedorLogo .imgLogo {
+  .index-header .row .logo-container img {
     width: 70px;
     height: 90px;
   }
-  .headerIndex .row .contenedorNav {
-    margin: 0%;
-    padding: 0%;
-    width: 50%;
-    height: fit-content;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 15px;
-    margin-top: 1%;
-    color: white;
-  }
-  .headerIndex .row .contenedorNav .nav-link {
-    color: white;
-  }
-  .headerIndex .row .contenedorNav .nav-link:hover {
-    text-decoration: underline;
-    color: white;
-  }
-  .redesHeader {
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-  }
-  .redesHeader .iconos {
-    font-size: 20px;
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
-  }
-  .contenedorNav {
+  .index-header .row .nav-container {
     width: 50%;
     height: fit-content;
     margin: 0%;
@@ -247,30 +208,31 @@
     display: flex;
     justify-content: center;
   }
-  .contenedorNav .navbar-toggler {
+  .index-header .row .nav-container .navbar-toggler {
     display: flex;
     justify-content: end;
+    background-color: white;
   }
-  .contenedorNav .nav-link {
+  .index-header .row .nav-container a {
     display: flex;
     justify-content: end;
     color: white;
   }
-  .contenedorNav .nav-link:hover {
+  .index-header .row .nav-container a:hover {
     text-decoration: underline;
     color: white;
   }
-  .contenedorNav .navbar-toggler {
-    background-color: white;
+  .index-header .header-links {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
   }
-  .contenedorLogo {
-    margin: 0%;
-    padding: 0%;
-    height: fit-content;
-  }
-  .contenedorLogo .imgLogo {
-    width: 70px;
-    height: 90px;
+  .index-header .header-links a, .index-header .header-links i {
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
   }
 }
 footer {
@@ -279,7 +241,7 @@ footer {
   padding: 0;
   overflow-x: hidden;
 }
-footer .divHr .hr {
+footer .div-hr hr {
   background-color: white;
   height: 2px;
   width: 90%;
@@ -290,12 +252,12 @@ footer .row {
   padding: 0%;
   overflow-x: hidden;
 }
-footer .row .redesFooter {
+footer .row .links-footer {
   margin: 0;
   padding: 0;
-  height: 15vh;
+  height: 10vh;
 }
-footer .row .redesFooter .iconosNoticias {
+footer .row .links-footer a {
   width: 100%;
   list-style: none;
   text-decoration: none;
@@ -304,7 +266,7 @@ footer .row .redesFooter .iconosNoticias {
   margin-bottom: 2%;
   margin-top: 1%;
 }
-footer .row .redesFooter .iconosNoticias .iconos {
+footer .row .links-footer a i {
   font-size: 1.5rem;
   display: flex;
   margin-left: 2%;
@@ -314,7 +276,7 @@ footer .row .redesFooter .iconosNoticias .iconos {
   color: white;
   overflow-y: hidden;
 }
-footer .row .redesFooter .iconosNoticias .iconos:hover {
+footer .row .links-footer a i:hover {
   font-size: 1.6rem;
 }
 
@@ -619,10 +581,10 @@ body {
   overflow-x: hidden;
   background-color: black;
 }
-body .mainInicio {
+body .main-index {
   width: 100vw;
 }
-body .mainInicio .biografia {
+body .main-index .biography {
   margin: 0%;
   padding: 0%;
   margin-top: 2%;
@@ -630,12 +592,12 @@ body .mainInicio .biografia {
   width: 100%;
   justify-content: center;
 }
-body .mainInicio .biografia .divTextoUno {
+body .main-index .biography .div-text {
   margin: 0%;
   padding: 0%;
   width: 80%;
 }
-body .mainInicio .biografia .divTextoUno .textoUno {
+body .main-index .biography .div-text p {
   letter-spacing: 0.1rem;
   font-family: "JetBrains Mono", monospace;
   font-size: 17px;
@@ -643,22 +605,10 @@ body .mainInicio .biografia .divTextoUno .textoUno {
   color: rgb(164, 164, 164);
   text-align: justify;
 }
-body .mainInicio .biografia .divTextoDos {
-  padding: 0%;
-  margin: 0%;
-  width: 80%;
+body .main-index .div-title {
+  margin-top: 5%;
 }
-body .mainInicio .biografia .divTextoDos .textoDos {
-  letter-spacing: 0.1rem;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 17px;
-  color: rgb(164, 164, 164);
-  text-align: justify;
-}
-body .mainInicio .tituloPagina {
-  margin-top: 8%;
-}
-body .mainInicio .tituloPagina .subtituloPagina {
+body .main-index .div-title h1, body .main-index .div-title h2 {
   font-family: "JetBrains Mono", monospace;
   font-size: 23px;
   font-weight: 400;
@@ -667,69 +617,52 @@ body .mainInicio .tituloPagina .subtituloPagina {
   overflow-y: hidden;
   margin-left: 2%;
 }
-body .mainInicio .divHr .hr {
+body .main-index .div-hr hr {
   color: white;
   height: 2px;
   width: 100%;
 }
-body .mainInicio .noticias .divNoticiasUno {
+body .main-index .news .div-news {
   margin: 0%;
   padding: 0%;
-  /*.divFechaNoticias {
-      color: rgb(164, 164, 164);
-      font-family: $fontexto;
-  }*/
 }
-body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos {
+body .main-index .news .div-news .div-img-news {
   height: fit-content;
   width: 100vw;
   overflow-y: hidden;
   margin-bottom: 2%;
 }
-body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPC {
+body .main-index .news .div-news .div-img-news .img-news {
   width: 35vw;
   height: auto;
 }
-body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCdos {
+body .main-index .news .div-news .div-img-news .img-news-two {
   width: 35vw;
   height: auto;
   margin-left: 2%;
 }
-body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCGrande {
+body .main-index .news .div-news .div-img-news .img-news-large {
   width: 70vw;
   height: auto;
 }
-body .mainInicio .noticias .divNoticiasUno .divHrNoticias {
-  margin: 0%;
-  padding: 0%;
-  margin-bottom: 1%;
-  margin-top: 1%;
-}
-body .mainInicio .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
-  margin: 0%;
-  padding: 0%;
-  background-color: white;
-  height: 2px;
-  width: 100%;
-}
-body .mainInicio .noticias .divNoticiasUno .divTextoNoticias {
+body .main-index .news .div-news .div-text-news {
   display: flex;
   justify-content: center;
 }
-body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
+body .main-index .news .div-news .div-text-news h3 {
   color: rgb(164, 164, 164);
   overflow-y: hidden;
   font-family: "JetBrains Mono", monospace;
 }
-body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
+body .main-index .news .div-news .div-text-news p {
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
 }
-body .mainInicio .noticias .divNoticiasUno .iconosNoticias {
+body .main-index .news .div-news .div-links-news {
   width: 50%;
   height: fit-content;
 }
-body .mainInicio .noticias .divNoticiasUno .iconosNoticias .iconosAncla {
+body .main-index .news .div-news .div-links-news a {
   display: flex;
   justify-content: center;
   width: 50%;
@@ -738,7 +671,7 @@ body .mainInicio .noticias .divNoticiasUno .iconosNoticias .iconosAncla {
   margin-bottom: 1rem;
   margin-top: 2%;
 }
-body .mainInicio .noticias .divNoticiasUno .iconosNoticias .iconosAncla .iconos {
+body .main-index .news .div-news .div-links-news a i {
   font-size: 2rem;
   display: flex;
   list-style: none;
@@ -746,48 +679,52 @@ body .mainInicio .noticias .divNoticiasUno .iconosNoticias .iconosAncla .iconos 
   color: white;
   overflow-y: hidden;
 }
-body .mainInicio .noticias .divNoticiasUno .iconosNoticias .iconosAncla .iconos:hover {
+body .main-index .news .div-news .div-links-news a i:hover {
   font-size: 2.1rem;
 }
-body .mainInicio .noticias .divNoticiasUno .divBotonNoticias {
+body .main-index .news .div-news .div-button-news {
   padding-right: 5%;
 }
-body .mainInicio .noticias .divNoticiasUno .divBotonNoticias .botonNoticias {
+body .main-index .news .div-news .div-button-news button {
   border: none;
   background-color: black;
   color: white;
   font-family: "JetBrains Mono", monospace;
 }
-body .mainInicio .videos .divBotonVideos {
-  padding-right: 5%;
+body .main-index .news .div-news .div-hr-large {
+  margin: 0%;
+  padding: 0%;
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
-body .mainInicio .videos .divBotonVideos .botonVideos {
-  border: none;
-  background-color: black;
-  color: white;
-  font-family: "JetBrains Mono", monospace;
+body .main-index .news .div-news .div-hr-large hr {
+  margin: 0%;
+  padding: 0%;
+  background-color: white;
+  height: 2px;
+  width: 100%;
 }
-body .mainInicio .contenedorDiscos {
+body .main-index .div-records {
   margin: 0%;
   padding: 0%;
   margin-top: 3%;
   margin-bottom: 5%;
   height: fit-content;
 }
-body .mainInicio .contenedorDiscos .ancla {
+body .main-index .div-records a {
   text-decoration: none;
 }
-body .mainInicio .contenedorDiscos .ancla .discos {
+body .main-index .div-records a img {
   width: auto;
   height: 50vh;
   display: flex;
   justify-content: space-between;
 }
-body .mainInicio .contenedorDiscos .ancla .discos:hover {
+body .main-index .div-records a img:hover {
   width: auto;
   height: 53vh;
 }
-body .mainInicio .contenedorDiscos .ancla .textoDiscosTitulo {
+body .main-index .div-records a h3 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -799,10 +736,10 @@ body .mainInicio .contenedorDiscos .ancla .textoDiscosTitulo {
   margin: 0%;
   margin-top: 1%;
 }
-body .mainInicio .contenedorDiscos .ancla .textoDiscosTitulo:hover {
+body .main-index .div-records a h3:hover {
   color: rgb(138, 30, 30);
 }
-body .mainInicio .contenedorDiscos .divTextos .textoDiscos {
+body .main-index .div-records .div-text-music h4, body .main-index .div-records .div-text-music h5 {
   overflow-y: hidden;
   color: white;
   margin: 0%;
@@ -813,16 +750,44 @@ body .mainInicio .contenedorDiscos .divTextos .textoDiscos {
   flex-direction: column;
   text-align: center;
 }
-body .mainInicio .divBotonMusica {
+body .main-index .div-button-music {
   padding-right: 5%;
 }
-body .mainInicio .divBotonMusica .botonMusica {
+body .main-index .div-button-music button {
   border: none;
   background-color: black;
   color: white;
   font-family: "JetBrains Mono", monospace;
 }
-body .mainInicio .galery {
+body .main-index .videos .div-button-videos {
+  padding-right: 5%;
+}
+body .main-index .videos .div-button-videos button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+}
+body .main-index .book .div-book {
+  margin: 0%;
+  padding: 0%;
+}
+body .main-index .book .div-book img {
+  width: auto;
+  height: 70vh;
+  margin-left: 10vw;
+  object-fit: contain;
+}
+body .main-index .book .div-book .div-text-book h3 {
+  color: rgb(164, 164, 164);
+  overflow-y: hidden;
+  font-family: "JetBrains Mono", monospace;
+}
+body .main-index .book .div-book .div-text-book p {
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+}
+body .main-index .galery {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -831,64 +796,23 @@ body .mainInicio .galery {
   grid-gap: 20px;
   padding: 100px 0;
 }
-body .mainInicio .galery .box {
+body .main-index .galery .box {
   overflow: hidden;
 }
-body .mainInicio .galery .box .imgGalery {
+body .main-index .galery .box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
-body .mainInicio .galery .box .imgGalery:hover {
+body .main-index .galery .box img:hover {
   transform: scale(1.07);
 }
-body .mainInicio .galery .box:nth-child(1) {
+body .main-index .galery .box:nth-child(1) {
   grid-column-start: span 2;
 }
-body .mainInicio .galery .box:nth-child(4) {
+body .main-index .galery .box:nth-child(4) {
   grid-column-start: span 2;
-}
-body .mainInicio .libro .divLibroUno {
-  margin: 0%;
-  padding: 0%;
-}
-body .mainInicio .libro .divLibroUno .divHrLibro {
-  margin: 0%;
-  padding: 0%;
-  margin-bottom: 1%;
-  margin-top: 1%;
-}
-body .mainInicio .libro .divLibroUno .divHrLibro .hrLibro {
-  margin: 0%;
-  padding: 0%;
-  background-color: white;
-  height: 2px;
-  width: 100%;
-}
-body .mainInicio .libro .divLibroUno .imgLibro {
-  width: auto;
-  height: 70vh;
-  margin-left: 10vw;
-  object-fit: contain;
-}
-body .mainInicio .libro .divLibroUno .divTextoLibro .tituloLibro {
-  color: rgb(164, 164, 164);
-  overflow-y: hidden;
-  font-family: "JetBrains Mono", monospace;
-}
-body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
-  color: rgb(164, 164, 164);
-  font-family: "JetBrains Mono", monospace;
-}
-body .divPortfolio {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1%;
-}
-body .aPortfolio {
-  text-decoration: none;
-  color: rgb(164, 164, 164);
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -897,7 +821,7 @@ body .aPortfolio {
     overflow-x: hidden;
     background-color: black;
   }
-  body .mainInicio {
+  body .main-index {
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
@@ -905,43 +829,29 @@ body .aPortfolio {
     margin-bottom: 2%;
     width: 100%;
   }
-  body .mainInicio .biografia .divTextoUno {
+  body .main-index .biography .div-text {
     margin: 0%;
     padding: 0%;
     width: 90%;
     height: 50%;
     overflow-x: hidden;
   }
-  body .mainInicio .biografia .divTextoUno .textoUno {
+  body .main-index .biography .div-text p {
     font-family: "JetBrains Mono", monospace;
     font-size: 13px;
     color: rgb(164, 164, 164);
     letter-spacing: 0rem;
   }
-  body .mainInicio .biografia .divTextoDos {
-    visibility: hidden;
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
-    height: 1%;
-    overflow-x: hidden;
-  }
-  body .mainInicio .biografia .divTextoDos .textoDos {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 1px;
-    color: rgb(164, 164, 164);
-    letter-spacing: 0rem;
-  }
-  body .mainInicio .sectionTitulos {
+  body .main-index .section-title {
     margin-top: 10%;
   }
-  body .mainInicio .sectionTitulos .tituloPagina {
+  body .main-index .section-title .div-title {
     overflow-x: hidden;
     margin-top: 5%;
     justify-content: center;
     align-items: center;
   }
-  body .mainInicio .sectionTitulos .tituloPagina .subtituloPagina {
+  body .main-index .section-title .div-title h2 {
     font-family: "JetBrains Mono", monospace;
     font-size: 23px;
     font-weight: 400;
@@ -949,23 +859,23 @@ body .aPortfolio {
     letter-spacing: 0.1rem;
     overflow-y: hidden;
   }
-  body .mainInicio .noticias {
+  body .main-index .news {
     width: 100vw;
     margin: 0%;
     padding: 0%;
   }
-  body .mainInicio .noticias .divNoticiasUno {
+  body .main-index .news .div-news {
     margin: 0%;
     padding: 0%;
     width: 100vw;
   }
-  body .mainInicio .noticias .divNoticiasUno .divImgNoticias {
+  body .main-index .news .div-news .div-img-news {
     width: 100vw;
     height: fit-content;
     display: flex;
     flex-direction: column;
   }
-  body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos {
+  body .main-index .news .div-news .div-img-news-two {
     height: fit-content;
     width: 100vw;
     margin: 0%;
@@ -973,41 +883,41 @@ body .aPortfolio {
     overflow-y: hidden;
     margin-bottom: 2%;
   }
-  body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPC {
+  body .main-index .news .div-news .div-img-news-two .img-news {
     width: 80vw;
     height: auto;
   }
-  body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCdos {
+  body .main-index .news .div-news .div-img-news-two .img-news-two {
     width: 80vw;
     height: auto;
     margin: 0%;
     margin-top: 2%;
   }
-  body .mainInicio .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCGrande {
+  body .main-index .news .div-news .div-img-news-two .img-news-large {
     width: 95vw;
     height: auto;
   }
-  body .mainInicio .noticias .divNoticiasUno .divHrNoticias {
+  body .main-index .news .div-news .div-hr-large {
     margin: 0%;
     padding: 0%;
     margin-bottom: 1%;
     margin-top: 1%;
   }
-  body .mainInicio .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
+  body .main-index .news .div-news .div-hr-large hr {
     margin: 0%;
     padding: 0%;
     background-color: white;
     height: 2px;
     width: 100%;
   }
-  body .mainInicio .noticias .divNoticiasUno .divImgNoticias {
+  body .main-index .news .div-news .div-img-news {
     padding: 0%;
     margin: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  body .mainInicio .noticias .divNoticiasUno .divTextoNoticias {
+  body .main-index .news .div-news .div-text-news {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1016,7 +926,7 @@ body .aPortfolio {
     padding: 0%;
     width: 100vw;
   }
-  body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
+  body .main-index .news .div-news .div-text-news h3 {
     color: rgb(164, 164, 164);
     overflow-y: hidden;
     font-family: "JetBrains Mono", monospace;
@@ -1024,186 +934,126 @@ body .aPortfolio {
     text-align: center;
     font-size: large;
   }
-  body .mainInicio .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
+  body .main-index .news .div-news .div-text-news p {
     color: rgb(164, 164, 164);
     font-family: "JetBrains Mono", monospace;
     margin: 0%;
     margin-bottom: 2%;
     text-align: center;
   }
-  body .mainInicio .noticias .divNoticiasUno .divFechaNoticias {
-    color: rgb(164, 164, 164);
-    font-family: "JetBrains Mono", monospace;
-    margin-top: 2%;
-  }
-  body .mainInicio .noticias .divNoticiasUno .divBotonNoticias .botonNoticias {
+  body .main-index .news .div-news .div-button-news button {
     border: none;
     background-color: black;
     color: white;
     font-family: "JetBrains Mono", monospace;
     margin-top: 20%;
   }
-  body .mainInicio .videos {
+  body .main-index .videos {
     margin-left: 2%;
     margin-right: 2%;
   }
-  body .mainInicio .videos .divBotonVideos .botonVideos {
+  body .main-index .videos .div-button-videos button {
     border: none;
     background-color: black;
     color: white;
     font-family: "JetBrains Mono", monospace;
   }
-  body .mainInicio .contenedorDiscos {
+  body .main-index .div-records {
     margin: 0%;
     padding: 0%;
     margin-top: 3%;
     margin-bottom: 5%;
   }
-  body .mainInicio .contenedorDiscos .textoDiscosTitulo {
-    margin: 0%;
-    margin-top: 1%;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-  }
-  body .mainInicio .contenedorDiscos .textoDiscosTitulo:hover {
-    color: rgb(138, 30, 30);
-  }
-  body .mainInicio .contenedorDiscos .textoDiscos {
-    overflow-y: hidden;
-    color: white;
-    margin: 0%;
-    margin-top: 1%;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  body .mainInicio .contenedorDiscos .ancla {
+  body .main-index .div-records a {
     text-decoration: none;
   }
-  body .mainInicio .contenedorDiscos .ancla .textoDiscosTituloBuceo {
-    margin: 0%;
-    margin-top: 1%;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 17px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    overflow-y: hidden;
-  }
-  body .mainInicio .contenedorDiscos .ancla .textoDiscosTituloBuceo:hover {
-    color: rgb(85, 24, 24);
-  }
-  body .mainInicio .contenedorDiscos .ancla .divTextos .textoDiscosTitulo {
-    margin: 0%;
-    margin-top: 1%;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-  }
-  body .mainInicio .contenedorDiscos .ancla .divTextos .textoDiscosTitulo:hover {
-    color: rgb(138, 30, 30);
-  }
-  body .mainInicio .contenedorDiscos .ancla .textoDiscos {
-    color: white;
-    margin: 0%;
-    margin-top: 1%;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  body .mainInicio .contenedorDiscos .ancla .textoDiscos:hover {
-    color: rgb(85, 24, 24);
-  }
-  body .mainInicio .contenedorDiscos .discos {
+  body .main-index .div-records a img {
     width: 300px;
     height: 300px;
     display: flex;
     justify-content: space-between;
   }
-  body .mainInicio .contenedorDiscos .discos:hover {
+  body .main-index .div-records a img:hover {
     width: 320px;
     height: 320px;
   }
-  body .mainInicio .divBotonMusica .botonMusica {
+  body .main-index .div-records a h3 {
+    margin: 0%;
+    margin-top: 1%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  body .main-index .div-records a h3:hover {
+    color: rgb(138, 30, 30);
+  }
+  body .main-index .div-records .div-text-music h4, body .main-index .div-records .div-text-music h5 {
+    color: white;
+    margin: 0%;
+    margin-top: 1%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  body .main-index .div-button-music button {
     border: none;
     background-color: black;
     color: white;
     font-family: "JetBrains Mono", monospace;
   }
-  body .mainInicio .galery {
-    padding: 30px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  body .mainInicio .galery .box:nth-child(1) {
-    grid-column-start: span 1;
-  }
-  body .mainInicio .galery .box:nth-child(4) {
-    grid-column-start: span 1;
-  }
-  body .mainInicio .libro .divLibroUno {
+  body .main-index .book .div-book {
     margin: 0%;
     padding: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  body .mainInicio .libro .divLibroUno .divHrLibro {
-    margin: 0%;
-    padding: 0%;
-    margin-bottom: 1%;
-    margin-top: 1%;
-  }
-  body .mainInicio .libro .divLibroUno .divHrLibro .hrLibro {
-    margin: 0%;
-    padding: 0%;
-    background-color: white;
-    height: 2px;
-    width: 100%;
-  }
-  body .mainInicio .libro .divLibroUno .divImgLibro {
+  body .main-index .book .div-book .div-img-book {
     padding: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  body .mainInicio .libro .divLibroUno .divImgLibro .imgLibro {
+  body .main-index .book .div-book .div-img-book img {
     width: 400px;
     height: 370px;
     margin: 0%;
     padding: 0%;
     object-fit: contain;
   }
-  body .mainInicio .libro .divLibroUno .divTextoLibro {
+  body .main-index .book .div-book .div-text-book {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  body .mainInicio .libro .divLibroUno .divTextoLibro .tituloLibro {
+  body .main-index .book .div-book .div-text-book h3 {
     color: rgb(164, 164, 164);
     overflow-y: hidden;
     font-family: "JetBrains Mono", monospace;
     margin-top: 2%;
   }
-  body .mainInicio .libro .divLibroUno .divTextoLibro .parrafoLibro {
+  body .main-index .book .div-book .div-text-book p {
     color: rgb(164, 164, 164);
     font-family: "JetBrains Mono", monospace;
     margin: 0%;
     margin-bottom: 2%;
+  }
+  body .main-index .galery {
+    padding: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body .main-index .galery .box:nth-child(1) {
+    grid-column-start: span 1;
+  }
+  body .main-index .galery .box:nth-child(4) {
+    grid-column-start: span 1;
   }
 }
 body {
