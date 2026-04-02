@@ -47,75 +47,72 @@
             </div>
         </div>
     </header>
-    <main class="mainContacto">
+
+    <main id="main-contact">
         <div class="container">
-            <div class="tituloPagina col-md-12 col-sm-12 d-flex justify-content-first">
-                <h1 data-aos="zoom-in" class="subtituloPagina">CONTACTO</h1>
+            <div class="div-title col-md-12 col-sm-12 d-flex justify-content-first">
+                <h1 data-aos="zoom-in">CONTACTO</h1>
             </div>
-            <div class="divHr col-md-12 col-sm-12 d-flex justify-content-first">
-                <hr class="hr">
+            <div class="div-hr col-md-12 col-sm-12 d-flex justify-content-first">
+                <hr>
             </div>
         </div>
-        <div data-aos="fade-up" class="divFormulario d-flex">
-            <div class="divImgContacto col-md-6 col-sm-12 d-flex justify-content-center">
-                <img class="imgContacto" src="../assets/img/rojo.jpg" alt="foto" title="foto">
+        <div data-aos="fade-up" class="div-form d-flex">
+            <div class="div-img col-md-6 col-sm-12 d-flex justify-content-center">
+                <img src="../assets/img/rojo.jpg" alt="pic" title="pic">
             </div>
-            <form id="form" title="formulario" action="https://formsubmit.co/diegopresamusica@gmail.com" method="POST" class="formulario col-md-6 col-sm-12 d-flex flex-column justify-content-center">
-                <div class="formularioContenido form-floating mb-3">
+            <form id="form" title="formulario" action="https://formsubmit.co/diegopresamusica@gmail.com" method="POST" class="form col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+                <div class="form-content form-floating mb-3">
                     <input autocomplete="name" name="name" type="text" class="form-control" id="name"
                         placeholder="name@example.com" required>
                     <label for="name">Nombre</label>
                 </div>
-                <div class="formularioContenido form-floating mb-3">
+                <div class="form-content form-floating mb-3">
                     <input name="email" autocomplete="email" type="email" class="form-control" id="email"
                         placeholder="Email" required>
                     <label for="email">Email</label>
                 </div>
-                <div class="formularioContenido form-floating mb-3">
+                <div class="form-content form-floating mb-3">
                     <textarea name="message" class="form-control" placeholder="Leave a comment here"
                         id="floatingTextarea2" style="height: 100px" required></textarea>
                     <label for="floatingTextarea2">Deja tu mensaje</label>
                 </div>
-                <div class="divBotones">
-                    <button id="buttonEnviar" type="submit" class="button btn btn-primary me-2">Enviar</button>
+                <div>
+                    <button type="submit" class="button btn btn-primary me-2">Enviar</button>
                 </div>
             </form>
         </div>
-        <div data-aos="fade-up" class="divMail d-flex col-md-12 col-sm-12 justify-content-center">
-            <a href="mailto:diegopresamusica@gmail.com" class="elMail">
+        <div data-aos="fade-up" class="div-mail d-flex col-md-12 col-sm-12 justify-content-center">
+            <a href="mailto:diegopresamusica@gmail.com">
                 diegopresamusica@gmail.com
             </a>
         </div>
     </main>
+
     <footer class="footer container-fluid">
-        <div class="divHr col-md-12 col-sm-12 d-flex justify-content-center">
-            <hr class="hr">
+        <div class="div-hr col-md-12 col-sm-12 d-flex justify-content-center">
+            <hr>
         </div>
         <div class="row">
-            <div class="redesFooter col-md-12 col-sm-12 d-flex justify-content-center">
-                <a title="redes" class="iconosNoticias" href="https://www.instagram.com/diegopresabuceo/" target="_blank"><i
-                        class="iconos fa-brands fa-instagram"></i></a>
-                <a title="redes" class="iconosNoticias" href="https://twitter.com/diegopresabuceo?lang=es" target="_blank"><i
-                        class="iconos fa-brands fa-twitter"></i></a>
-                <a title="redes" class="iconosNoticias" href="https://www.facebook.com/diegopresabuceo/?locale=es_LA" target="_blank"><i
-                        class="iconos fa-brands fa-facebook-f"></i></a>
-                <a title="redes" class="iconosNoticias" href="https://open.spotify.com/artist/3ocrfk5U9Q5V2j6F0T8fjT" target="_blank"><i
-                        class="iconos fa-brands fa-spotify"></i></a>
-                <a title="redes" class="iconosNoticias" href="https://www.youtube.com/c/DiegoPresa" target="_blank"><i
-                        class="iconos fa-brands fa-youtube"></i></a>
+            <div class="links-footer col-md-12 col-sm-12 d-flex justify-content-center">
+                <a title="link" href="https://www.instagram.com/diegopresabuceo/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a title="link" class="iconosNoticias" href="https://twitter.com/diegopresabuceo?lang=es" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a title="link" href="https://www.facebook.com/diegopresabuceo/?locale=es_LA" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a title="link" href="https://open.spotify.com/artist/3ocrfk5U9Q5V2j6F0T8fjT" target="_blank"><i
+                        class="fa-brands fa-spotify"></i></a>
+                <a title="link" href="https://www.youtube.com/c/DiegoPresa" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
-        <div class="divPortfolio d-flex flex-column align-items-center">
-            <p class="aPortfolio">© 2024. Todos los derechos reservados</p>
+        <div class="d-flex flex-column align-items-center">
+            <p>© 2024. Todos los derechos reservados</p>
           </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-    AOS.init({
-        duration: 1000,
-        once: true
-    });
-    </script>
+    <script>AOS.init({duration: 1000,once: true});</script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

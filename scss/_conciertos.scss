@@ -4,10 +4,10 @@ body {
     padding: 0%;
     overflow-x: hidden;
 
-    .mainConciertos {
+    #main-shows {
         height: 60vh;
-        .tituloPagina {
-            .subtituloPagina {
+        .div-title {
+            h1 {
                 font-family: $fontitulo;
                 font-size: 28px;
                 font-weight: 400;
@@ -17,26 +17,25 @@ body {
             }
         }
 
-        .divHr {
-            .hr {
+        .div-hr {
+            hr {
                 color: white;
                 height: 2px;
                 width: 100%;
             }
         }
 
-        .conciertos {
-            .divConciertosUno {
+        .shows {
+            .div-shows-one {
                 margin: 0%;
                 padding: 0%;
                 width: 95vw;
-                .divHrConciertos {
+                .div-hr-large {
                     margin: 0%;
                     padding: 0%;
                     margin-bottom: 1%;
                     margin-top: 1%;
-
-                    .hrConciertos {
+                    hr {
                         margin: 0%;
                         padding: 0%;
                         background-color: white;
@@ -45,14 +44,14 @@ body {
                     }
                 }
 
-                .divTextoConciertos {
+                .div-text-shows {
                     padding: 0%;
                     margin: 0%;
                     margin-left: 8%;
                     width: 45%;
                     height: fit-content;
 
-                    .tituloConciertos {
+                    h2 {
                         color: rgb(164, 164, 164);
                         overflow-y: hidden;
                         font-family: $fontexto;
@@ -60,23 +59,23 @@ body {
                         font-size: 20px;
                     }
 
-                    .parrafoConciertos {
+                    p {
                         color: rgb(164, 164, 164);
                         font-family: $fontexto;
                     }
                 }
 
-                .divFechaConciertos {
+                .div-date-shows {
                     width: fit-content;
                     height: fit-content;
                     padding: 0%;
                     margin: 0%;
                     color: rgb(164, 164, 164);
                     font-family: $fontexto;
-                    .divFechasChicoUno {
+                    .div-date-shows-two {
                         width: fit-content;
                         height: fit-content;
-                        .fecha {
+                        .div-date-shows {
                             margin: 0%;
                             padding: 0%;
                             width: fit-content;
@@ -97,11 +96,11 @@ body {
         padding: 0%;
         overflow-x: hidden;
     
-        .mainConciertos {
-            .tituloPagina {
+        main {
+            .div-tite {
                 display: flex;
                 justify-content: center;
-                .subtituloPagina {
+                h1 {
                     font-family: $fontexto;
                     font-size: 28px;
                     font-weight: 400;
@@ -111,25 +110,25 @@ body {
                 }
             }
     
-            .divHr {
-                .hr {
+            .div-hr {
+                hr {
                     color: white;
                     height: 2px;
                     width: 100%;
                 }
             }
     
-            .conciertos {
-                .divConciertosUno {
+            .shows {
+                .div-shows-one {
                     margin: 0%;
                     padding: 0%;
-                    .divHrConciertos {
+                    .div-hr-large {
                         margin: 0%;
                         padding: 0%;
                         margin-bottom: 1%;
                         margin-top: 1%;
     
-                        .hrConciertos {
+                        hr {
                             margin: 0%;
                             padding: 0%;
                             background-color: white;
@@ -138,14 +137,14 @@ body {
                         }
                     }
     
-                    .divTextoConciertos {
+                    .div-text-shows {
                         padding: 0%;
                         margin: 0%;
                         margin-left: 2%;
                         width: 50%;
                         height: fit-content;
     
-                        .tituloConciertos {
+                        h2 {
                             color: rgb(164, 164, 164);
                             overflow-y: hidden;
                             font-family: $fontexto;
@@ -153,23 +152,23 @@ body {
                             font-size: 20px;
                         }
     
-                        .parrafoConciertos {
+                        p {
                             color: rgb(164, 164, 164);
                             font-family: $fontexto;
                         }
                     }
     
-                    .divFechaConciertos {
+                    .div-date-shows {
                         width: fit-content;
                         height: fit-content;
                         padding: 0%;
                         margin: 0%;
                         color: rgb(164, 164, 164);
                         font-family: $fontexto;
-                        .divFechasChicoUno {
+                        .div-date-shows-two {
                             width: fit-content;
                             height: fit-content;
-                            .fecha {
+                            p {
                                 margin: 0%;
                                 padding: 0%;
                                 width: fit-content;

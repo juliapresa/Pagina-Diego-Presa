@@ -286,10 +286,10 @@ body {
   padding: 0%;
   overflow-x: hidden;
 }
-body .mainConciertos {
+body #main-shows {
   height: 60vh;
 }
-body .mainConciertos .tituloPagina .subtituloPagina {
+body #main-shows .div-title h1 {
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
@@ -297,48 +297,48 @@ body .mainConciertos .tituloPagina .subtituloPagina {
   letter-spacing: 0.1rem;
   overflow-y: hidden;
 }
-body .mainConciertos .divHr .hr {
+body #main-shows .div-hr hr {
   color: white;
   height: 2px;
   width: 100%;
 }
-body .mainConciertos .conciertos .divConciertosUno {
+body #main-shows .shows .div-shows-one {
   margin: 0%;
   padding: 0%;
   width: 95vw;
 }
-body .mainConciertos .conciertos .divConciertosUno .divHrConciertos {
+body #main-shows .shows .div-shows-one .div-hr-large {
   margin: 0%;
   padding: 0%;
   margin-bottom: 1%;
   margin-top: 1%;
 }
-body .mainConciertos .conciertos .divConciertosUno .divHrConciertos .hrConciertos {
+body #main-shows .shows .div-shows-one .div-hr-large hr {
   margin: 0%;
   padding: 0%;
   background-color: white;
   height: 2px;
   width: 100%;
 }
-body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos {
+body #main-shows .shows .div-shows-one .div-text-shows {
   padding: 0%;
   margin: 0%;
   margin-left: 8%;
   width: 45%;
   height: fit-content;
 }
-body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos .tituloConciertos {
+body #main-shows .shows .div-shows-one .div-text-shows h2 {
   color: rgb(164, 164, 164);
   overflow-y: hidden;
   font-family: "JetBrains Mono", monospace;
   font-weight: 500;
   font-size: 20px;
 }
-body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos .parrafoConciertos {
+body #main-shows .shows .div-shows-one .div-text-shows p {
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
 }
-body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos {
+body #main-shows .shows .div-shows-one .div-date-shows {
   width: fit-content;
   height: fit-content;
   padding: 0%;
@@ -346,11 +346,11 @@ body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos {
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
 }
-body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFechasChicoUno {
+body #main-shows .shows .div-shows-one .div-date-shows .div-date-shows-two {
   width: fit-content;
   height: fit-content;
 }
-body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFechasChicoUno .fecha {
+body #main-shows .shows .div-shows-one .div-date-shows .div-date-shows-two .div-date-shows {
   margin: 0%;
   padding: 0%;
   width: fit-content;
@@ -364,11 +364,11 @@ body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFecha
     padding: 0%;
     overflow-x: hidden;
   }
-  body .mainConciertos .tituloPagina {
+  body main .div-tite {
     display: flex;
     justify-content: center;
   }
-  body .mainConciertos .tituloPagina .subtituloPagina {
+  body main .div-tite h1 {
     font-family: "JetBrains Mono", monospace;
     font-size: 28px;
     font-weight: 400;
@@ -376,47 +376,47 @@ body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFecha
     letter-spacing: 0.1rem;
     overflow-y: hidden;
   }
-  body .mainConciertos .divHr .hr {
+  body main .div-hr hr {
     color: white;
     height: 2px;
     width: 100%;
   }
-  body .mainConciertos .conciertos .divConciertosUno {
+  body main .shows .div-shows-one {
     margin: 0%;
     padding: 0%;
   }
-  body .mainConciertos .conciertos .divConciertosUno .divHrConciertos {
+  body main .shows .div-shows-one .div-hr-large {
     margin: 0%;
     padding: 0%;
     margin-bottom: 1%;
     margin-top: 1%;
   }
-  body .mainConciertos .conciertos .divConciertosUno .divHrConciertos .hrConciertos {
+  body main .shows .div-shows-one .div-hr-large hr {
     margin: 0%;
     padding: 0%;
     background-color: white;
     height: 2px;
     width: 100%;
   }
-  body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos {
+  body main .shows .div-shows-one .div-text-shows {
     padding: 0%;
     margin: 0%;
     margin-left: 2%;
     width: 50%;
     height: fit-content;
   }
-  body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos .tituloConciertos {
+  body main .shows .div-shows-one .div-text-shows h2 {
     color: rgb(164, 164, 164);
     overflow-y: hidden;
     font-family: "JetBrains Mono", monospace;
     font-weight: 500;
     font-size: 20px;
   }
-  body .mainConciertos .conciertos .divConciertosUno .divTextoConciertos .parrafoConciertos {
+  body main .shows .div-shows-one .div-text-shows p {
     color: rgb(164, 164, 164);
     font-family: "JetBrains Mono", monospace;
   }
-  body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos {
+  body main .shows .div-shows-one .div-date-shows {
     width: fit-content;
     height: fit-content;
     padding: 0%;
@@ -424,18 +424,18 @@ body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFecha
     color: rgb(164, 164, 164);
     font-family: "JetBrains Mono", monospace;
   }
-  body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFechasChicoUno {
+  body main .shows .div-shows-one .div-date-shows .div-date-shows-two {
     width: fit-content;
     height: fit-content;
   }
-  body .mainConciertos .conciertos .divConciertosUno .divFechaConciertos .divFechasChicoUno .fecha {
+  body main .shows .div-shows-one .div-date-shows .div-date-shows-two p {
     margin: 0%;
     padding: 0%;
     width: fit-content;
     height: fit-content;
   }
 }
-body .mainContacto .tituloPagina .subtituloPagina {
+body #main-contact .div-title h1 {
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
@@ -443,52 +443,59 @@ body .mainContacto .tituloPagina .subtituloPagina {
   letter-spacing: 0.1rem;
   overflow-y: hidden;
 }
-body .mainContacto .divHr .hr {
+body #main-contact .div-hr hr {
   color: white;
   height: 2px;
   width: 100%;
 }
-body .mainContacto .divFormulario {
+body #main-contact .div-form {
   margin-bottom: 5%;
   margin-top: 5%;
   margin-right: 2%;
 }
-body .mainContacto .divFormulario .mailto {
+body #main-contact .div-form .mailto {
   opacity: 0;
 }
-body .mainContacto .divFormulario .divImgContacto .imgContacto {
+body #main-contact .div-form .div-img {
+  width: 50%;
+}
+body #main-contact .div-form .div-img img {
+  padding-left: 2%;
   height: 370px;
   width: 550px;
 }
-body .mainContacto .divFormulario .formulario {
+body #main-contact .div-form .form {
   align-items: center;
   background-color: black;
+  width: 50%;
+  padding-left: 2%;
 }
-body .mainContacto .divFormulario .formulario .formularioContenido {
-  width: 95%;
+body #main-contact .div-form .form .form-content {
+  width: 75%;
   font-family: "JetBrains Mono", monospace;
   color: white;
 }
-body .mainContacto .divFormulario .formulario .formularioContenido .form-control {
+body #main-contact .div-form .form .form-content .form-control {
   background-color: black;
   color: white;
 }
-body .mainContacto .divFormulario .formulario .button {
+body #main-contact .div-form .form .button {
   background-color: black;
   border: 1px solid white;
   color: white;
   font-family: "JetBrains Mono", monospace;
 }
-body .mainContacto .divMail {
+body #main-contact .div-mail {
   overflow-y: hidden;
 }
-body .mainContacto .divMail .elMail {
+body #main-contact .div-mail a {
   font-size: xx-large;
   overflow-y: hidden;
   text-decoration: none;
   color: rgb(194, 190, 190);
+  margin-bottom: 3%;
 }
-body .mainContacto .divMail .elMail:hover {
+body #main-contact .div-mail a:hover {
   overflow-y: hidden;
   text-decoration: none;
   color: white;
@@ -498,15 +505,15 @@ body .mainContacto .divMail .elMail:hover {
   body {
     overflow-x: hidden;
   }
-  body .mainContacto {
+  body #main-contact {
     width: 100%;
     overflow-x: hidden;
   }
-  body .mainContacto .tituloPagina {
+  body #main-contact .div-title {
     display: flex;
     justify-content: center;
   }
-  body .mainContacto .tituloPagina .subtituloPagina {
+  body #main-contact .div-title h1 {
     font-family: "JetBrains Mono", monospace;
     font-size: 28px;
     font-weight: 400;
@@ -514,12 +521,12 @@ body .mainContacto .divMail .elMail:hover {
     letter-spacing: 0.1rem;
     overflow-y: hidden;
   }
-  body .mainContacto .divHr .hr {
+  body #main-contact .div-hr hr {
     color: white;
     height: 2px;
     width: 100%;
   }
-  body .mainContacto .divFormulario {
+  body #main-contact .div-form {
     width: 100%;
     margin: 0%;
     padding: 0%;
@@ -530,47 +537,49 @@ body .mainContacto .divMail .elMail:hover {
     display: flex;
     flex-direction: column;
   }
-  body .mainContacto .divFormulario .divImgContacto {
+  body #main-contact .div-form .div-img {
     width: 100%;
     margin-bottom: 5%;
     justify-content: center;
   }
-  body .mainContacto .divFormulario .divImgContacto .imgContacto {
+  body #main-contact .div-form .div-img img {
+    padding: 0;
     height: 270px;
     width: 345px;
   }
-  body .mainContacto .divFormulario .formulario {
+  body #main-contact .div-form .form {
     width: 100%;
     align-items: center;
     background-color: black;
     display: flex;
     justify-content: center;
   }
-  body .mainContacto .divFormulario .formulario .formularioContenido {
+  body #main-contact .div-form .form .form-content {
+    padding: 0;
     width: 95%;
     font-family: "JetBrains Mono", monospace;
     color: white;
   }
-  body .mainContacto .divFormulario .formulario .formularioContenido .form-control {
+  body #main-contact .div-form .form .form-content .form-control {
     background-color: black;
     color: white;
   }
-  body .mainContacto .divFormulario .formulario .button {
+  body #main-contact .div-form .form .button {
     background-color: black;
     border: 1px solid white;
     color: white;
     font-family: "JetBrains Mono", monospace;
   }
-  body .mainContacto .divMail {
+  body #main-contact .div-mail {
     overflow-y: hidden;
   }
-  body .mainContacto .divMail .elMail {
+  body #main-contact .div-mail a {
     font-size: medium;
     overflow-y: hidden;
     text-decoration: none;
     color: rgb(194, 190, 190);
   }
-  body .mainContacto .divMail .elMail:hover {
+  body #main-contact .div-mail a:hover {
     overflow-y: hidden;
     text-decoration: none;
     color: white;
@@ -587,8 +596,8 @@ body .main-index {
 body .main-index .biography {
   margin: 0%;
   padding: 0%;
-  margin-top: 2%;
-  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-bottom: 0%;
   width: 100%;
   justify-content: center;
 }
@@ -622,9 +631,15 @@ body .main-index .div-hr hr {
   height: 2px;
   width: 100%;
 }
+body .main-index .news {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 body .main-index .news .div-news {
   margin: 0%;
   padding: 0%;
+  display: flex;
+  flex-direction: row;
 }
 body .main-index .news .div-news .div-img-news {
   height: fit-content;
@@ -633,12 +648,12 @@ body .main-index .news .div-news .div-img-news {
   margin-bottom: 2%;
 }
 body .main-index .news .div-news .div-img-news .img-news {
-  width: 35vw;
-  height: auto;
+  width: auto;
+  height: 45vh;
 }
 body .main-index .news .div-news .div-img-news .img-news-two {
-  width: 35vw;
-  height: auto;
+  width: auto;
+  height: 45vh;
   margin-left: 2%;
 }
 body .main-index .news .div-news .div-img-news .img-news-large {
@@ -653,26 +668,27 @@ body .main-index .news .div-news .div-text-news h3 {
   color: rgb(164, 164, 164);
   overflow-y: hidden;
   font-family: "JetBrains Mono", monospace;
+  font-size: 18px;
 }
 body .main-index .news .div-news .div-text-news p {
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
 }
 body .main-index .news .div-news .div-links-news {
-  width: 50%;
+  width: 40%;
   height: fit-content;
 }
 body .main-index .news .div-news .div-links-news a {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 20%;
+  height: 5vh;
   list-style: none;
   text-decoration: none;
-  margin-bottom: 1rem;
   margin-top: 2%;
 }
 body .main-index .news .div-news .div-links-news a i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   list-style: none;
   text-decoration: none;
@@ -680,7 +696,7 @@ body .main-index .news .div-news .div-links-news a i {
   overflow-y: hidden;
 }
 body .main-index .news .div-news .div-links-news a i:hover {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
 }
 body .main-index .news .div-news .div-button-news {
   padding-right: 5%;
@@ -707,22 +723,23 @@ body .main-index .news .div-news .div-hr-large hr {
 body .main-index .div-records {
   margin: 0%;
   padding: 0%;
-  margin-top: 3%;
+  margin-top: 5%;
   margin-bottom: 5%;
-  height: fit-content;
+  height: 60vh;
+  width: 30vw;
 }
 body .main-index .div-records a {
   text-decoration: none;
 }
 body .main-index .div-records a img {
+  height: 45vh;
   width: auto;
-  height: 50vh;
   display: flex;
   justify-content: space-between;
 }
 body .main-index .div-records a img:hover {
   width: auto;
-  height: 53vh;
+  height: 48vh;
 }
 body .main-index .div-records a h3 {
   overflow: hidden;
@@ -872,11 +889,11 @@ body .main-index .galery .box:nth-child(4) {
   body .main-index .news .div-news .div-img-news {
     width: 100vw;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
   }
   body .main-index .news .div-news .div-img-news-two {
+    flex-direction: column;
     height: fit-content;
+    align-items: center;
     width: 100vw;
     margin: 0%;
     padding: 0%;
@@ -963,6 +980,8 @@ body .main-index .galery .box:nth-child(4) {
     padding: 0%;
     margin-top: 3%;
     margin-bottom: 5%;
+    width: 100%;
+    height: auto;
   }
   body .main-index .div-records a {
     text-decoration: none;
@@ -1062,10 +1081,10 @@ body {
   padding: 0%;
   overflow-x: hidden;
 }
-body .mainMusica {
+body .main-record {
   padding: 0%;
 }
-body .mainMusica .tituloPagina .subtituloPagina {
+body .main-record .div-title h1 {
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
@@ -1073,49 +1092,46 @@ body .mainMusica .tituloPagina .subtituloPagina {
   letter-spacing: 0.1rem;
   overflow-y: hidden;
 }
-body .mainMusica .divHr {
+body .main-record .div-hr {
   color: white;
 }
-body .mainMusica .divHr .hr {
+body .main-record .div-hr hr {
   color: white;
   height: 2px;
   width: 100%;
 }
-body .mainMusica .contenedorDiscos {
-  overflow: hidden;
+body .main-record .record-container {
   margin: 0%;
   padding: 0%;
   margin-top: 3%;
   height: 60vh;
 }
-body .mainMusica .contenedorDiscos .textoDiscos {
-  overflow: hidden;
-  color: white;
-  margin: 0%;
-  margin-top: 1%;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 15px;
+body .main-record .record-container .text-record {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 0%;
+  margin-top: 1%;
 }
-body .mainMusica .contenedorDiscos .textoDiscos:hover {
-  color: rgb(85, 24, 24);
+body .main-record .record-container .text-record h3, body .main-record .record-container .text-record h4 {
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 15px;
 }
-body .mainMusica .contenedorDiscos .ancla {
+body .main-record .record-container a {
   text-decoration: none;
 }
-body .mainMusica .contenedorDiscos .ancla .discos {
+body .main-record .record-container a img {
   width: auto;
   height: 45vh;
   display: flex;
   justify-content: space-between;
 }
-body .mainMusica .contenedorDiscos .ancla .discos:hover {
+body .main-record .record-container a img:hover {
   width: auto;
   height: 47vh;
 }
-body .mainMusica .contenedorDiscos .ancla .textoDiscosTitulo {
+body .main-record .record-container a h2 {
   overflow: hidden;
   margin: 0%;
   margin-top: 1%;
@@ -1127,10 +1143,10 @@ body .mainMusica .contenedorDiscos .ancla .textoDiscosTitulo {
   text-align: center;
   color: white;
 }
-body .mainMusica .contenedorDiscos .ancla .textoDiscosTitulo:hover {
+body .main-record .record-container a h2:hover {
   color: rgb(138, 30, 30);
 }
-body .mainMusica .contenedorDiscos .ancla .textoDiscosTituloBuceo {
+body .main-record .record-container a .title-two {
   overflow: hidden;
   margin: 0%;
   margin-top: 1%;
@@ -1142,16 +1158,16 @@ body .mainMusica .contenedorDiscos .ancla .textoDiscosTituloBuceo {
   text-align: center;
   color: white;
 }
-body .mainMusica .contenedorDiscos .ancla .textoDiscosTituloBuceo:hover {
+body .main-record .record-container a .title-two:hover {
   color: rgb(138, 30, 30);
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .tituloPagina {
+  .div-title {
     display: flex;
     justify-content: center;
   }
-  .tituloPagina .subtituloPagina {
+  .div-title h1 {
     font-family: "JetBrains Mono", monospace;
     font-size: 28px;
     font-weight: 400;
@@ -1166,7 +1182,7 @@ body {
   padding: 0%;
   overflow-x: hidden;
 }
-body .mainNoticias .tituloPagina .subtituloPagina {
+body #main-news .div-title h1 {
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
@@ -1174,90 +1190,89 @@ body .mainNoticias .tituloPagina .subtituloPagina {
   letter-spacing: 0.1rem;
   overflow-y: hidden;
 }
-body .mainNoticias .divHr .hr {
+body #main-news .div-hr hr {
   color: white;
   height: 2px;
   width: 100%;
 }
-body .mainNoticias .noticias .divNoticiasUno {
+body #main-news .news .div-news {
   margin: 0%;
   padding: 0%;
-  /*.imgNoticias{
-      width: 400px;
-      height: 380px;
-      margin-left: 5%;
-      object-fit: cover;
-  }
-  .imgNoticiasDos{
-      width: 350px;
-      height: 330px;
-      margin-left: 5%;
-      object-fit: cover;
-  }
-  .imgNoticiasTres{
-      width: 400px;
-      height: 380px;
-      margin-left: 5%;
-      object-fit: cover;
-  }*/
+  margin-top: 4%;
 }
-body .mainNoticias .noticias .divNoticiasUno .divHrNoticias {
+body #main-news .news .div-news .div-hr-large {
   margin: 0%;
   padding: 0%;
   margin-bottom: 3%;
   margin-top: 3%;
 }
-body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
+body #main-news .news .div-news .div-hr-large hr {
   margin: 0%;
   padding: 0%;
   background-color: white;
   height: 2px;
   width: 100%;
 }
-body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
+body #main-news .news .div-news .div-img-news {
   display: flex;
   justify-content: center;
   margin: 0%;
   width: 95vw;
 }
-body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPC {
-  width: 35vw;
+body #main-news .news .div-news .div-img-news .img-news {
+  width: 30vw;
   height: auto;
 }
-body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPCdos {
-  width: 35vw;
+body #main-news .news .div-news .div-img-news .img-news-two {
+  width: 30vw;
   height: auto;
   margin-left: 2%;
 }
-body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos {
+body #main-news .news .div-news .div-text-news {
   display: flex;
-  justify-content: center;
-  margin: 0%;
-  width: 95vw;
+  flex-direction: column;
+  align-items: center;
+  width: 45vw;
 }
-body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCTres {
-  width: 35vw;
-  height: auto;
+body #main-news .news .div-news .div-text-news h2 {
+  color: rgb(164, 164, 164);
+  overflow-y: hidden;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 2%;
 }
-body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCCuatro {
-  width: 70vw;
-  height: auto;
+body #main-news .news .div-news .div-text-news h3 {
+  text-align: center;
+  overflow-y: hidden;
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
 }
-body .mainNoticias .noticias .divNoticiasUno .iconosNoticias {
+body #main-news .news .div-news .div-text-news p {
+  text-align: center;
+  width: 80%;
+  overflow-y: hidden;
+  color: rgb(164, 164, 164);
+  font-family: "JetBrains Mono", monospace;
+  margin-top: 1%;
+  font-size: 16px;
+}
+body #main-news .news .div-news .div-text-news .div-i-news {
   width: 100%;
   height: fit-content;
 }
-body .mainNoticias .noticias .divNoticiasUno .iconosNoticias .iconosAncla {
+body #main-news .news .div-news .div-text-news .div-i-news a {
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: fit-content;
+  width: 20%;
+  height: 10vh;
   list-style: none;
   text-decoration: none;
   padding: 3%;
 }
-body .mainNoticias .noticias .divNoticiasUno .iconosNoticias .iconosAncla .iconos {
-  font-size: 2rem;
+body #main-news .news .div-news .div-text-news .div-i-news a i {
+  font-size: 1.5rem;
   height: fit-content;
   display: flex;
   list-style: none;
@@ -1265,81 +1280,8 @@ body .mainNoticias .noticias .divNoticiasUno .iconosNoticias .iconosAncla .icono
   color: white;
   overflow-y: hidden;
 }
-body .mainNoticias .noticias .divNoticiasUno .iconosNoticias .iconosAncla .iconos:hover {
-  font-size: 2.1rem;
-}
-body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 45vw;
-}
-body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
-  color: rgb(164, 164, 164);
-  overflow-y: hidden;
-  font-family: "JetBrains Mono", monospace;
-  font-size: x-large;
-  text-align: center;
-  margin-top: 2%;
-}
-body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
-  text-align: center;
-  overflow-y: hidden;
-  color: rgb(164, 164, 164);
-  font-family: "JetBrains Mono", monospace;
-  font-size: x-large;
-}
-body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticiasDos {
-  text-align: center;
-  width: 80%;
-  overflow-y: hidden;
-  color: rgb(164, 164, 164);
-  font-family: "JetBrains Mono", monospace;
-  margin-top: 1%;
-  font-size: large;
-}
-body .mainNoticias .noticias .divNoticiasUno .divTextoNoticiasTres {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70vw;
-}
-body .mainNoticias .noticias .divNoticiasUno .divTextoNoticiasTres .tituloNoticias {
-  color: rgb(164, 164, 164);
-  overflow-y: hidden;
-  font-family: "JetBrains Mono", monospace;
-  font-size: x-large;
-  text-align: center;
-  margin-top: 2%;
-}
-body .mainNoticias .noticias .divNoticiasUno .divTextoNoticiasTres .parrafoNoticias {
-  text-align: center;
-  overflow-y: hidden;
-  color: rgb(164, 164, 164);
-  font-family: "JetBrains Mono", monospace;
-  font-size: x-large;
-}
-body .mainNoticias .noticias .divNoticiasUno .divTextoNoticiasTres .parrafoNoticiasDos {
-  text-align: center;
-  width: 85%;
-  overflow-y: hidden;
-  color: rgb(164, 164, 164);
-  font-family: "JetBrains Mono", monospace;
-  margin-top: 1%;
-  font-size: large;
-}
-body .mainNoticias .noticias .divNoticiasUno .divTextoNoticiasTres .parrafoNoticiasTres {
-  text-align: center;
-  width: 100%;
-  overflow-y: hidden;
-  color: rgb(164, 164, 164);
-  font-family: "JetBrains Mono", monospace;
-  margin-top: 1%;
-  font-size: large;
-}
-body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
-  color: rgb(164, 164, 164);
-  font-family: "JetBrains Mono", monospace;
+body #main-news .news .div-news .div-text-news .div-i-news a i:hover {
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -1349,11 +1291,11 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     padding: 0%;
     overflow-x: hidden;
   }
-  body .mainNoticias .tituloPagina {
+  body main .div-title {
     display: flex;
     justify-content: center;
   }
-  body .mainNoticias .tituloPagina .subtituloPagina {
+  body main .div-title h1 {
     font-family: "JetBrains Mono", monospace;
     font-size: 28px;
     font-weight: 400;
@@ -1361,98 +1303,59 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     letter-spacing: 0.1rem;
     overflow-y: hidden;
   }
-  body .mainNoticias .divHr .hr {
+  body main .div-hr hr {
     color: white;
     height: 2px;
     width: 100%;
   }
-  body .mainNoticias .noticias {
+  body main .news {
     margin: 0%;
     padding: 0%;
     width: 100vw;
   }
-  body .mainNoticias .noticias .divNoticiasUno {
+  body main .news .div-news {
     margin: 0%;
     padding: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*.divImgNoticias{
-
-        .imgNoticias {
-            width: 360px;
-            height: 330px;
-            margin: 0%;
-            padding: 0%;
-            object-fit: contain;
-        }
-        .imgNoticiasTres {
-            width: 360px;
-            height: 330px;
-            margin: 0%;
-            padding: 0%;
-            object-fit: contain;
-        }
-    }
-    .divImgNoticiasDos{
-        overflow-y: hidden;
-        overflow-x: hidden;
-        display: flex;
-        justify-content: center;
-        width: 95%;
-        height: 290px;
-        .imgNoticiasDos {
-            margin: 0%;
-            padding: 0%;
-            object-fit: contain;
-        }
-    }*/
   }
-  body .mainNoticias .noticias .divNoticiasUno .divHrNoticias {
+  body main .news .div-news .div-hr-large {
     visibility: hidden;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divHrNoticias .hrNoticias {
+  body main .news .div-news .div-hr-large hr {
     visibility: hidden;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias {
+  body main .news .div-news .div-img-news {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 5%;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPC {
+  body main .news .div-news .div-img-news .img-news {
     width: 80vw;
     height: auto;
     margin-bottom: 5%;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticias .imgNoticiasPCdos {
+  body main .news .div-news .div-img-news .img-news-two {
     width: 80vw;
     height: auto;
     margin-left: 0%;
     margin: 0%;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCTres {
+  body main .news .div-news .div-img-news .img-news-three {
     width: 80vw;
     height: auto;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divImgNoticiasDos .imgNoticiasPCCuatro {
-    width: 95vw;
-    height: auto;
-  }
-  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias {
+  body main .news .div-news .div-text-news {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 95vw;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .tituloNoticias {
+  body main .news .div-news .div-text-news h2 {
     color: rgb(164, 164, 164);
     overflow-y: hidden;
     font-family: "JetBrains Mono", monospace;
@@ -1460,7 +1363,7 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     font-size: large;
     text-align: center;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticias {
+  body main .news .div-news .div-text-news h3 {
     color: rgb(164, 164, 164);
     font-family: "JetBrains Mono", monospace;
     margin: 0%;
@@ -1468,7 +1371,7 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     font-size: large;
     text-align: center;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divTextoNoticias .parrafoNoticiasDos {
+  body main .news .div-news .div-text-news p {
     text-align: center;
     width: 90%;
     overflow-y: hidden;
@@ -1476,37 +1379,6 @@ body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
     font-family: "JetBrains Mono", monospace;
     font-size: medium;
   }
-  body .mainNoticias .noticias .divNoticiasUno .divFechaNoticias {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: rgb(164, 164, 164);
-    font-family: "JetBrains Mono", monospace;
-    margin-top: 2%;
-  }
-  body .mainNoticias .noticias .divNoticiasUno .divBotonNoticias .botonNoticias {
-    border: none;
-    background-color: black;
-    color: white;
-    font-family: "JetBrains Mono", monospace;
-  }
-  body .mainNoticias .noticias .noticiasVeinticuatro .textoNoticiasVenticuatro {
-    display: flex;
-    justify-content: center;
-    color: white;
-    overflow-y: hidden;
-    font-family: "Castoro Titling", cursive;
-  }
-  body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  body .mainNoticias .noticias .noticiasVeinticuatro .divImgNoticiasVenticuartro .imgNoticiasVenticuartro {
-    width: 70%;
-    height: 100%;
-  }
 }
 body {
   width: 100vw;
@@ -1514,7 +1386,7 @@ body {
   padding: 0%;
   overflow-x: hidden;
 }
-body .mainVideo .tituloPagina .subtituloPagina {
+body #main-video .div-title h1 {
   margin: 0%;
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
@@ -1523,32 +1395,31 @@ body .mainVideo .tituloPagina .subtituloPagina {
   letter-spacing: 0.1rem;
   overflow-y: hidden;
 }
-body .mainVideo .divHr .hr {
+body #main-video .div-hr hr {
   background-color: white;
   height: 2px;
   width: 100%;
 }
-body .mainVideo .sectionVideoUno {
-  margin-top: 2%;
-}
-body .mainVideo .sectionVideoDos {
-  margin-top: 2%;
-}
-body .mainVideo .sectionVideoTres {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-body .mainVideo .sectionVideoTres .videoCinco {
-  border: 1px white solid;
+body #main-video .section-video {
+  margin-top: 4%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body .section-video {
+    margin-top: 4%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
 body {
   width: 100vw;
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
 }
-body .mainPrensa .tituloPagina .subtituloPagina {
+body #main-press .div-title h1 {
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
@@ -1556,141 +1427,48 @@ body .mainPrensa .tituloPagina .subtituloPagina {
   letter-spacing: 0.1rem;
   overflow-y: hidden;
 }
-body .mainPrensa .divHr .hr {
+body #main-press .div-hr hr {
   color: white;
   height: 2px;
   width: 100%;
 }
-body .mainPrensa .notaUnoSection {
+body #main-press .div-release {
   margin: 0%;
   padding: 0%;
   text-align: center;
   margin-top: 5%;
 }
-body .mainPrensa .notaUnoSection .divBotonNotas {
+body #main-press .div-release .div-button {
   margin: 0%;
   padding: 0%;
 }
-body .mainPrensa .notaUnoSection .divBotonNotas .botonNotas {
+body #main-press .div-release .div-button a {
   text-decoration: none;
   border: none;
   background-color: black;
   color: white;
   font-family: "JetBrains Mono", monospace;
 }
-body .mainPrensa .notaUnoSection .divBotonNotas .botonNotas:hover {
+body #main-press .div-release .div-button a:hover {
   text-decoration: underline;
 }
-body .mainPrensa .notaUnoSection .divNotaUno {
+body #main-press .div-release .release {
   margin: 0%;
   padding: 0%;
   align-items: center;
   text-align: center;
 }
-body .mainPrensa .notaUnoSection .divNotaUno .notaUnoImg {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
-}
-body .mainPrensa .notaDosSection {
-  margin: 0%;
-  padding: 0%;
-  text-align: center;
-  margin-top: 5%;
-}
-body .mainPrensa .notaDosSection .divBotonNotas {
-  margin: 0%;
-  padding: 0%;
-}
-body .mainPrensa .notaDosSection .divBotonNotas .botonNotas {
-  text-decoration: none;
-  border: none;
-  background-color: black;
-  color: white;
-  font-family: "JetBrains Mono", monospace;
-}
-body .mainPrensa .notaDosSection .divBotonNotas .botonNotas:hover {
-  text-decoration: underline;
-}
-body .mainPrensa .notaDosSection .divNotaDos {
-  margin: 0%;
-  padding: 0%;
-  align-items: center;
-  text-align: center;
-}
-body .mainPrensa .notaDosSection .divNotaDos .notaDosImg {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
-}
-body .mainPrensa .notaTresSection {
-  margin: 0%;
-  padding: 0%;
-  margin-top: 5%;
-  text-align: center;
-}
-body .mainPrensa .notaTresSection .divBotonNotas {
-  margin: 0%;
-  padding: 0%;
-}
-body .mainPrensa .notaTresSection .divBotonNotas .botonNotas {
-  text-decoration: none;
-  border: none;
-  background-color: black;
-  color: white;
-  font-family: "JetBrains Mono", monospace;
-}
-body .mainPrensa .notaTresSection .divBotonNotas .botonNotas:hover {
-  text-decoration: underline;
-}
-body .mainPrensa .notaTresSection .divNotaTres {
-  margin: 0%;
-  padding: 0%;
-  align-items: center;
-  text-align: center;
-}
-body .mainPrensa .notaTresSection .divNotaTres .notaTresImg {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
-}
-body .mainPrensa .notaCuatroSection {
-  margin: 0%;
-  padding: 0%;
-  margin-top: 5%;
-  text-align: center;
-}
-body .mainPrensa .notaCuatroSection .divBotonNotas {
-  margin: 0%;
-  padding: 0%;
-}
-body .mainPrensa .notaCuatroSection .divBotonNotas .botonNotas {
-  text-decoration: none;
-  border: none;
-  background-color: black;
-  color: white;
-  font-family: "JetBrains Mono", monospace;
-}
-body .mainPrensa .notaCuatroSection .divBotonNotas .botonNotas:hover {
-  text-decoration: underline;
-}
-body .mainPrensa .notaCuatroSection .divNotaCuatro {
-  margin: 0%;
-  padding: 0%;
-  align-items: center;
-  text-align: center;
-}
-body .mainPrensa .notaCuatroSection .divNotaCuatro .notaCuatroImg {
-  width: 90%;
+body #main-press .div-release .release img {
+  width: 80%;
   height: 100%;
   object-fit: cover;
 }
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  body .tituloPagina {
+  body .div-title {
     display: flex;
     justify-content: center;
   }
-  body .tituloPagina .subtituloPagina {
+  body .div-title h1 {
     font-family: "JetBrains Mono", monospace;
     font-size: 28px;
     font-weight: 400;
@@ -1698,7 +1476,7 @@ body .mainPrensa .notaCuatroSection .divNotaCuatro .notaCuatroImg {
     letter-spacing: 0.1rem;
     overflow-y: hidden;
   }
-  body .divHr .hr {
+  body .div-hr hr {
     color: white;
     height: 2px;
     width: 100%;

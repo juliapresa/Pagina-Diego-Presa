@@ -8,8 +8,8 @@ body {
         .biography {
             margin: 0%;
             padding: 0%;
-            margin-top: 2%;
-            margin-bottom: 5%;
+            margin-top: 3%;
+            margin-bottom: 0%;
             width: 100%;
             justify-content: center;
 
@@ -51,21 +51,25 @@ body {
         }
 
         .news {
+            margin-top: 2%;
+            margin-bottom: 2%;
             .div-news {
                 margin: 0%;
                 padding: 0%;
+                display: flex;
+                flex-direction: row;
                 .div-img-news{
                    height: fit-content;
                    width: 100vw;
                    overflow-y: hidden;
                    margin-bottom: 2%;
                    .img-news{
-                    width: 35vw;
-                    height: auto;
+                    width: auto;
+                    height: 45vh;
                     }
                     .img-news-two{
-                        width: 35vw;
-                        height: auto;
+                        width: auto;
+                        height: 45vh;
                         margin-left: 2%;
                     }
                     .img-news-large{
@@ -80,6 +84,7 @@ body {
                         color: rgb(164, 164, 164);
                         overflow-y: hidden;
                         font-family: $fontexto;
+                        font-size: 18px;
                     }
 
                     p {
@@ -88,18 +93,18 @@ body {
                     }
                 }
                 .div-links-news {
-                    width: 50%;
+                    width: 40%;
                     height: fit-content;
                     a {
                         display: flex;
                         justify-content: center;
-                        width: 50%;
+                        width: 20%;
+                        height: 5vh;
                         list-style: none;
                         text-decoration: none;
-                        margin-bottom: 1rem;
                         margin-top: 2%;
                         i {
-                            font-size: 2rem;
+                            font-size: 1.5rem;
                             display: flex;
                             list-style: none;
                             text-decoration: none;
@@ -107,7 +112,7 @@ body {
                             overflow-y: hidden;
                         }
                         i:hover{
-                           font-size: 2.1rem;
+                           font-size: 1.8rem;
                         }
                     }
                 }
@@ -140,21 +145,22 @@ body {
         .div-records {
             margin: 0%;
             padding: 0%;
-            margin-top: 3%;
+            margin-top: 5%;
             margin-bottom: 5%;
-            height: fit-content;
+            height: 60vh;
+            width: 30vw;
             a {
                 text-decoration: none;
                 img {
+                    height: 45vh;
                     width: auto;
-                    height: 50vh;
                     display: flex;
                     justify-content: space-between;
                 }
     
                 img:hover {
                     width: auto;
-                    height: 53vh;
+                    height: 48vh;
                 }
                 h3 {
                     overflow: hidden;
@@ -322,11 +328,11 @@ body {
                     .div-img-news{
                         width: 100vw;
                         height: fit-content;
-                        display: flex;
-                        flex-direction: column;
                     }
                     .div-img-news-two{
+                        flex-direction: column;
                         height: fit-content;
+                        align-items: center;
                         width: 100vw;
                         margin: 0%;
                         padding: 0%;
@@ -343,8 +349,8 @@ body {
                             margin-top: 2%;
                         }
                         .img-news-large{
-                        width: 95vw;
-                        height: auto;
+                            width: 95vw;
+                            height: auto;
                         }
                     }
                     .div-hr-large{
@@ -422,6 +428,8 @@ body {
                 padding: 0%;
                 margin-top: 3%;
                 margin-bottom: 5%;
+                width: 100%;
+                height: auto;
                 a {
                     text-decoration: none;
                     img {

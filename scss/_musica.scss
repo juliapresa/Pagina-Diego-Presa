@@ -3,10 +3,13 @@ body {
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
-    .mainMusica {
+
+    .main-record {
         padding: 0%;
-        .tituloPagina {
-            .subtituloPagina{
+
+        .div-title {
+
+            h1{
                 font-family: $fontitulo;
                 font-size: 28px;
                 font-weight: 400;
@@ -15,47 +18,51 @@ body {
                 overflow-y: hidden;
             }
         }
-        .divHr{
+
+        .div-hr{
             color: white;
-            .hr{
+
+            hr{
                color: white;
                 height: 2px;
                 width: 100%;
             }
         }
-        .contenedorDiscos {
-            overflow: hidden;
+
+        .record-container {
             margin: 0%;
             padding: 0%;
             margin-top: 3%;
             height: 60vh;
-            .textoDiscos {
-                overflow: hidden;
-                color: white;
-                margin: 0%;
-                margin-top: 1%;
-                font-family: $fontexto;
-                font-size: 15px;
+
+            .text-record {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
+                margin: 0%;
+                margin-top: 1%;
+                h3, h4{
+                color: white;
+                font-family: $fontexto;
+                font-size: 15px;
+                }
             }
-            .textoDiscos:hover{
-                color: rgb(85, 24, 24);
-            }
-            .ancla{
+
+            a{
                 text-decoration: none;
-                .discos {
+
+                img {
                     width: auto;
                     height: 45vh;
                     display: flex;
                     justify-content: space-between;
                 }
-                .discos:hover{
+                img:hover{
                     width: auto;
                     height: 47vh;
                 }
-                .textoDiscosTitulo{
+
+                h2{
                     overflow: hidden;
                     margin: 0%;
                     margin-top: 1%;
@@ -67,10 +74,11 @@ body {
                     text-align: center;   
                     color: white;
                 }
-                .textoDiscosTitulo:hover{
+                h2:hover{
                     color: rgb(138, 30, 30);
                 }
-                .textoDiscosTituloBuceo{
+
+                .title-two{
                     overflow: hidden;
                     margin: 0%;
                     margin-top: 1%;
@@ -82,7 +90,7 @@ body {
                     text-align: center;   
                     color: white;
                 }
-                .textoDiscosTituloBuceo:hover{
+                .title-two:hover{
                     color: rgb(138, 30, 30);
                 }
             }
@@ -93,10 +101,10 @@ body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px){
-    .tituloPagina {
+    .div-title {
         display: flex;
         justify-content: center;
-        .subtituloPagina{
+        h1{
             font-family: $fontexto;
             font-size: 28px;
             font-weight: 400;

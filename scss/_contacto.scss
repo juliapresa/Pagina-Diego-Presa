@@ -1,7 +1,9 @@
 body {
-    .mainContacto {
-        .tituloPagina {
-            .subtituloPagina{
+
+    #main-contact {
+
+        .div-title {
+            h1{
                 font-family: $fontitulo;
                 font-size: 28px;
                 font-weight: 400;
@@ -10,34 +12,41 @@ body {
                 overflow-y: hidden;
             }
         }
-        .divHr{
-            .hr{
+        .div-hr{
+            hr{
                 color: white;
                 height: 2px;
                 width: 100%;
             }
         }
-        .divFormulario {
+
+        .div-form {
             margin-bottom: 5%;
             margin-top: 5%;
             margin-right: 2%;
+
             .mailto{
                 opacity: 0;
             }
-            .divImgContacto {
-                .imgContacto {
+            .div-img {
+                width: 50%;
+                img {
+                    padding-left: 2%;
                     height: 370px;
                     width: 550px;
                 }
             }
 
-            .formulario {
+            .form {
                 align-items: center;
                 background-color: black;
-                .formularioContenido {
-                    width: 95%;
+                width: 50%;
+                padding-left: 2%;
+                .form-content {
+                    width: 75%;
                     font-family: $fontexto;
                     color: white;
+
                     .form-control{
                         background-color: black;
                         color: white;
@@ -53,15 +62,16 @@ body {
             }
 
         }
-        .divMail{
+        .div-mail{
             overflow-y: hidden;
-            .elMail{
+            a{
                 font-size: xx-large;
                 overflow-y: hidden;
                 text-decoration: none;
                 color: rgb(194, 190, 190);
+                margin-bottom: 3%;
             }
-            .elMail:hover{
+            a:hover{
                 overflow-y: hidden;
                 text-decoration: none;
                 color: white;
@@ -73,13 +83,13 @@ body {
 @media screen and (min-width: 0px) and (max-width: 768px){
     body {
        overflow-x: hidden;
-        .mainContacto {
+        #main-contact {
             width: 100%;
             overflow-x: hidden;
-            .tituloPagina {
+            .div-title {
                 display: flex;
                 justify-content: center;
-                .subtituloPagina{
+                h1{
                     font-family: $fontexto;
                     font-size: 28px;
                     font-weight: 400;
@@ -88,14 +98,14 @@ body {
                     overflow-y: hidden;
                 }
             }
-            .divHr{
-                .hr{
+            .div-hr{
+                hr{
                     color: white;
                     height: 2px;
                     width: 100%;
                 }
             }
-            .divFormulario {
+            .div-form {
                 width: 100%;
                 margin: 0%;
                 padding: 0%;
@@ -105,23 +115,25 @@ body {
                 margin-right: 2%;
                 display: flex;
                 flex-direction: column;
-                .divImgContacto {
+                .div-img {
                     width: 100%;
                     margin-bottom: 5%;
                     justify-content: center;
-                    .imgContacto {
+                    img {
+                        padding: 0;
                         height: 270px;
                         width: 345px;
                     }
                 }
     
-                .formulario {
+                .form {
                     width: 100%;
                     align-items: center;
                     background-color: black;
                     display: flex;
                     justify-content: center;
-                    .formularioContenido {
+                    .form-content {
+                        padding: 0;
                         width: 95%;
                         font-family: $fontexto;
                         color: white;
@@ -140,15 +152,15 @@ body {
                 }
     
             }
-            .divMail{
+            .div-mail{
                 overflow-y: hidden;
-                .elMail{
+                a{
                     font-size: medium;
                     overflow-y: hidden;
                     text-decoration: none;
                     color: rgb(194, 190, 190);
                 }
-                .elMail:hover{
+                a:hover{
                     overflow-y: hidden;
                     text-decoration: none;
                     color: white;
