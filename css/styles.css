@@ -282,14 +282,16 @@ footer .row .links-footer a i:hover {
 
 body {
   width: 100vw;
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
-body #main-shows {
+
+#main-shows {
   height: 60vh;
 }
-body #main-shows .div-title h1 {
+
+.shows__title h1 {
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
@@ -297,142 +299,56 @@ body #main-shows .div-title h1 {
   letter-spacing: 0.1rem;
   overflow-y: hidden;
 }
-body #main-shows .div-hr hr {
-  color: white;
-  height: 2px;
-  width: 100%;
-}
-body #main-shows .shows .div-shows-one {
-  margin: 0%;
-  padding: 0%;
-  width: 95vw;
-}
-body #main-shows .shows .div-shows-one .div-hr-large {
-  margin: 0%;
-  padding: 0%;
-  margin-bottom: 1%;
-  margin-top: 1%;
-}
-body #main-shows .shows .div-shows-one .div-hr-large hr {
-  margin: 0%;
-  padding: 0%;
+.shows__divider hr {
   background-color: white;
   height: 2px;
   width: 100%;
+  margin: 0;
 }
-body #main-shows .shows .div-shows-one .div-text-shows {
-  padding: 0%;
-  margin: 0%;
-  margin-left: 8%;
-  width: 45%;
-  height: fit-content;
+
+.show {
+  align-items: center;
+  margin-top: 1%;
 }
-body #main-shows .shows .div-shows-one .div-text-shows h2 {
+.show__title {
   color: rgb(164, 164, 164);
-  overflow-y: hidden;
   font-family: "JetBrains Mono", monospace;
   font-weight: 500;
   font-size: 20px;
+  overflow-y: hidden;
 }
-body #main-shows .shows .div-shows-one .div-text-shows p {
+.show__location, .show__city {
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
 }
-body #main-shows .shows .div-shows-one .div-date-shows {
-  width: fit-content;
-  height: fit-content;
-  padding: 0%;
-  margin: 0%;
+.show__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  text-align: right;
+}
+.show__date {
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
 }
-body #main-shows .shows .div-shows-one .div-date-shows .div-date-shows-two {
-  width: fit-content;
-  height: fit-content;
-}
-body #main-shows .shows .div-shows-one .div-date-shows .div-date-shows-two .div-date-shows {
-  margin: 0%;
-  padding: 0%;
-  width: fit-content;
-  height: fit-content;
+.show__action {
+  display: flex;
+  justify-content: flex-end;
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
-  body {
-    width: 100vw;
-    margin: 0%;
-    padding: 0%;
-    overflow-x: hidden;
+@media screen and (max-width: 768px) {
+  .show__info {
+    align-items: start;
+    text-align: center;
+    margin-top: 10px;
   }
-  body main .div-tite {
-    display: flex;
+  .show__action {
     justify-content: center;
   }
-  body main .div-tite h1 {
+  .shows__title h1 {
     font-family: "JetBrains Mono", monospace;
-    font-size: 28px;
-    font-weight: 400;
-    color: white;
-    letter-spacing: 0.1rem;
-    overflow-y: hidden;
-  }
-  body main .div-hr hr {
-    color: white;
-    height: 2px;
-    width: 100%;
-  }
-  body main .shows .div-shows-one {
-    margin: 0%;
-    padding: 0%;
-  }
-  body main .shows .div-shows-one .div-hr-large {
-    margin: 0%;
-    padding: 0%;
-    margin-bottom: 1%;
-    margin-top: 1%;
-  }
-  body main .shows .div-shows-one .div-hr-large hr {
-    margin: 0%;
-    padding: 0%;
-    background-color: white;
-    height: 2px;
-    width: 100%;
-  }
-  body main .shows .div-shows-one .div-text-shows {
-    padding: 0%;
-    margin: 0%;
-    margin-left: 2%;
-    width: 50%;
-    height: fit-content;
-  }
-  body main .shows .div-shows-one .div-text-shows h2 {
-    color: rgb(164, 164, 164);
-    overflow-y: hidden;
-    font-family: "JetBrains Mono", monospace;
-    font-weight: 500;
-    font-size: 20px;
-  }
-  body main .shows .div-shows-one .div-text-shows p {
-    color: rgb(164, 164, 164);
-    font-family: "JetBrains Mono", monospace;
-  }
-  body main .shows .div-shows-one .div-date-shows {
-    width: fit-content;
-    height: fit-content;
-    padding: 0%;
-    margin: 0%;
-    color: rgb(164, 164, 164);
-    font-family: "JetBrains Mono", monospace;
-  }
-  body main .shows .div-shows-one .div-date-shows .div-date-shows-two {
-    width: fit-content;
-    height: fit-content;
-  }
-  body main .shows .div-shows-one .div-date-shows .div-date-shows-two p {
-    margin: 0%;
-    padding: 0%;
-    width: fit-content;
-    height: fit-content;
   }
 }
 body #main-contact .div-title h1 {

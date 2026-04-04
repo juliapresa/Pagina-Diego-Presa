@@ -1,184 +1,92 @@
+// Base
 body {
     width: 100vw;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
+}
 
-    #main-shows {
-        height: 60vh;
-        .div-title {
-            h1 {
-                font-family: $fontitulo;
-                font-size: 28px;
-                font-weight: 400;
-                color: white;
-                letter-spacing: 0.1rem;
-                overflow-y: hidden;
-            }
-        }
+// Main
+#main-shows {
+    height: 60vh;
+}
 
-        .div-hr {
-            hr {
-                color: white;
-                height: 2px;
-                width: 100%;
-            }
-        }
+// Header
+.shows {
 
-        .shows {
-            .div-shows-one {
-                margin: 0%;
-                padding: 0%;
-                width: 95vw;
-                .div-hr-large {
-                    margin: 0%;
-                    padding: 0%;
-                    margin-bottom: 1%;
-                    margin-top: 1%;
-                    hr {
-                        margin: 0%;
-                        padding: 0%;
-                        background-color: white;
-                        height: 2px;
-                        width: 100%;
-                    }
-                }
+    &__title h1 {
+        font-family: $fontitulo;
+        font-size: 28px;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 0.1rem;
+        overflow-y: hidden;
+    }
 
-                .div-text-shows {
-                    padding: 0%;
-                    margin: 0%;
-                    margin-left: 8%;
-                    width: 45%;
-                    height: fit-content;
-
-                    h2 {
-                        color: rgb(164, 164, 164);
-                        overflow-y: hidden;
-                        font-family: $fontexto;
-                        font-weight: 500;
-                        font-size: 20px;
-                    }
-
-                    p {
-                        color: rgb(164, 164, 164);
-                        font-family: $fontexto;
-                    }
-                }
-
-                .div-date-shows {
-                    width: fit-content;
-                    height: fit-content;
-                    padding: 0%;
-                    margin: 0%;
-                    color: rgb(164, 164, 164);
-                    font-family: $fontexto;
-                    .div-date-shows-two {
-                        width: fit-content;
-                        height: fit-content;
-                        .div-date-shows {
-                            margin: 0%;
-                            padding: 0%;
-                            width: fit-content;
-                            height: fit-content;
-                        }
-                    }
-
-                }
-            }
-        }
+    &__divider hr {
+        background-color: white;
+        height: 2px;
+        width: 100%;
+        margin: 0;
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px){
-    body {
-        width: 100vw;
-        margin: 0%;
-        padding: 0%;
-        overflow-x: hidden;
-    
-        main {
-            .div-tite {
-                display: flex;
-                justify-content: center;
-                h1 {
-                    font-family: $fontexto;
-                    font-size: 28px;
-                    font-weight: 400;
-                    color: white;
-                    letter-spacing: 0.1rem;
-                    overflow-y: hidden;
-                }
-            }
-    
-            .div-hr {
-                hr {
-                    color: white;
-                    height: 2px;
-                    width: 100%;
-                }
-            }
-    
-            .shows {
-                .div-shows-one {
-                    margin: 0%;
-                    padding: 0%;
-                    .div-hr-large {
-                        margin: 0%;
-                        padding: 0%;
-                        margin-bottom: 1%;
-                        margin-top: 1%;
-    
-                        hr {
-                            margin: 0%;
-                            padding: 0%;
-                            background-color: white;
-                            height: 2px;
-                            width: 100%;
-                        }
-                    }
-    
-                    .div-text-shows {
-                        padding: 0%;
-                        margin: 0%;
-                        margin-left: 2%;
-                        width: 50%;
-                        height: fit-content;
-    
-                        h2 {
-                            color: rgb(164, 164, 164);
-                            overflow-y: hidden;
-                            font-family: $fontexto;
-                            font-weight: 500;
-                            font-size: 20px;
-                        }
-    
-                        p {
-                            color: rgb(164, 164, 164);
-                            font-family: $fontexto;
-                        }
-                    }
-    
-                    .div-date-shows {
-                        width: fit-content;
-                        height: fit-content;
-                        padding: 0%;
-                        margin: 0%;
-                        color: rgb(164, 164, 164);
-                        font-family: $fontexto;
-                        .div-date-shows-two {
-                            width: fit-content;
-                            height: fit-content;
-                            p {
-                                margin: 0%;
-                                padding: 0%;
-                                width: fit-content;
-                                height: fit-content;
-                            }
-                        }
-    
-                    }
-                }
-            }
+// Item show
+.show {
+    align-items: center;
+    margin-top: 1%;
+    &__title {
+        color: rgb(164, 164, 164);
+        font-family: $fontexto;
+        font-weight: 500;
+        font-size: 20px;
+        overflow-y: hidden;
+    }
+
+    &__location,
+    &__city {
+        color: rgb(164, 164, 164);
+        font-family: $fontexto;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 10px;
+        text-align: right;
+    }
+
+    &__date {
+        color: rgb(164, 164, 164);
+        font-family: $fontexto;
+    }
+
+    &__action {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .show {
+
+        &__info {
+            align-items: start;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        &__action {
+            justify-content: center;
+        }
+    }
+
+    .shows {
+        &__title h1 {
+            font-family: $fontexto;
         }
     }
 }
