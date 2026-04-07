@@ -87,6 +87,14 @@ body {
     .shows {
         &__title h1 {
             font-family: $fontexto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .show {
+        &__title {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
     }
 }

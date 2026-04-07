@@ -1,46 +1,55 @@
-footer{
+// Footer base
+.footer {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    .div-hr{
-        hr{
-          background-color: white;
-            height: 2px;
-            width: 90%;
+}
+
+// Línea
+.footer__divider {
+    display: flex;
+    justify-content: center;
+
+    hr {
+        width: 90%;
+        height: 2px;
+        background-color: white;
+        margin: 0;
+    }
+}
+
+// Redes
+.footer__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 10vh;
+
+    a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    i {
+        font-size: 1.5rem;
+        color: white;
+        transition: 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
-    .row{
-        width: 100%;
-        margin: 0%;
-        padding: 0%;
-        overflow-x: hidden;
-        .links-footer{
-            margin: 0;
-            padding: 0;
-            height: 10vh;
-            a{
-                width: 100%;
-                list-style: none;
-                text-decoration: none;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 2%;
-                margin-top: 1%;
-                i{
-                    font-size: 1.5rem;
-                    display: flex;
-                    margin-left: 2%;
-                    margin-right: 2%;
-                    list-style: none;
-                    text-decoration: none;
-                    color: white;
-                    overflow-y: hidden;
-                }
-                i:hover{
-                   font-size: 1.6rem;
-                }
-            }
-        }
-    }
-    }
+}
+
+// Copy
+.footer__copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

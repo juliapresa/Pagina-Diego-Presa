@@ -235,49 +235,52 @@
     margin: 0 10px;
   }
 }
-footer {
+.footer {
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
-footer .div-hr hr {
-  background-color: white;
-  height: 2px;
-  width: 90%;
-}
-footer .row {
-  width: 100%;
-  margin: 0%;
-  padding: 0%;
-  overflow-x: hidden;
-}
-footer .row .links-footer {
-  margin: 0;
-  padding: 0;
-  height: 10vh;
-}
-footer .row .links-footer a {
-  width: 100%;
-  list-style: none;
-  text-decoration: none;
+
+.footer__divider {
   display: flex;
   justify-content: center;
-  margin-bottom: 2%;
-  margin-top: 1%;
 }
-footer .row .links-footer a i {
-  font-size: 1.5rem;
+.footer__divider hr {
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  margin: 0;
+}
+
+.footer__social {
   display: flex;
-  margin-left: 2%;
-  margin-right: 2%;
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  overflow-y: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 10vh;
 }
-footer .row .links-footer a i:hover {
-  font-size: 1.6rem;
+.footer__social a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.footer__social i {
+  font-size: 1.5rem;
+  color: white;
+  transition: 0.2s;
+}
+.footer__social i:hover {
+  transform: scale(1.1);
+}
+
+.footer__copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 body {
@@ -349,6 +352,12 @@ body {
   }
   .shows__title h1 {
     font-family: "JetBrains Mono", monospace;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .show__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 body #main-contact .div-title h1 {
