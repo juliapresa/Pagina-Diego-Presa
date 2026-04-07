@@ -1,77 +1,83 @@
 body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
-    #main-contact {
+.contact {
 
-        .div-title {
-            h1{
-                font-family: $fontitulo;
-                font-size: 28px;
-                font-weight: 400;
-                color: white;
-                letter-spacing: 0.1rem;
-                overflow-y: hidden;
-            }
+    &__title h1 {
+        font-family: $fontitulo;
+        font-size: 28px;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 0.1rem;
+        overflow-y: hidden;
+    }
+
+    &__divider hr{
+        color: white;
+        height: 2px;
+        width: 100%;
+    }
+
+    &__content {
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-right: 2%;
+        display: flex;
+    }
+
+    &__image {
+        width: 50%;
+        img {
+            padding-left: 2%;
+            height: 370px;
+            width: 550px;
         }
-        .div-hr{
-            hr{
-                color: white;
-                height: 2px;
-                width: 100%;
-            }
+    }
+
+    &__form {
+        align-items: center;
+        background-color: black;
+        width: 50%;
+        padding-left: 2%;
+    }
+    
+    &__field {
+        width: 75%;
+        font-family: $fontexto;
+        color: white;
+
+        .form-control {
+            background-color: black;
+            color: white;
         }
+    }
 
-        .div-form {
-            margin-bottom: 5%;
-            margin-top: 5%;
-            margin-right: 2%;
-
-            .mailto{
-                opacity: 0;
-            }
-            .div-img {
-                width: 50%;
-                img {
-                    padding-left: 2%;
-                    height: 370px;
-                    width: 550px;
-                }
-            }
-
-            .form {
-                align-items: center;
-                background-color: black;
-                width: 50%;
-                padding-left: 2%;
-                .form-content {
-                    width: 75%;
-                    font-family: $fontexto;
-                    color: white;
-
-                    .form-control{
-                        background-color: black;
-                        color: white;
-                    }
-                }
-
-                .button {
-                    background-color: black;
-                    border: 1px solid white;
-                    color: white;
-                    font-family: $fontexto;
-                }
-            }
-
+    &__button {
+        background-color: black;
+        border: 1px solid white;
+        color: white;
+        font-family: $fontexto;
+        &:hover{
+            background-color: white;
+            color: black;
         }
-        .div-mail{
+    }
+    
+    &__mail {
+        display: flex;
+        justify-content: center;
+        overflow-y: hidden;
+        a {
+            font-size: xx-large;
             overflow-y: hidden;
-            a{
-                font-size: xx-large;
-                overflow-y: hidden;
-                text-decoration: none;
-                color: rgb(194, 190, 190);
-                margin-bottom: 3%;
-            }
-            a:hover{
+            text-decoration: none;
+            color: rgb(194, 190, 190);
+            margin-bottom: 3%;
+            &:hover {
                 overflow-y: hidden;
                 text-decoration: none;
                 color: white;
@@ -81,91 +87,51 @@ body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px){
-    body {
-       overflow-x: hidden;
-        #main-contact {
+
+    .contact {
+        width: 100%;
+        overflow-x: hidden;
+        
+        &__title {
+            margin-top: 2rem;
+        }
+
+        &__content {
             width: 100%;
+            margin: 0%;
+            padding: 0%;
             overflow-x: hidden;
-            .div-title {
-                display: flex;
-                justify-content: center;
-                h1{
-                    font-family: $fontexto;
-                    font-size: 28px;
-                    font-weight: 400;
-                    color: white;
-                    letter-spacing: 0.1rem;
-                    overflow-y: hidden;
-                }
+            flex-direction: column;
+        }
+
+        &__image {
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+            img {
+                padding: 0;
+                height: 270px;
+                width: 345px;
             }
-            .div-hr{
-                hr{
-                    color: white;
-                    height: 2px;
-                    width: 100%;
-                }
-            }
-            .div-form {
-                width: 100%;
-                margin: 0%;
-                padding: 0%;
-                overflow-x: hidden;
-                margin-bottom: 5%;
-                margin-top: 5%;
-                margin-right: 2%;
-                display: flex;
-                flex-direction: column;
-                .div-img {
-                    width: 100%;
-                    margin-bottom: 5%;
-                    justify-content: center;
-                    img {
-                        padding: 0;
-                        height: 270px;
-                        width: 345px;
-                    }
-                }
+        }
+
+        &__form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        &__field {
+            padding: 0;
+            width: 95%;
+        }
     
-                .form {
-                    width: 100%;
-                    align-items: center;
-                    background-color: black;
-                    display: flex;
-                    justify-content: center;
-                    .form-content {
-                        padding: 0;
-                        width: 95%;
-                        font-family: $fontexto;
-                        color: white;
-                        .form-control{
-                            background-color: black;
-                            color: white;
-                        }
-                    }
-    
-                    .button {
-                        background-color: black;
-                        border: 1px solid white;
-                        color: white;
-                        font-family: $fontexto;
-                    }
-                }
-    
-            }
-            .div-mail{
-                overflow-y: hidden;
-                a{
-                    font-size: medium;
-                    overflow-y: hidden;
-                    text-decoration: none;
-                    color: rgb(194, 190, 190);
-                }
-                a:hover{
-                    overflow-y: hidden;
-                    text-decoration: none;
-                    color: white;
-                }
-            }
+        &__mail a{
+            font-size: x-large;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+                
         }
     }
 }
