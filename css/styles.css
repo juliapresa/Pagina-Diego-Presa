@@ -239,7 +239,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  margin-top: 1%;
+  margin-top: 2rem;
 }
 
 .footer__divider {
@@ -291,7 +291,7 @@ body {
   overflow-x: hidden;
 }
 
-#main-shows {
+.main-shows {
   height: 60vh;
 }
 
@@ -1260,7 +1260,8 @@ body {
   padding: 0%;
   overflow-x: hidden;
 }
-body #main-press .div-title h1 {
+
+.press__title h1 {
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
@@ -1268,59 +1269,46 @@ body #main-press .div-title h1 {
   letter-spacing: 0.1rem;
   overflow-y: hidden;
 }
-body #main-press .div-hr hr {
+.press__divider hr {
   color: white;
   height: 2px;
   width: 100%;
 }
-body #main-press .div-release {
+.press__item {
   margin: 0%;
   padding: 0%;
   text-align: center;
   margin-top: 5%;
 }
-body #main-press .div-release .div-button {
+.press__image {
+  margin: 0%;
+  padding: 0%;
+  align-items: center;
+  text-align: center;
+}
+.press__image img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+.press__action {
   margin: 0%;
   padding: 0%;
 }
-body #main-press .div-release .div-button a {
+.press__action a {
   text-decoration: none;
   border: none;
   background-color: black;
   color: white;
   font-family: "JetBrains Mono", monospace;
 }
-body #main-press .div-release .div-button a:hover {
+.press__action a:hover {
   text-decoration: underline;
 }
-body #main-press .div-release .release {
-  margin: 0%;
-  padding: 0%;
-  align-items: center;
-  text-align: center;
-}
-body #main-press .div-release .release img {
-  width: 80%;
-  height: 100%;
-  object-fit: cover;
-}
+
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  body .div-title {
-    display: flex;
-    justify-content: center;
-  }
-  body .div-title h1 {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 28px;
-    font-weight: 400;
-    color: white;
-    letter-spacing: 0.1rem;
-    overflow-y: hidden;
-  }
-  body .div-hr hr {
-    color: white;
-    height: 2px;
-    width: 100%;
+  .press__title {
+    margin-top: 2rem;
   }
 }
 

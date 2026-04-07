@@ -3,82 +3,67 @@ body{
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+}
 
-    #main-press{
+.press{
 
-        .div-title {
-            h1 {
-                font-family: $fontitulo;
-                font-size: 28px;
-                font-weight: 400;
-                color: white;
-                letter-spacing: 0.1rem;
-                overflow-y: hidden;
-            }
-        }
+    &__title h1 {
+        font-family: $fontitulo;
+        font-size: 28px;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 0.1rem;
+        overflow-y: hidden;
+    }
     
-        .div-hr {
-            hr {
-                color: white;
-                height: 2px;
-                width: 100%;
-            }
-        }
-
-        .div-release{
-            margin: 0%;
-            padding: 0%;
-            text-align: center;
-            margin-top: 5%;
-
-            .div-button{
-                margin: 0%;
-                padding: 0%;
-
-                a {
-                    text-decoration: none;
-                    border: none;
-                    background-color: black;
-                    color: white;
-                    font-family: $fontexto;
-                }
-                a:hover{
-                    text-decoration: underline;
-                }
-            }
-            .release{
-                margin: 0%;
-                padding: 0%;
-                align-items: center;
-                text-align: center;
-                img{
-                    width: 80%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+    &__divider hr {
+        color: white;
+        height: 2px;
+        width: 100%;
+    }
+    
+    &__item{
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    &__image{
+        margin: 0%;
+        padding: 0%;
+        align-items: center;
+        text-align: center;
+        img{
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
         }
     }
-    @media screen and (min-width: 0px) and (max-width: 768px){
 
-        .div-title {
-            display: flex;
-            justify-content: center;
-            h1{
-                font-family: $fontexto;
-                font-size: 28px;
-                font-weight: 400;
-                color: white;
-                letter-spacing: 0.1rem;
-                overflow-y: hidden;
-            }
+    &__action{
+        margin: 0%;
+        padding: 0%;
+        a {
+            text-decoration: none;
+            border: none;
+            background-color: black;
+            color: white;
+            font-family: $fontexto;
         }
-        .div-hr{
-            hr{
-                color: white;
-                height: 2px;
-                width: 100%;
-            }
+        a:hover{
+            text-decoration: underline;
         }
     }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+
+    .press{
+        &__title {
+            margin-top: 2rem;
+        }
+    }
+        
+
 }

@@ -6,12 +6,11 @@ body {
     overflow-x: hidden;
 }
 
-// Main
-#main-shows {
+
+.main-shows {
     height: 60vh;
 }
 
-// Header
 .shows {
 
     &__title h1 {
