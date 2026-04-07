@@ -239,6 +239,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  margin-top: 1%;
 }
 
 .footer__divider {
@@ -1107,7 +1108,8 @@ body {
   padding: 0%;
   overflow-x: hidden;
 }
-body #main-news .div-title h1 {
+
+.news-page__title h1 {
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
@@ -1115,51 +1117,42 @@ body #main-news .div-title h1 {
   letter-spacing: 0.1rem;
   overflow-y: hidden;
 }
-body #main-news .div-hr hr {
+.news-page__divider hr {
   color: white;
   height: 2px;
   width: 100%;
 }
-body #main-news .news .div-news {
+
+.news__item {
   margin: 0%;
   padding: 0%;
-  margin-top: 4%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-body #main-news .news .div-news .div-hr-large {
-  margin: 0%;
-  padding: 0%;
-  margin-bottom: 3%;
-  margin-top: 3%;
-}
-body #main-news .news .div-news .div-hr-large hr {
-  margin: 0%;
-  padding: 0%;
-  background-color: white;
-  height: 2px;
-  width: 100%;
-}
-body #main-news .news .div-news .div-img-news {
+.news__images {
   display: flex;
   justify-content: center;
   margin: 0%;
   width: 95vw;
 }
-body #main-news .news .div-news .div-img-news .img-news {
-  width: 30vw;
+.news__img {
+  width: 25vw;
   height: auto;
 }
-body #main-news .news .div-news .div-img-news .img-news-two {
-  width: 30vw;
+.news__img--secondary {
+  width: 25vw;
   height: auto;
   margin-left: 2%;
 }
-body #main-news .news .div-news .div-text-news {
+.news__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 45vw;
 }
-body #main-news .news .div-news .div-text-news h2 {
+.news__title {
   color: rgb(164, 164, 164);
   overflow-y: hidden;
   font-family: "JetBrains Mono", monospace;
@@ -1167,14 +1160,14 @@ body #main-news .news .div-news .div-text-news h2 {
   text-align: center;
   margin-top: 2%;
 }
-body #main-news .news .div-news .div-text-news h3 {
+.news__subtitle {
   text-align: center;
   overflow-y: hidden;
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
   font-size: 16px;
 }
-body #main-news .news .div-news .div-text-news p {
+.news__text {
   text-align: center;
   width: 80%;
   overflow-y: hidden;
@@ -1183,11 +1176,13 @@ body #main-news .news .div-news .div-text-news p {
   margin-top: 1%;
   font-size: 16px;
 }
-body #main-news .news .div-news .div-text-news .div-i-news {
+.news__links {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: fit-content;
 }
-body #main-news .news .div-news .div-text-news .div-i-news a {
+.news__links a {
   display: flex;
   justify-content: center;
   width: 20%;
@@ -1196,7 +1191,7 @@ body #main-news .news .div-news .div-text-news .div-i-news a {
   text-decoration: none;
   padding: 3%;
 }
-body #main-news .news .div-news .div-text-news .div-i-news a i {
+.news__links a i {
   font-size: 1.5rem;
   height: fit-content;
   display: flex;
@@ -1205,103 +1200,52 @@ body #main-news .news .div-news .div-text-news .div-i-news a i {
   color: white;
   overflow-y: hidden;
 }
-body #main-news .news .div-news .div-text-news .div-i-news a i:hover {
+.news__links a i:hover {
   font-size: 1.6rem;
+}
+.news__divider {
+  margin: 1% 0;
+}
+.news__divider hr {
+  background-color: white;
+  height: 2px;
+  width: 100%;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  body {
-    width: 100vw;
-    margin: 0%;
-    padding: 0%;
-    overflow-x: hidden;
+  .news-page__title h1 {
+    margin-top: 2rem;
   }
-  body main .div-title {
-    display: flex;
-    justify-content: center;
-  }
-  body main .div-title h1 {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 28px;
-    font-weight: 400;
-    color: white;
-    letter-spacing: 0.1rem;
-    overflow-y: hidden;
-  }
-  body main .div-hr hr {
-    color: white;
-    height: 2px;
-    width: 100%;
-  }
-  body main .news {
-    margin: 0%;
-    padding: 0%;
-    width: 100vw;
-  }
-  body main .news .div-news {
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body main .news .div-news .div-hr-large {
-    visibility: hidden;
-  }
-  body main .news .div-news .div-hr-large hr {
-    visibility: hidden;
-  }
-  body main .news .div-news .div-img-news {
-    display: flex;
+  .news__images {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;
+    align-items: start;
+    margin-left: 5%;
   }
-  body main .news .div-news .div-img-news .img-news {
-    width: 80vw;
-    height: auto;
+  .news__img {
+    width: 85vw;
     margin-bottom: 5%;
   }
-  body main .news .div-news .div-img-news .img-news-two {
-    width: 80vw;
-    height: auto;
+  .news__img--secondary {
+    width: 85vw;
     margin-left: 0%;
     margin: 0%;
   }
-  body main .news .div-news .div-img-news .img-news-three {
-    width: 80vw;
-    height: auto;
+  .news__content {
+    width: 90vw;
   }
-  body main .news .div-news .div-text-news {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 95vw;
-  }
-  body main .news .div-news .div-text-news h2 {
-    color: rgb(164, 164, 164);
-    overflow-y: hidden;
-    font-family: "JetBrains Mono", monospace;
-    margin-top: 2%;
+  .news__title {
     font-size: large;
-    text-align: center;
+    text-align: left;
   }
-  body main .news .div-news .div-text-news h3 {
-    color: rgb(164, 164, 164);
-    font-family: "JetBrains Mono", monospace;
+  .news__subtitle {
     margin: 0%;
     margin-bottom: 2%;
     font-size: large;
-    text-align: center;
+    text-align: left;
   }
-  body main .news .div-news .div-text-news p {
-    text-align: center;
-    width: 90%;
-    overflow-y: hidden;
-    color: rgb(164, 164, 164);
-    font-family: "JetBrains Mono", monospace;
+  .news__text {
+    text-align: left;
+    width: fit-content;
     font-size: medium;
   }
 }
