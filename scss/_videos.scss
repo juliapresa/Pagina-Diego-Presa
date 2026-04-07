@@ -3,38 +3,43 @@ body{
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+}
+
+.videos{
     
-    #main-video{
-        .div-title {
-            h1{
-                margin: 0%;
-                font-family: $fontitulo;
-                font-size: 28px;
-                font-weight: 400;
-                color: white;
-                letter-spacing: 0.1rem;
-                overflow-y: hidden;
-            }
-        }
-        .div-hr{
-            hr{
-              background-color: white;
-                height: 2px;
-                width: 100%;
-            }
-        }
-        .section-video{
-            margin-top: 4%;
-            padding-left: 8%;
-            padding-right: 8%;
+    &__title h1 {
+        margin: 0%;
+        font-family: $fontitulo;
+        font-size: 28px;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 0.1rem;
+        overflow-y: hidden;
+    }
+    
+    &__divider hr{
+        background-color: white;
+        height: 2px;
+        width: 100%;
+    }
+    
+    &__grid{
+        margin-top: 2rem;
+        padding-left: 8%;
+        padding-right: 8%;
            
-        }
     }
 }
 @media screen and (min-width: 0px) and (max-width: 768px){
-   body{
-        .section-video{
-            margin-top: 4%;
+    
+    .videos{
+
+        &__title h1{
+            margin-top: 2rem;
+        }
+
+        &__grid{
+            margin-top: 2rem;
             padding-left: 0%;
             padding-right: 0%;
            

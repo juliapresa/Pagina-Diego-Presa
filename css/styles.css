@@ -1223,7 +1223,8 @@ body {
   padding: 0%;
   overflow-x: hidden;
 }
-body #main-video .div-title h1 {
+
+.videos__title h1 {
   margin: 0%;
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
@@ -1232,20 +1233,23 @@ body #main-video .div-title h1 {
   letter-spacing: 0.1rem;
   overflow-y: hidden;
 }
-body #main-video .div-hr hr {
+.videos__divider hr {
   background-color: white;
   height: 2px;
   width: 100%;
 }
-body #main-video .section-video {
-  margin-top: 4%;
+.videos__grid {
+  margin-top: 2rem;
   padding-left: 8%;
   padding-right: 8%;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  body .section-video {
-    margin-top: 4%;
+  .videos__title h1 {
+    margin-top: 2rem;
+  }
+  .videos__grid {
+    margin-top: 2rem;
     padding-left: 0%;
     padding-right: 0%;
   }
