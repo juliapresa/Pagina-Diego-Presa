@@ -564,6 +564,7 @@ body {
 }
 .new__content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -791,7 +792,6 @@ body {
     align-items: center;
     margin: 0%;
     padding: 0%;
-    width: 100vw;
   }
   .new__content h3 {
     margin-top: 2%;
