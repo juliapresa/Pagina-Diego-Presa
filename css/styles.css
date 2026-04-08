@@ -484,95 +484,107 @@ body {
   overflow-x: hidden;
   background-color: black;
 }
-body .main-index {
+
+.index {
   width: 100vw;
+  overflow-x: hidden;
 }
-body .main-index .biography {
-  margin: 0%;
-  padding: 0%;
-  margin-top: 3%;
-  margin-bottom: 0%;
-  width: 100%;
-  justify-content: center;
+.index__header {
+  margin-top: 5rem;
 }
-body .main-index .biography .div-text {
-  margin: 0%;
-  padding: 0%;
-  width: 80%;
-}
-body .main-index .biography .div-text p {
-  letter-spacing: 0.1rem;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 17px;
-  text-indent: 0cqmax;
-  color: rgb(164, 164, 164);
-  text-align: justify;
-}
-body .main-index .div-title {
-  margin-top: 5%;
-}
-body .main-index .div-title h1, body .main-index .div-title h2 {
+.index__header h1, .index__header h2 {
   font-family: "JetBrains Mono", monospace;
   font-size: 23px;
   font-weight: 400;
   color: white;
   letter-spacing: 0.1rem;
   overflow-y: hidden;
-  margin-left: 2%;
 }
-body .main-index .div-hr hr {
+.index__divider hr {
   color: white;
   height: 2px;
   width: 100%;
 }
-body .main-index .news {
-  margin-top: 2%;
-  margin-bottom: 2%;
+.index__button {
+  display: flex;
+  justify-content: end;
+  margin-top: 5rem;
+  padding-right: 7rem;
 }
-body .main-index .news .div-news {
+.index__button button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.bio {
+  margin: 0%;
+  padding: 0%;
+  margin-top: 2rem;
+  width: 100%;
+}
+.bio p {
+  letter-spacing: 0.1rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 17px;
+  text-indent: 0cqmax;
+  color: rgb(164, 164, 164);
+  text-align: justify;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.new {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.new__item {
   margin: 0%;
   padding: 0%;
   display: flex;
-  flex-direction: row;
 }
-body .main-index .news .div-news .div-img-news {
+.new__images {
+  display: flex;
+  justify-content: center;
   height: fit-content;
   width: 100vw;
   overflow-y: hidden;
   margin-bottom: 2%;
 }
-body .main-index .news .div-news .div-img-news .img-news {
+.new__img {
   width: auto;
   height: 45vh;
 }
-body .main-index .news .div-news .div-img-news .img-news-two {
+.new__img--secondary {
   width: auto;
   height: 45vh;
   margin-left: 2%;
 }
-body .main-index .news .div-news .div-img-news .img-news-large {
-  width: 70vw;
-  height: auto;
-}
-body .main-index .news .div-news .div-text-news {
+.new__content {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-body .main-index .news .div-news .div-text-news h3 {
+.new__content h3 {
   color: rgb(164, 164, 164);
   overflow-y: hidden;
   font-family: "JetBrains Mono", monospace;
   font-size: 18px;
+  margin-top: 2rem;
 }
-body .main-index .news .div-news .div-text-news p {
+.new__content p {
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
 }
-body .main-index .news .div-news .div-links-news {
+.new__links {
+  display: flex;
+  justify-content: center;
   width: 40%;
   height: fit-content;
 }
-body .main-index .news .div-news .div-links-news a {
+.new__links a {
   display: flex;
   justify-content: center;
   width: 20%;
@@ -581,7 +593,7 @@ body .main-index .news .div-news .div-links-news a {
   text-decoration: none;
   margin-top: 2%;
 }
-body .main-index .news .div-news .div-links-news a i {
+.new__links a i {
   font-size: 1.5rem;
   display: flex;
   list-style: none;
@@ -589,116 +601,102 @@ body .main-index .news .div-news .div-links-news a i {
   color: white;
   overflow-y: hidden;
 }
-body .main-index .news .div-news .div-links-news a i:hover {
+.new__links a i:hover {
   font-size: 1.8rem;
 }
-body .main-index .news .div-news .div-button-news {
-  padding-right: 5%;
-}
-body .main-index .news .div-news .div-button-news button {
-  border: none;
-  background-color: black;
-  color: white;
-  font-family: "JetBrains Mono", monospace;
-}
-body .main-index .news .div-news .div-hr-large {
+.new__divider {
   margin: 0%;
   padding: 0%;
   margin-bottom: 1%;
   margin-top: 1%;
 }
-body .main-index .news .div-news .div-hr-large hr {
+.new__divider hr {
   margin: 0%;
   padding: 0%;
   background-color: white;
   height: 2px;
   width: 100%;
 }
-body .main-index .div-records {
+
+.records {
+  display: flex;
+  justify-content: center;
+}
+.records__item {
   margin: 0%;
   padding: 0%;
   margin-top: 5%;
   margin-bottom: 5%;
-  height: 60vh;
   width: 30vw;
 }
-body .main-index .div-records a {
+.records__item a {
   text-decoration: none;
 }
-body .main-index .div-records a img {
+.records__item a img {
   height: 45vh;
   width: auto;
   display: flex;
   justify-content: space-between;
+  transition: transform 0.2s ease;
 }
-body .main-index .div-records a img:hover {
-  width: auto;
-  height: 48vh;
+.records__item a img:hover {
+  transform: scale(1.05);
 }
-body .main-index .div-records a h3 {
+.records__item a h3 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  color: white;
+  text-align: start;
+  color: rgb(216, 213, 213);
   font-family: "JetBrains Mono", monospace;
   font-size: 17px;
   margin: 0%;
-  margin-top: 1%;
+  margin-top: 3%;
 }
-body .main-index .div-records a h3:hover {
+.records__item a h3:hover {
   color: rgb(138, 30, 30);
 }
-body .main-index .div-records .div-text-music h4, body .main-index .div-records .div-text-music h5 {
+.records__item a h4 {
   overflow-y: hidden;
-  color: white;
+  color: rgb(216, 213, 213);
   margin: 0%;
   margin-top: 1%;
   font-family: "JetBrains Mono", monospace;
   font-size: 15px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: start;
 }
-body .main-index .div-button-music {
-  padding-right: 5%;
+
+.book {
+  display: flex;
 }
-body .main-index .div-button-music button {
-  border: none;
-  background-color: black;
-  color: white;
-  font-family: "JetBrains Mono", monospace;
-}
-body .main-index .videos .div-button-videos {
-  padding-right: 5%;
-}
-body .main-index .videos .div-button-videos button {
-  border: none;
-  background-color: black;
-  color: white;
-  font-family: "JetBrains Mono", monospace;
-}
-body .main-index .book .div-book {
+.book__item {
+  display: flex;
   margin: 0%;
   padding: 0%;
 }
-body .main-index .book .div-book img {
-  width: auto;
-  height: 70vh;
-  margin-left: 10vw;
-  object-fit: contain;
-}
-body .main-index .book .div-book .div-text-book h3 {
+.book__item h3 {
   color: rgb(164, 164, 164);
   overflow-y: hidden;
   font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
 }
-body .main-index .book .div-book .div-text-book p {
+.book__item p {
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
+  font-size: 17px;
 }
-body .main-index .galery {
+.book__image {
+  padding-left: 10vw;
+}
+.book__image img {
+  width: auto;
+  height: 70vh;
+}
+
+.galery {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -707,22 +705,22 @@ body .main-index .galery {
   grid-gap: 20px;
   padding: 100px 0;
 }
-body .main-index .galery .box {
+.galery__box {
   overflow: hidden;
 }
-body .main-index .galery .box img {
+.galery__box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
-body .main-index .galery .box img:hover {
+.galery__box img:hover {
   transform: scale(1.07);
 }
-body .main-index .galery .box:nth-child(1) {
+.galery__box:nth-child(1) {
   grid-column-start: span 2;
 }
-body .main-index .galery .box:nth-child(4) {
+.galery__box:nth-child(4) {
   grid-column-start: span 2;
 }
 
@@ -732,7 +730,7 @@ body .main-index .galery .box:nth-child(4) {
     overflow-x: hidden;
     background-color: black;
   }
-  body .main-index {
+  .index {
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
@@ -740,95 +738,53 @@ body .main-index .galery .box:nth-child(4) {
     margin-bottom: 2%;
     width: 100%;
   }
-  body .main-index .biography .div-text {
+  .index__header {
+    margin-top: 2rem;
+    overflow-x: hidden;
+    justify-content: start;
+  }
+  .index__button {
+    margin-top: 2rem;
+    margin-bottom: 2%;
+    padding-right: 1rem;
+  }
+  .bio {
     margin: 0%;
     padding: 0%;
-    width: 90%;
-    height: 50%;
     overflow-x: hidden;
   }
-  body .main-index .biography .div-text p {
-    font-family: "JetBrains Mono", monospace;
+  .bio p {
     font-size: 13px;
-    color: rgb(164, 164, 164);
     letter-spacing: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  body .main-index .section-title {
-    margin-top: 10%;
-  }
-  body .main-index .section-title .div-title {
-    overflow-x: hidden;
-    margin-top: 5%;
-    justify-content: center;
-    align-items: center;
-  }
-  body .main-index .section-title .div-title h2 {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 23px;
-    font-weight: 400;
-    color: white;
-    letter-spacing: 0.1rem;
-    overflow-y: hidden;
-  }
-  body .main-index .news {
+  .new {
     width: 100vw;
     margin: 0%;
     padding: 0%;
   }
-  body .main-index .news .div-news {
-    margin: 0%;
-    padding: 0%;
+  .new__item {
     width: 100vw;
   }
-  body .main-index .news .div-news .div-img-news {
-    width: 100vw;
-    height: fit-content;
-  }
-  body .main-index .news .div-news .div-img-news-two {
+  .new__images {
     flex-direction: column;
-    height: fit-content;
     align-items: center;
     width: 100vw;
     margin: 0%;
     padding: 0%;
-    overflow-y: hidden;
-    margin-bottom: 2%;
   }
-  body .main-index .news .div-news .div-img-news-two .img-news {
+  .new__img {
     width: 80vw;
     height: auto;
   }
-  body .main-index .news .div-news .div-img-news-two .img-news-two {
+  .new__img--secondary {
     width: 80vw;
     height: auto;
     margin: 0%;
     margin-top: 2%;
   }
-  body .main-index .news .div-news .div-img-news-two .img-news-large {
-    width: 95vw;
-    height: auto;
-  }
-  body .main-index .news .div-news .div-hr-large {
-    margin: 0%;
-    padding: 0%;
-    margin-bottom: 1%;
-    margin-top: 1%;
-  }
-  body .main-index .news .div-news .div-hr-large hr {
-    margin: 0%;
-    padding: 0%;
-    background-color: white;
-    height: 2px;
-    width: 100%;
-  }
-  body .main-index .news .div-news .div-img-news {
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body .main-index .news .div-news .div-text-news {
+  .new__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -837,135 +793,81 @@ body .main-index .galery .box:nth-child(4) {
     padding: 0%;
     width: 100vw;
   }
-  body .main-index .news .div-news .div-text-news h3 {
-    color: rgb(164, 164, 164);
-    overflow-y: hidden;
-    font-family: "JetBrains Mono", monospace;
+  .new__content h3 {
     margin-top: 2%;
     text-align: center;
-    font-size: large;
+    font-size: 16px;
   }
-  body .main-index .news .div-news .div-text-news p {
-    color: rgb(164, 164, 164);
-    font-family: "JetBrains Mono", monospace;
+  .new__content p {
     margin: 0%;
     margin-bottom: 2%;
     text-align: center;
   }
-  body .main-index .news .div-news .div-button-news button {
-    border: none;
-    background-color: black;
-    color: white;
-    font-family: "JetBrains Mono", monospace;
-    margin-top: 20%;
+  .new__divider {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
-  body .main-index .videos {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-  body .main-index .videos .div-button-videos button {
-    border: none;
-    background-color: black;
-    color: white;
-    font-family: "JetBrains Mono", monospace;
-  }
-  body .main-index .div-records {
+  .records {
+    flex-direction: column;
     margin: 0%;
     padding: 0%;
     margin-top: 3%;
     margin-bottom: 5%;
-    width: 100%;
-    height: auto;
   }
-  body .main-index .div-records a {
-    text-decoration: none;
+  .records__item {
+    width: 100vw;
   }
-  body .main-index .div-records a img {
+  .records a img {
     width: 300px;
     height: 300px;
-    display: flex;
-    justify-content: space-between;
   }
-  body .main-index .div-records a img:hover {
-    width: 320px;
-    height: 320px;
+  .records a h3 {
+    margin-top: 3%;
+    font-size: 16px;
+    text-align: start;
   }
-  body .main-index .div-records a h3 {
-    margin: 0%;
-    margin-top: 1%;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
+  .book {
+    margin-left: 1rem;
   }
-  body .main-index .div-records a h3:hover {
-    color: rgb(138, 30, 30);
-  }
-  body .main-index .div-records .div-text-music h4, body .main-index .div-records .div-text-music h5 {
-    color: white;
-    margin: 0%;
-    margin-top: 1%;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  body .main-index .div-button-music button {
-    border: none;
-    background-color: black;
-    color: white;
-    font-family: "JetBrains Mono", monospace;
-  }
-  body .main-index .book .div-book {
+  .book__item {
     margin: 0%;
     padding: 0%;
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  body .main-index .book .div-book .div-img-book {
+  .book__image {
     padding: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  body .main-index .book .div-book .div-img-book img {
-    width: 400px;
+  .book__image img {
+    width: auto;
     height: 370px;
     margin: 0%;
     padding: 0%;
-    object-fit: contain;
   }
-  body .main-index .book .div-book .div-text-book {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .book__content {
+    padding: 0%;
   }
-  body .main-index .book .div-book .div-text-book h3 {
+  .book__content h3 {
     color: rgb(164, 164, 164);
     overflow-y: hidden;
     font-family: "JetBrains Mono", monospace;
     margin-top: 2%;
+    font-size: 16px;
   }
-  body .main-index .book .div-book .div-text-book p {
+  .book__content p {
     color: rgb(164, 164, 164);
     font-family: "JetBrains Mono", monospace;
     margin: 0%;
     margin-bottom: 2%;
+    font-size: 15px;
   }
-  body .main-index .galery {
+  .galery {
     padding: 30px;
     grid-template-columns: repeat(1, 1fr);
   }
-  body .main-index .galery .box:nth-child(1) {
+  .galery__box:nth-child(1) {
     grid-column-start: span 1;
   }
-  body .main-index .galery .box:nth-child(4) {
+  .galery__box:nth-child(4) {
     grid-column-start: span 1;
   }
 }

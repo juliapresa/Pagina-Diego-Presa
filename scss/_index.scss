@@ -2,269 +2,257 @@ body {
     width: 100vw;
     overflow-x: hidden;
     background-color: black;
+}
 
-    .main-index {
-        width: 100vw;
-        .biography {
-            margin: 0%;
-            padding: 0%;
-            margin-top: 3%;
-            margin-bottom: 0%;
-            width: 100%;
-            justify-content: center;
-
-            .div-text {
-                margin: 0%;
-                padding: 0%;
-                width: 80%;
-
-                p {
-                    letter-spacing: 0.1rem;
-                    font-family: $fontexto;
-                    font-size: 17px;
-                    text-indent: 0cqmax;
-                    color: rgb(164, 164, 164);
-                    text-align: justify;
-                }
-            }
-        }
-
-        .div-title {
-            margin-top: 5%;
-            h1, h2 {
-                font-family: $fontexto;
-                font-size: 23px;
-                font-weight: 400;
-                color: white;
-                letter-spacing: 0.1rem;
-                overflow-y: hidden;
-                margin-left: 2%;
-            }
-        }
-
-        .div-hr {
-            hr {
-                color: white;
-                height: 2px;
-                width: 100%;
-            }
-        }
-
-        .news {
-            margin-top: 2%;
-            margin-bottom: 2%;
-            .div-news {
-                margin: 0%;
-                padding: 0%;
-                display: flex;
-                flex-direction: row;
-                .div-img-news{
-                   height: fit-content;
-                   width: 100vw;
-                   overflow-y: hidden;
-                   margin-bottom: 2%;
-                   .img-news{
-                    width: auto;
-                    height: 45vh;
-                    }
-                    .img-news-two{
-                        width: auto;
-                        height: 45vh;
-                        margin-left: 2%;
-                    }
-                    .img-news-large{
-                        width: 70vw;
-                        height: auto;
-                    }
-                }
-                .div-text-news {
-                    display: flex;
-                    justify-content: center;
-                    h3 {
-                        color: rgb(164, 164, 164);
-                        overflow-y: hidden;
-                        font-family: $fontexto;
-                        font-size: 18px;
-                    }
-
-                    p {
-                        color: rgb(164, 164, 164);
-                        font-family: $fontexto;
-                    }
-                }
-                .div-links-news {
-                    width: 40%;
-                    height: fit-content;
-                    a {
-                        display: flex;
-                        justify-content: center;
-                        width: 20%;
-                        height: 5vh;
-                        list-style: none;
-                        text-decoration: none;
-                        margin-top: 2%;
-                        i {
-                            font-size: 1.5rem;
-                            display: flex;
-                            list-style: none;
-                            text-decoration: none;
-                            color: white;
-                            overflow-y: hidden;
-                        }
-                        i:hover{
-                           font-size: 1.8rem;
-                        }
-                    }
-                }
-                .div-button-news {
-                    padding-right: 5%;
-                    button {
-                        border: none;
-                        background-color: black;
-                        color: white;
-                        font-family: $fontexto;
-                    }
-                }
-                .div-hr-large {
-                    margin: 0%;
-                    padding: 0%;
-                    margin-bottom: 1%;
-                    margin-top: 1%;
-
-                    hr {
-                        margin: 0%;
-                        padding: 0%;
-                        background-color: white;
-                        height: 2px;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-
-        .div-records {
-            margin: 0%;
-            padding: 0%;
-            margin-top: 5%;
-            margin-bottom: 5%;
-            height: 60vh;
-            width: 30vw;
-            a {
-                text-decoration: none;
-                img {
-                    height: 45vh;
-                    width: auto;
-                    display: flex;
-                    justify-content: space-between;
-                }
-    
-                img:hover {
-                    width: auto;
-                    height: 48vh;
-                }
-                h3 {
-                    overflow: hidden;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    text-align: center;
-                    color: white;
-                    font-family: $fontexto;
-                    font-size: 17px;
-                    margin: 0%;
-                    margin-top: 1%;
-                }
-    
-                h3:hover {
-                    color: rgb(138, 30, 30);
-                }
-            }
-            .div-text-music {
-                h4, h5 {
-                    overflow-y: hidden;
-                    color: white;
-                    margin: 0%;
-                    margin-top: 1%;
-                    font-family: $fontexto;
-                    font-size: 15px;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                }
-            }
-        }
-        .div-button-music{
-            padding-right: 5%;
-
-            button {
-                border: none;
-                background-color: black;
-                color: white;
-                font-family: $fontexto;
-            }
-        }
-
-        .videos {
-            .div-button-videos {
-                padding-right: 5%;
-
-                button {
-                    border: none;
-                    background-color: black;
-                    color: white;
-                    font-family: $fontexto;
-                }
-            }
-        }
-
-        .book {
-            .div-book {
-                margin: 0%;
-                padding: 0%;
-                img {
-                    width: auto;
-                    height: 70vh;
-                    margin-left: 10vw;
-                    object-fit: contain;
-                }
-                .div-text-book {
-                    h3 {
-                        color: rgb(164, 164, 164);
-                        ;
-                        overflow-y: hidden;
-                        font-family: $fontexto;
-                    }
-
-                    p {
-                        color: rgb(164, 164, 164);
-                        font-family: $fontexto;
-                    }
-                }
-            }
-        }
-
-        .galery {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 250px;
-            grid-gap: 20px;
-            padding: 100px 0;
-            .box {
-                overflow: hidden;
-                img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: transform 0.4s ease;
-                &:hover {transform: scale(1.07);}
-                }
-            }
-            .box:nth-child(1) {grid-column-start: span 2;}
-            .box:nth-child(4) {grid-column-start: span 2;}
+.index {
+    width: 100vw;
+    overflow-x: hidden;
+    &__header{
+        margin-top: 5rem;
+        h1, h2 {
+            font-family: $fontexto;
+            font-size: 23px;
+            font-weight: 400;
+            color: white;
+            letter-spacing: 0.1rem;
+            overflow-y: hidden;
         }
     }
+
+    &__divider hr {
+        color: white;
+        height: 2px;
+        width: 100%;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: end;
+        margin-top: 5rem;
+        padding-right: 7rem;
+        button {
+            border: none;
+            background-color: black;
+            color: white;
+            font-family: $fontexto;
+        }
+    }
+}
+
+ // BIO
+    
+.bio{
+    margin: 0%;
+    padding: 0%;
+    margin-top: 2rem;
+    width: 100%;
+    p {
+        letter-spacing: 0.1rem;
+        font-family: $fontexto;
+        font-size: 17px;
+        text-indent: 0cqmax;
+        color: rgb(164, 164, 164);
+        text-align: justify;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+// NOTICIAS
+
+.new {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    &__item {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+    }
+    &__images{
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        width: 100vw;
+        overflow-y: hidden;
+        margin-bottom: 2%;
+    }
+    &__img{
+        width: auto;
+        height: 45vh;
+        &--secondary{
+            width: auto;
+            height: 45vh;
+            margin-left: 2%;
+        }
+    }
+                
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            color: rgb(164, 164, 164);
+            overflow-y: hidden;
+            font-family: $fontexto;
+            font-size: 18px;
+            margin-top: 2rem;
+        }
+        p {
+            color: rgb(164, 164, 164);
+            font-family: $fontexto;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        height: fit-content;
+        a {
+            display: flex;
+            justify-content: center;
+            width: 20%;
+            height: 5vh;
+            list-style: none;
+            text-decoration: none;
+            margin-top: 2%;
+            i {
+                font-size: 1.5rem;
+                display: flex;
+                list-style: none;
+                text-decoration: none;
+                color: white;
+                overflow-y: hidden;
+            }
+            i:hover{
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    &__divider {
+        margin: 0%;
+        padding: 0%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        hr {
+            margin: 0%;
+            padding: 0%;
+            background-color: white;
+            height: 2px;
+            width: 100%;
+        }
+    }
+}
+
+// DISCOS
+
+.records{
+    display: flex;
+    justify-content: center;
+    &__item {
+        margin: 0%;
+        padding: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 30vw;
+        a {
+            text-decoration: none;
+            img {
+                height: 45vh;
+                width: auto;
+                display: flex;
+                justify-content: space-between;
+                transition: transform 0.2s ease;
+            }
+    
+            img:hover {
+                transform: scale(1.05);
+            }
+            h3 {
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: start;
+                color: rgb(216, 213, 213);
+                font-family: $fontexto;
+                font-size: 17px;
+                margin: 0%;
+                margin-top: 3%;
+            }
+    
+            h3:hover {
+                color: rgb(138, 30, 30);
+                }
+            h4 {
+                overflow-y: hidden;
+                color: rgb(216, 213, 213);
+                margin: 0%;
+                margin-top: 1%;
+                font-family: $fontexto;
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                text-align: start;
+            }
+        }
+    }
+}
+
+// LIBRO
+
+.book {
+    display: flex;
+    &__item {
+        display: flex;
+        margin: 0%;
+        padding: 0%;
+        h3 {
+            color: rgb(164, 164, 164);
+            overflow-y: hidden;
+            font-family: $fontexto;
+            font-size: 20px;
+        }
+        p {
+            color: rgb(164, 164, 164);
+            font-family: $fontexto;
+            font-size: 17px;
+        }
+    }
+    &__image{
+        padding-left: 10vw;
+        img {
+            width: auto;
+            height: 70vh;
+            
+        }
+    }
+}  
+
+// GALERIA
+
+.galery {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+    padding: 100px 0;
+    &__box {
+        overflow: hidden;
+        img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+        &:hover {transform: scale(1.07);}
+        }
+    }
+    &__box:nth-child(1) {grid-column-start: span 2;}
+    &__box:nth-child(4) {grid-column-start: span 2;}
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -272,263 +260,152 @@ body {
         width: 100vw;
         overflow-x: hidden;
         background-color: black;
+    }
 
-        .main-index {
+    .index{
+        overflow-x: hidden;
+        margin: 0%;
+        padding: 0%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 100%;
+
+        &__header {
+            margin-top: 2rem;
             overflow-x: hidden;
+            justify-content: start;
+        }
+
+        &__button {
+            margin-top: 2rem;
+            margin-bottom: 2%;
+            padding-right: 1rem;
+        }
+    }
+
+    .bio {
+        margin: 0%;
+        padding: 0%;
+        overflow-x: hidden;
+        p {
+            font-size: 13px;
+            letter-spacing: 0rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+    
+    .new {
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+        &__item {
+            width: 100vw;
+        }
+        &__images{
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
             margin: 0%;
             padding: 0%;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            width: 100%;
-
-            .biography {
-                .div-text {
-                    margin: 0%;
-                    padding: 0%;
-                    width: 90%;
-                    height: 50%;
-                    overflow-x: hidden;
-
-                    p {
-                        font-family: $fontexto;
-                        font-size: 13px;
-                        color: rgb(164, 164, 164);
-                        letter-spacing: 0rem;
-                    }
-                }
-            }
-
-            .section-title {
-                margin-top: 10%;
-                .div-title {
-                    overflow-x: hidden;
-                    margin-top: 5%;
-                    justify-content: center;
-                    align-items: center;
-                    h2 {
-                        font-family: $fontexto;
-                        font-size: 23px;
-                        font-weight: 400;
-                        color: white;
-                        letter-spacing: 0.1rem;
-                        overflow-y: hidden;
-                    }
-                }
-
-            }
-
-            .news {
-                width: 100vw;
-                margin: 0%;
-                padding: 0%;
-                .div-news {
-                    margin: 0%;
-                    padding: 0%;
-                    width: 100vw;
-                    .div-img-news{
-                        width: 100vw;
-                        height: fit-content;
-                    }
-                    .div-img-news-two{
-                        flex-direction: column;
-                        height: fit-content;
-                        align-items: center;
-                        width: 100vw;
-                        margin: 0%;
-                        padding: 0%;
-                        overflow-y: hidden;
-                        margin-bottom: 2%;
-                        .img-news{
-                            width: 80vw;
-                            height: auto;
-                        }
-                        .img-news-two{
-                            width: 80vw;
-                            height: auto;
-                            margin: 0%;
-                            margin-top: 2%;
-                        }
-                        .img-news-large{
-                            width: 95vw;
-                            height: auto;
-                        }
-                    }
-                    .div-hr-large{
-                        margin: 0%;
-                        padding: 0%;
-                        margin-bottom: 1%;
-                        margin-top: 1%;
-                        hr {
-                            margin: 0%;
-                            padding: 0%;
-                            background-color: white;
-                            height: 2px;
-                            width: 100%;
-                        }
-                    }
-
-                    .div-img-news {
-                        padding: 0%;
-                        margin: 0%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    .div-text-news {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        margin: 0%;
-                        padding: 0%;
-                        width: 100vw;
-                        h3 {
-                            color: rgb(164, 164, 164);
-                            overflow-y: hidden;
-                            font-family: $fontexto;
-                            margin-top: 2%;
-                            text-align: center;
-                            font-size: large;
-                        }
-                        p {
-                            color: rgb(164, 164, 164);
-                            font-family: $fontexto;
-                            margin: 0%;
-                            margin-bottom: 2%;
-                            text-align: center;
-                        }
-                    }
-                    .div-button-news {
-                        button {
-                            border: none;
-                            background-color: black;
-                            color: white;
-                            font-family: $fontexto;
-                            margin-top: 20%;
-                        }
-                    }
-                }
-            }
-
-            .videos {
-                margin-left: 2%;
-                margin-right: 2%;
-                .div-button-videos {
-                    button {
-                        border: none;
-                        background-color: black;
-                        color: white;
-                        font-family: $fontexto;
-                    }
-                }
-            }
-
-            .div-records {
-                margin: 0%;
-                padding: 0%;
-                margin-top: 3%;
-                margin-bottom: 5%;
-                width: 100%;
+        }
+        &__img{
+            width: 80vw;
+            height: auto;
+            &--secondary{
+                width: 80vw;
                 height: auto;
-                a {
-                    text-decoration: none;
-                    img {
-                    width: 300px;
-                    height: 300px;
-                    display: flex;
-                    justify-content: space-between;
-                    }
-                    img:hover {
-                        width: 320px;
-                        height: 320px;
-                    }
-                    h3 {
-                        margin: 0%;
-                        margin-top: 1%;
-                        font-family: $fontexto;
-                        font-size: 18px;
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                        color: white;
-                    }
-                    h3:hover {
-                        color: rgb(138, 30, 30);
-                    }
-                }
-                .div-text-music {
-                    h4, h5 {
-                        color: white;
-                        margin: 0%;
-                        margin-top: 1%;
-                        font-family: $fontexto;
-                        font-size: 15px;
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                    }
-                }
-            }
-
-            .div-button-music {
-                button {
-                    border: none;
-                    background-color: black;
-                    color: white;
-                    font-family: $fontexto;
-                }
-            }
-
-
-            .book {
-                .div-book {
-                    margin: 0%;
-                    padding: 0%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .div-img-book{
-                        padding: 0%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        img {
-                            width: 400px;
-                            height: 370px;
-                            margin: 0%;
-                            padding: 0%;
-                            object-fit: contain;
-                        }
-                    }
-                    .div-text-book {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                        h3 {
-                            color: rgb(164, 164, 164);
-                            overflow-y: hidden;
-                            font-family: $fontexto;
-                            margin-top: 2%;
-                        }
-                        p {
-                            color: rgb(164, 164, 164);
-                            font-family: $fontexto;
-                            margin: 0%;
-                            margin-bottom: 2%;
-                        }
-                    }
-                }
-            }
-            
-            .galery {
-                padding: 30px;
-                grid-template-columns: repeat(1, 1fr);
-
-                .box:nth-child(1) {grid-column-start: span 1;}
-                .box:nth-child(4) {grid-column-start: span 1;}
+                margin: 0%;
+                margin-top: 2%;
             }
         }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0%;
+            padding: 0%;
+            width: 100vw;
+            h3 {
+                margin-top: 2%;
+                text-align: center;
+                font-size: 16px;
+            }
+            p {
+                margin: 0%;
+                margin-bottom: 2%;
+                text-align: center;
+            }
+        }
+
+        &__divider{
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+    }
+
+    .records {
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+        margin-top: 3%;
+        margin-bottom: 5%;
+        &__item{
+            width: 100vw;
+        }
+        a {
+            img {
+                width: 300px;
+                height: 300px;
+            }
+            h3 {
+                margin-top: 3%;
+                font-size: 16px;
+                text-align: start;
+            }
+        }
+    }
+
+    .book {
+        margin-left: 1rem;
+        &__item {
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+        }
+        &__image{
+            padding: 0%;
+            img {
+                width: auto;
+                height: 370px;
+                margin: 0%;
+                padding: 0%;
+            }
+        }
+        &__content{
+            padding: 0%;
+            h3 {
+                color: rgb(164, 164, 164);
+                overflow-y: hidden;
+                font-family: $fontexto;
+                margin-top: 2%;
+                font-size: 16px;
+            }
+            p {
+                color: rgb(164, 164, 164);
+                font-family: $fontexto;
+                margin: 0%;
+                margin-bottom: 2%;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .galery {
+        padding: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        &__box:nth-child(1) {grid-column-start: span 1;}
+        &__box:nth-child(4) {grid-column-start: span 1;}
     }
 }
