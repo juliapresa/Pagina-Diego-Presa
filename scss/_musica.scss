@@ -3,114 +3,75 @@ body {
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+}
 
-    .main-record {
-        padding: 0%;
+.records {
+    padding: 0%;
 
-        .div-title {
-
-            h1{
-                font-family: $fontitulo;
-                font-size: 28px;
-                font-weight: 400;
-                color: white;
-                letter-spacing: 0.1rem;
-                overflow-y: hidden;
-            }
-        }
-
-        .div-hr{
-            color: white;
-
-            hr{
-               color: white;
-                height: 2px;
-                width: 100%;
-            }
-        }
-
-        .record-container {
-            margin: 0%;
-            padding: 0%;
-            margin-top: 3%;
-            height: 60vh;
-
-            .text-record {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                margin: 0%;
-                margin-top: 1%;
-                h3, h4{
-                color: white;
-                font-family: $fontexto;
-                font-size: 15px;
-                }
-            }
-
-            a{
-                text-decoration: none;
-
-                img {
-                    width: auto;
-                    height: 45vh;
-                    display: flex;
-                    justify-content: space-between;
-                }
-                img:hover{
-                    width: auto;
-                    height: 47vh;
-                }
-
-                h2{
-                    overflow: hidden;
-                    margin: 0%;
-                    margin-top: 1%;
-                    font-family: $fontexto;
-                    font-size: 18px;
-                    font-weight: bold;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;   
-                    color: white;
-                }
-                h2:hover{
-                    color: rgb(138, 30, 30);
-                }
-
-                .title-two{
-                    overflow: hidden;
-                    margin: 0%;
-                    margin-top: 1%;
-                    font-family: $fontexto;
-                    font-size: 17px;
-                    font-weight: bold;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;   
-                    color: white;
-                }
-                .title-two:hover{
-                    color: rgb(138, 30, 30);
-                }
-            }
-        }
-
+    &__title h1{
+        font-family: $fontitulo;
+        font-size: 28px;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 0.1rem;
+        overflow-y: hidden;
     }
 
+    &__divider hr{
+        background-color: white;
+        height: 2px;
+        width: 100%;
+    }
+
+    &__item {
+        margin: 0%;
+        padding: 0%;
+        margin-top: 2rem;
+    }
+
+    &__a{
+        text-decoration: none;
+        img {
+            width: auto;
+            height: 45vh;
+            display: flex;
+            justify-content: space-between;
+            transition: transform 0.2s ease;
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+
+        h2{
+            overflow: hidden;
+            margin: 0%;
+            margin-top: 3%;
+            margin-bottom: 2%;
+            font-family: $fontexto;
+            font-size: 15px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            text-align: start;   
+            color: rgb(216, 213, 213);
+        }
+        h2:hover{
+            color: rgb(138, 30, 30);
+        }
+
+        h3, h4{
+        color: rgb(216, 213, 213);
+        font-family: $fontexto;
+        font-size: 15px;
+        }
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px){
-    .div-title {
-        display: flex;
-        justify-content: center;
-        h1{
-            font-family: $fontexto;
-            font-size: 28px;
-            font-weight: 400;
-            color: white;
-            letter-spacing: 0.1rem;
-            overflow-y: hidden;
+
+    .records{
+        &__title{
+        margin-top: 2rem;
         }
     }
 }

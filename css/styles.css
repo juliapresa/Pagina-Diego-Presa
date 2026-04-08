@@ -975,10 +975,11 @@ body {
   padding: 0%;
   overflow-x: hidden;
 }
-body .main-record {
+
+.records {
   padding: 0%;
 }
-body .main-record .div-title h1 {
+.records__title h1 {
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
   font-weight: 400;
@@ -986,88 +987,54 @@ body .main-record .div-title h1 {
   letter-spacing: 0.1rem;
   overflow-y: hidden;
 }
-body .main-record .div-hr {
-  color: white;
-}
-body .main-record .div-hr hr {
-  color: white;
+.records__divider hr {
+  background-color: white;
   height: 2px;
   width: 100%;
 }
-body .main-record .record-container {
+.records__item {
   margin: 0%;
   padding: 0%;
-  margin-top: 3%;
-  height: 60vh;
+  margin-top: 2rem;
 }
-body .main-record .record-container .text-record {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 0%;
-  margin-top: 1%;
-}
-body .main-record .record-container .text-record h3, body .main-record .record-container .text-record h4 {
-  color: white;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 15px;
-}
-body .main-record .record-container a {
+.records__a {
   text-decoration: none;
 }
-body .main-record .record-container a img {
+.records__a img {
   width: auto;
   height: 45vh;
   display: flex;
   justify-content: space-between;
+  transition: transform 0.2s ease;
 }
-body .main-record .record-container a img:hover {
-  width: auto;
-  height: 47vh;
+.records__a img:hover {
+  transform: scale(1.05);
 }
-body .main-record .record-container a h2 {
+.records__a h2 {
   overflow: hidden;
   margin: 0%;
-  margin-top: 1%;
+  margin-top: 3%;
+  margin-bottom: 2%;
   font-family: "JetBrains Mono", monospace;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  color: white;
+  text-align: start;
+  color: rgb(216, 213, 213);
 }
-body .main-record .record-container a h2:hover {
+.records__a h2:hover {
   color: rgb(138, 30, 30);
 }
-body .main-record .record-container a .title-two {
-  overflow: hidden;
-  margin: 0%;
-  margin-top: 1%;
+.records__a h3, .records__a h4 {
+  color: rgb(216, 213, 213);
   font-family: "JetBrains Mono", monospace;
-  font-size: 17px;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-}
-body .main-record .record-container a .title-two:hover {
-  color: rgb(138, 30, 30);
+  font-size: 15px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .div-title {
-    display: flex;
-    justify-content: center;
-  }
-  .div-title h1 {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 28px;
-    font-weight: 400;
-    color: white;
-    letter-spacing: 0.1rem;
-    overflow-y: hidden;
+  .records__title {
+    margin-top: 2rem;
   }
 }
 body {
