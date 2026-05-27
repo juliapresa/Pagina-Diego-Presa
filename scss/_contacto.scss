@@ -8,13 +8,14 @@ body {
 .contact {
     min-height: 100vh;
     overflow: visible;
+
     &__title h1 {
         font-family: $fontitulo;
         font-size: 28px;
         font-weight: 400;
         color: white;
         letter-spacing: 0.1rem;
-        overflow-y: hidden;
+        overflow: hidden;
     }
 
     &__divider hr{
@@ -24,6 +25,8 @@ body {
     }
 
     &__content {
+        min-height: 100vh;
+        overflow: visible;
         margin-bottom: 5%;
         margin-top: 5%;
         margin-right: 2%;
@@ -71,15 +74,15 @@ body {
     &__mail {
         display: flex;
         justify-content: center;
-        overflow-y: hidden;
+        overflow: hidden;
         a {
             font-size: x-large;
-            overflow-y: hidden;
+            overflow: hidden;
             text-decoration: none;
             color: rgb(194, 190, 190);
             margin-bottom: 3%;
             &:hover {
-                overflow-y: hidden;
+                overflow: hidden;
                 text-decoration: none;
                 color: white;
             }
@@ -90,8 +93,8 @@ body {
 @media screen and (min-width: 0px) and (max-width: 768px){
 
     .contact {
-        width: 100%;
-        overflow-x: hidden;
+        min-height: 100vh;
+        overflow: visible;
         
         &__title {
             margin-top: 2rem;
@@ -101,7 +104,6 @@ body {
             width: 100%;
             margin: 0%;
             padding: 0%;
-            overflow-x: hidden;
             flex-direction: column;
         }
 
