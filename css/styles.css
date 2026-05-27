@@ -908,6 +908,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 100vh;
+  overflow: visible;
 }
 .records__title h1 {
   font-family: "Castoro Titling", cursive;
@@ -972,10 +974,12 @@ body {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
+}
+
+.news-page {
   min-height: 100vh;
   overflow: visible;
 }
-
 .news-page__title h1 {
   font-family: "Castoro Titling", cursive;
   font-size: 28px;
@@ -1123,6 +1127,10 @@ body {
   overflow-x: hidden;
 }
 
+.videos {
+  min-height: 100vh;
+  overflow: visible;
+}
 .videos__title h1 {
   margin: 0%;
   font-family: "Castoro Titling", cursive;
@@ -1158,10 +1166,12 @@ body {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
+}
+
+.press {
   min-height: 100vh;
   overflow: visible;
 }
-
 .press__title h1 {
   font-family: "Castoro Titling", cursive;
   font-size: 28px;

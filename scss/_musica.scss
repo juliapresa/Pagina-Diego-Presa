@@ -11,6 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-height: 100vh;
+    overflow: visible;
     
     &__title h1{
         font-family: $fontitulo;

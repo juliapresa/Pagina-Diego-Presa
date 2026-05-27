@@ -6,6 +6,8 @@ body{
 }
 
 .videos{
+    min-height: 100vh;
+    overflow: visible;
     
     &__title h1 {
         margin: 0%;
