@@ -272,6 +272,8 @@ body {
         margin-top: 2%;
         margin-bottom: 2%;
         width: 100%;
+        min-height: 100vh;
+        overflow: visible;
 
         &__header {
             h1, h2{
