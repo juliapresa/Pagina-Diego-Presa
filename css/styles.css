@@ -297,6 +297,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  min-height: 100vh;
+  overflow: visible;
 }
 
 .main-shows {
@@ -374,6 +376,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  min-height: 100vh;
+  overflow: visible;
 }
 
 .contact__title h1 {
@@ -896,6 +900,8 @@ body {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
+  min-height: 100vh;
+  overflow: visible;
 }
 
 .records {
@@ -966,6 +972,8 @@ body {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
+  min-height: 100vh;
+  overflow: visible;
 }
 
 .news-page__title h1 {
@@ -1150,6 +1158,8 @@ body {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
+  min-height: 100vh;
+  overflow: visible;
 }
 
 .press__title h1 {
