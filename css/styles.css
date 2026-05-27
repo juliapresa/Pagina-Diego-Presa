@@ -464,13 +464,13 @@ body {
   .contact__image {
     width: 100%;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     justify-content: center;
   }
   .contact__image img {
     padding: 0;
     height: auto;
-    width: 400px;
+    width: 300px;
   }
   .contact__form {
     width: 100%;
@@ -1013,8 +1013,8 @@ body {
   color: rgb(164, 164, 164);
   overflow-y: hidden;
   font-family: "JetBrains Mono", monospace;
-  font-size: 20px;
-  text-align: center;
+  font-size: 17px;
+  text-align: left;
   margin-top: 2%;
 }
 .news__subtitle {
@@ -1022,16 +1022,16 @@ body {
   overflow-y: hidden;
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
-  font-size: 16px;
+  font-size: 15px;
 }
 .news__text {
   text-align: center;
-  width: 80%;
+  width: 60%;
   overflow-y: hidden;
   color: rgb(164, 164, 164);
   font-family: "JetBrains Mono", monospace;
   margin-top: 1%;
-  font-size: 16px;
+  font-size: 15px;
 }
 .news__links {
   display: flex;
