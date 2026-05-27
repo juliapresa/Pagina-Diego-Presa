@@ -90,9 +90,6 @@
     justify-content: end;
     color: white;
   }
-  .header .row .nav-container a, .header .row .nav-container i:hover {
-    text-decoration: underline;
-  }
 }
 .index-header {
   width: 100%;
@@ -379,7 +376,7 @@ body {
 }
 
 .contact {
-  min-height: 100vh;
+  height: fit-content;
   overflow: visible;
 }
 .contact__title h1 {
@@ -396,7 +393,7 @@ body {
   width: 100%;
 }
 .contact__content {
-  min-height: 100vh;
+  height: fit-content;
   overflow: visible;
   margin-bottom: 5%;
   margin-top: 5%;
@@ -456,13 +453,14 @@ body {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .contact {
-    min-height: 100vh;
+    height: fit-content;
     overflow: visible;
   }
   .contact__title {
     margin-top: 2rem;
   }
   .contact__content {
+    height: fit-content;
     width: 100%;
     margin: 0%;
     padding: 0%;
