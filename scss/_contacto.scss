@@ -34,7 +34,7 @@ body {
         img {
             padding-left: 2%;
             height: 370px;
-            width: 550px;
+            width: auto;
         }
     }
 
@@ -72,7 +72,7 @@ body {
         justify-content: center;
         overflow-y: hidden;
         a {
-            font-size: xx-large;
+            font-size: x-large;
             overflow-y: hidden;
             text-decoration: none;
             color: rgb(194, 190, 190);
@@ -111,8 +111,8 @@ body {
             justify-content: center;
             img {
                 padding: 0;
-                height: 270px;
-                width: 345px;
+                height: auto;
+                width: 400px;
             }
         }
 
@@ -128,7 +128,7 @@ body {
         }
     
         &__mail a{
-            font-size: x-large;
+            font-size: large;
             margin-top: 2rem;
             margin-bottom: 2rem;
                 

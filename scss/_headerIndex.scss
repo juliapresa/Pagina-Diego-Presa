@@ -4,25 +4,27 @@
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
-    background-image: url(../assets/img/pruebados.jpg);
+    background-image: url(../assets/img/nuevaTres.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    .row {
+    background-position: center;
+    .logonav-container {
         width: 100%;
-        height: 80%;
+        height: fit-content;
         margin: 0%;
         padding: 0%;
-
+        position: fixed;
         .logo-container {
             margin: 0%;
             padding: 0%;
             width: 50%;
             height: fit-content;
+            padding: 5px;
 
             img {
-                width: 70px;
-                height: 90px;
+                width: auto;
+                height: 70px;
             }
         }
 
@@ -30,10 +32,9 @@
             margin: 0%;
             padding: 0%;
             width: 50%;
-            height: fit-content;
+            height: auto;
             font-family: $fontexto;
-            font-size: 17px;
-            margin-top: 1%;
+            font-size: 16px;
             color: white;
             
             a {
@@ -50,20 +51,20 @@
     .header-links {
         margin: 0%;
         padding: 0%;
-        height: 10%;
+        height: fit-content;
         width: 100vw;
         position: absolute;
         bottom: 0;
         .div-links{
             width: 5vw;
             height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             a, i {
+                width: fit-content;
                 overflow: hidden;
                 display: flex;
-                margin-top: 2%;
-                margin-left: 2%;
-                margin-right: 2%;
-                margin-bottom: 2%;
                 font-size: 25px;
                 list-style: none;
                 text-decoration: none;
@@ -80,23 +81,24 @@
 @media screen and (min-width: 0px) and (max-width: 768px) {
     .index-header {
         width: 100%;
-        height: 100vh;
+        height: 70vh;
         margin: 0%;
         padding: 0%;
         overflow-x: hidden;
-        background-image: url(../assets/img/headerMovil.jpg);
+        background-image: url(../assets/img/nuevaTres.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
         display: flex;
         background-attachment: local;
-        .row {
+        background-position: center 40px;
+        background-color: black;
+        .logonav-container {
             overflow-x: hidden;
             width: 100%;
-            height: 80%;
+            height: auto;
             margin: 0%;
-            padding: 0%;
-
+            padding: 1%;
+            background-color: black;
             .logo-container {
                 margin: 0%;
                 padding: 0%;
@@ -104,13 +106,13 @@
                 height: fit-content;
     
                 img {
-                    width: 70px;
-                    height: 90px;
+                    width: auto;
+                    height: 70px;
                 }
             }
             .nav-container {
                 width: 50%;
-                height: fit-content;
+                height: auto;
                 margin: 0%;
                 padding: 0%;
                 font-family: $fontexto;
@@ -123,6 +125,28 @@
                     display: flex;
                     justify-content: end;
                     background-color: white;
+                }
+
+                .navbar-collapse {
+
+                    position: fixed;
+
+                    top: 70px;
+
+                    left: 0;
+
+                    width: 100vw;
+
+                    background-color: black;
+
+                    padding: 2rem;
+
+                    z-index: 9999;
+                }
+
+                .navbar-nav {
+                    gap: 10px;
+                    width: 100%;
                 }
 
                 a {
@@ -139,16 +163,7 @@
         }
 
         .header-links {
-        display: flex;
-        flex-direction: column;
         visibility: hidden;
-            a, i {
-                font-size: 20px;
-                list-style: none;
-                text-decoration: none;
-                color: white;
-                margin: 0 10px;
-            }
         }
     }
 }

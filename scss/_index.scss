@@ -149,10 +149,11 @@ body {
 
 // DISCOS
 
-.records{
+.recordsIndex{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    &__item {
+    &__itemIndex {
         margin: 0%;
         padding: 0%;
         margin-top: 5%;
@@ -272,12 +273,16 @@ body {
         width: 100%;
 
         &__header {
+            h1, h2{
+                font-size: 20px;
+            }
             margin-top: 2rem;
             overflow-x: hidden;
             justify-content: start;
         }
 
         &__button {
+            font-size: 13px;
             margin-top: 2rem;
             margin-bottom: 2%;
             padding-right: 1rem;
@@ -311,11 +316,11 @@ body {
             padding: 0%;
         }
         &__img{
-            width: 80vw;
-            height: auto;
+            width: 300px;
+            height: 300px;
             &--secondary{
-                width: 80vw;
-                height: auto;
+                width: 300px;
+                height: 300px;
                 margin: 0%;
                 margin-top: 2%;
             }
@@ -330,9 +335,10 @@ body {
             h3 {
                 margin-top: 2%;
                 text-align: center;
-                font-size: 16px;
+                font-size: 13px;
             }
             p {
+                font-size: 13px;
                 margin: 0%;
                 margin-bottom: 2%;
                 text-align: center;
@@ -345,13 +351,13 @@ body {
         }
     }
 
-    .records {
+    .recordsIndex {
         flex-direction: column;
         margin: 0%;
         padding: 0%;
         margin-top: 3%;
         margin-bottom: 5%;
-        &__item{
+        &__itemIndex{
             width: 100vw;
         }
         a {
@@ -359,9 +365,9 @@ body {
                 width: 300px;
                 height: 300px;
             }
-            h3 {
+            h3, h4 {
                 margin-top: 3%;
-                font-size: 16px;
+                font-size: 13px;
                 text-align: start;
             }
         }
@@ -385,20 +391,24 @@ body {
         }
         &__content{
             padding: 0%;
+            margin-bottom: 2rem;
             h3 {
                 color: rgb(164, 164, 164);
                 overflow-y: hidden;
                 font-family: $fontexto;
                 margin-top: 2%;
-                font-size: 16px;
+                font-size: 13px;
             }
             p {
                 color: rgb(164, 164, 164);
                 font-family: $fontexto;
                 margin: 0%;
                 margin-bottom: 2%;
-                font-size: 15px;
+                font-size: 13px;
             }
+        }
+        .btn{
+            font-size: 13px;
         }
     }
 

@@ -26,8 +26,8 @@
   height: fit-content;
 }
 .header .row .logo-container img {
-  width: 70px;
-  height: 90px;
+  width: auto;
+  height: 70px;
 }
 .header .row .nav-container {
   margin: 0%;
@@ -35,7 +35,7 @@
   padding: 0%;
   height: fit-content;
   font-family: "JetBrains Mono", monospace;
-  font-size: 17px;
+  font-size: 16px;
   color: white;
 }
 .header .row .nav-container .nav-link {
@@ -100,48 +100,50 @@
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
-  background-image: url(../assets/img/pruebados.jpg);
+  background-image: url(../assets/img/nuevaTres.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
-.index-header .row {
+.index-header .logonav-container {
   width: 100%;
-  height: 80%;
+  height: fit-content;
   margin: 0%;
   padding: 0%;
+  position: fixed;
 }
-.index-header .row .logo-container {
+.index-header .logonav-container .logo-container {
   margin: 0%;
   padding: 0%;
   width: 50%;
   height: fit-content;
+  padding: 5px;
 }
-.index-header .row .logo-container img {
-  width: 70px;
-  height: 90px;
+.index-header .logonav-container .logo-container img {
+  width: auto;
+  height: 70px;
 }
-.index-header .row .nav-container {
+.index-header .logonav-container .nav-container {
   margin: 0%;
   padding: 0%;
   width: 50%;
-  height: fit-content;
+  height: auto;
   font-family: "JetBrains Mono", monospace;
-  font-size: 17px;
-  margin-top: 1%;
+  font-size: 16px;
   color: white;
 }
-.index-header .row .nav-container a {
+.index-header .logonav-container .nav-container a {
   color: white;
 }
-.index-header .row .nav-container a:hover {
+.index-header .logonav-container .nav-container a:hover {
   text-decoration: underline;
   color: white;
 }
 .index-header .header-links {
   margin: 0%;
   padding: 0%;
-  height: 10%;
+  height: fit-content;
   width: 100vw;
   position: absolute;
   bottom: 0;
@@ -149,14 +151,14 @@
 .index-header .header-links .div-links {
   width: 5vw;
   height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .index-header .header-links .div-links a, .index-header .header-links .div-links i {
+  width: fit-content;
   overflow: hidden;
   display: flex;
-  margin-top: 2%;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 2%;
   font-size: 25px;
   list-style: none;
   text-decoration: none;
@@ -169,37 +171,39 @@
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .index-header {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
-    background-image: url(../assets/img/headerMovil.jpg);
+    background-image: url(../assets/img/nuevaTres.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     display: flex;
     background-attachment: local;
+    background-position: center 40px;
+    background-color: black;
   }
-  .index-header .row {
+  .index-header .logonav-container {
     overflow-x: hidden;
     width: 100%;
-    height: 80%;
+    height: auto;
     margin: 0%;
-    padding: 0%;
+    padding: 1%;
+    background-color: black;
   }
-  .index-header .row .logo-container {
+  .index-header .logonav-container .logo-container {
     margin: 0%;
     padding: 0%;
     width: 50%;
     height: fit-content;
   }
-  .index-header .row .logo-container img {
-    width: 70px;
-    height: 90px;
+  .index-header .logonav-container .logo-container img {
+    width: auto;
+    height: 70px;
   }
-  .index-header .row .nav-container {
+  .index-header .logonav-container .nav-container {
     width: 50%;
-    height: fit-content;
+    height: auto;
     margin: 0%;
     padding: 0%;
     font-family: "JetBrains Mono", monospace;
@@ -208,31 +212,35 @@
     display: flex;
     justify-content: center;
   }
-  .index-header .row .nav-container .navbar-toggler {
+  .index-header .logonav-container .nav-container .navbar-toggler {
     display: flex;
     justify-content: end;
     background-color: white;
   }
-  .index-header .row .nav-container a {
+  .index-header .logonav-container .nav-container .navbar-collapse {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    background-color: black;
+    padding: 2rem;
+    z-index: 9999;
+  }
+  .index-header .logonav-container .nav-container .navbar-nav {
+    gap: 10px;
+    width: 100%;
+  }
+  .index-header .logonav-container .nav-container a {
     display: flex;
     justify-content: end;
     color: white;
   }
-  .index-header .row .nav-container a:hover {
+  .index-header .logonav-container .nav-container a:hover {
     text-decoration: underline;
     color: white;
   }
   .index-header .header-links {
-    display: flex;
-    flex-direction: column;
     visibility: hidden;
-  }
-  .index-header .header-links a, .index-header .header-links i {
-    font-size: 20px;
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
   }
 }
 .footer {
@@ -393,7 +401,7 @@ body {
 .contact__image img {
   padding-left: 2%;
   height: 370px;
-  width: 550px;
+  width: auto;
 }
 .contact__form {
   align-items: center;
@@ -426,7 +434,7 @@ body {
   overflow-y: hidden;
 }
 .contact__mail a {
-  font-size: xx-large;
+  font-size: x-large;
   overflow-y: hidden;
   text-decoration: none;
   color: rgb(194, 190, 190);
@@ -461,8 +469,8 @@ body {
   }
   .contact__image img {
     padding: 0;
-    height: 270px;
-    width: 345px;
+    height: auto;
+    width: 400px;
   }
   .contact__form {
     width: 100%;
@@ -474,7 +482,7 @@ body {
     width: 95%;
   }
   .contact__mail a {
-    font-size: x-large;
+    font-size: large;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -619,31 +627,32 @@ body {
   width: 100%;
 }
 
-.records {
+.recordsIndex {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
-.records__item {
+.recordsIndex__itemIndex {
   margin: 0%;
   padding: 0%;
   margin-top: 5%;
   margin-bottom: 5%;
   width: 30vw;
 }
-.records__item a {
+.recordsIndex__itemIndex a {
   text-decoration: none;
 }
-.records__item a img {
+.recordsIndex__itemIndex a img {
   height: 45vh;
   width: auto;
   display: flex;
   justify-content: space-between;
   transition: transform 0.2s ease;
 }
-.records__item a img:hover {
+.recordsIndex__itemIndex a img:hover {
   transform: scale(1.05);
 }
-.records__item a h3 {
+.recordsIndex__itemIndex a h3 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -655,10 +664,10 @@ body {
   margin: 0%;
   margin-top: 3%;
 }
-.records__item a h3:hover {
+.recordsIndex__itemIndex a h3:hover {
   color: rgb(138, 30, 30);
 }
-.records__item a h4 {
+.recordsIndex__itemIndex a h4 {
   overflow-y: hidden;
   color: rgb(216, 213, 213);
   margin: 0%;
@@ -744,7 +753,11 @@ body {
     overflow-x: hidden;
     justify-content: start;
   }
+  .index__header h1, .index__header h2 {
+    font-size: 20px;
+  }
   .index__button {
+    font-size: 13px;
     margin-top: 2rem;
     margin-bottom: 2%;
     padding-right: 1rem;
@@ -776,12 +789,12 @@ body {
     padding: 0%;
   }
   .new__img {
-    width: 80vw;
-    height: auto;
+    width: 300px;
+    height: 300px;
   }
   .new__img--secondary {
-    width: 80vw;
-    height: auto;
+    width: 300px;
+    height: 300px;
     margin: 0%;
     margin-top: 2%;
   }
@@ -796,9 +809,10 @@ body {
   .new__content h3 {
     margin-top: 2%;
     text-align: center;
-    font-size: 16px;
+    font-size: 13px;
   }
   .new__content p {
+    font-size: 13px;
     margin: 0%;
     margin-bottom: 2%;
     text-align: center;
@@ -807,23 +821,23 @@ body {
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
-  .records {
+  .recordsIndex {
     flex-direction: column;
     margin: 0%;
     padding: 0%;
     margin-top: 3%;
     margin-bottom: 5%;
   }
-  .records__item {
+  .recordsIndex__itemIndex {
     width: 100vw;
   }
-  .records a img {
+  .recordsIndex a img {
     width: 300px;
     height: 300px;
   }
-  .records a h3 {
+  .recordsIndex a h3, .recordsIndex a h4 {
     margin-top: 3%;
-    font-size: 16px;
+    font-size: 13px;
     text-align: start;
   }
   .book {
@@ -845,20 +859,24 @@ body {
   }
   .book__content {
     padding: 0%;
+    margin-bottom: 2rem;
   }
   .book__content h3 {
     color: rgb(164, 164, 164);
     overflow-y: hidden;
     font-family: "JetBrains Mono", monospace;
     margin-top: 2%;
-    font-size: 16px;
+    font-size: 13px;
   }
   .book__content p {
     color: rgb(164, 164, 164);
     font-family: "JetBrains Mono", monospace;
     margin: 0%;
     margin-bottom: 2%;
-    font-size: 15px;
+    font-size: 13px;
+  }
+  .book .btn {
+    font-size: 13px;
   }
   .galery {
     padding: 30px;
