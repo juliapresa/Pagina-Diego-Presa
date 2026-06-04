@@ -1,167 +1,183 @@
-body{
-    width: 100vw;
-    margin: 0%;
-    padding: 0%;
-    overflow-x: hidden;
+/* ── NEWS PAGE ── */
+
+.news-page {
+  min-height: 100vh;
+  overflow: visible;
+  &__header {
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+  &__title h1 {
+    font-family: "Castoro Titling", cursive;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.1rem;
+    overflow-y: hidden;
+    margin-bottom: 1rem;
+  }
+  &__divider hr {
+    background-color: rgba(255,255,255,0.2);
+    height: 1px;
+    border: none;
+    width: 100%;
+    margin: 0;
+  }
 }
 
-    .news-page{
-        min-height: 100vh;
-        overflow: visible;
+.news{
+    /* ── ITEM ── */
+  &__item {
+    margin: 0;
+    padding: 3rem 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  /* ── IMAGEN ── */
+  &__images {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    gap: 1rem;
+    overflow: visible;
+  }
+  &__img {
+    width: 260px;
+    height: auto;
+    display: block;
+    filter: grayscale(30%);
+    transition: filter 0.4s ease, transform 0.4s ease;
+  }
+  &__img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+  }
+  &__img--secondary {
+    width: 260px;
+    height: auto;
+  }
 
-        &__title h1{
-                font-family: $fontitulo;
-                font-size: 28px;
-                font-weight: 400;
-                color: white;
-                letter-spacing: 0.1rem;
-                overflow-y: hidden;
-            }
+  /* ── CONTENIDO ── */
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding-top: 0.25rem;
+    overflow: visible;
+  }
+  &__title {
+    color: #ffffff;
+    font-family: "Castoro Titling", cursive;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-align: left;
+    margin-bottom: 1rem;
+    overflow-y: hidden;
+  }
+  &__subtitle {
+    text-align: left;
+    overflow-y: hidden;
+    color: rgba(255,255,255,0.45);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    text-align: left;
+    width: 100%;
+    overflow-y: hidden;
+    color: rgba(200, 196, 190, 0.8);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
 
-        &__divider hr{
-                color: white;
-                height: 2px;
-                width: 100%;
-            }
-    }
-    
-    .news {
-        &__item{
-            margin: 0%;
-            padding: 0%;
-            margin-top: 2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        &__images{
-            display: flex;
-            justify-content: center;
-            margin: 0%;
-            width: 95vw;
-        }
-        &__img{
-            width: 25vw;
-            height: auto;
-            &--secondary{
-                width: 25vw;
-                height: auto;
-                margin-left: 2%;
-            }
-        }
-        &__content{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 45vw;
-        }
-        &__title{
-            color: rgb(164, 164, 164);;
-            overflow-y: hidden;
-            font-family: $fontexto;
-            font-size: 17px;
-            text-align: left;
-            margin-top: 2%;
-        }
-        &__subtitle{
-            text-align: center;
-            overflow-y: hidden;
-            color: rgb(164, 164, 164);
-            font-family: $fontexto;
-            font-size: 15px;
-        }
-        &__text{
-            text-align: center;
-            width: 60%;
-            overflow-y: hidden;
-            color: rgb(164, 164, 164);
-            font-family: $fontexto;
-            margin-top: 1%;
-            font-size: 15px;
-        }
-        &__links{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            height: fit-content;
-            a {
-                display: flex;
-                justify-content: center;
-                width: 20%;
-                height: 10vh;
-                list-style: none;
-                text-decoration: none;
-                padding: 3%;
-                i{
-                    font-size: 1.5rem;
-                    height: fit-content;
-                    display: flex;
-                    list-style: none;
-                    text-decoration: none;
-                    color: white;
-                    overflow-y: hidden;
-                }
-                i:hover{
-                    font-size: 1.6rem;
-                }
-            }
-        }
-        &__divider {
-            margin: 1% 0;
-            hr {
-                background-color: white;
-                height: 2px;
-                width: 100%;
-            }
-        }
-                
-    }    
+  /* ── LINKS ── */
+  &__links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    height: fit-content;
+    margin-top: auto;
+  }
+  &__links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255,255,255,0.15);
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  &__links a:hover {
+    border-color: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.05);
+  }
+  &__links a i {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+    transition: color 0.2s;
+  }
+  &__links a:hover i {
+    color: white;
+  }
 
-@media screen and (min-width: 0px) and (max-width: 768px){
+  /* ── DIVISOR ── */
+  &__divider {
+    margin: 0 6%;
+  }
+  &__divider hr {
+    background-color: rgba(255,255,255,0.1);
+    height: 1px;
+    border: none;
+    width: 100%;
+    margin: 0;
+  }
 
-    .news-page {
-        
-        &__title h1 {
-            margin-top: 2rem;
-        } 
-    }  
-    
-    .news {
-        
-        &__images{
-            flex-direction: column;
-            align-items:start;
-            margin-left: 5%;
-        }
-        &__img{
-            width: 85vw;
-            margin-bottom: 5%;
-            &--secondary{
-                width: 85vw;
-                margin-left: 0%;
-                margin: 0%;
-            }
-        }
-              
-        &__content {
-            width: 90vw;
-        }
-        &__title {
-            font-size: large;
-            text-align: left;
-        }
-
-        &__subtitle{
-            margin: 0%;
-            margin-bottom: 2%;
-            font-size: large;
-            text-align: left; 
-        }
-        &__text{
-            text-align: left;
-            width: fit-content;
-            font-size: medium;
-        }
-    }
-                            
+}
+/* ── RESPONSIVE ── */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  
+  .news-page__title h1 {
+    margin-top: 2rem;
+    margin-left: 5%;
+  }
+  .news__item {
+    flex-direction: column;
+    padding: 2rem 5%;
+    gap: 1.5rem;
+  }
+  .news__images {
+    flex-direction: column;
+    width: 100%;
+  }
+  .news__img {
+    width: 85vw;
+    margin-bottom: 0;
+  }
+  .news__img--secondary {
+    width: 85vw;
+    margin: 0;
+  }
+  .news__content {
+    width: 100%;
+  }
+  .news__title {
+    font-size: 16px;
+  }
+  .news__text {
+    font-size: 13px;
+  }
+  .news__divider {
+    margin: 0 5%;
+  }
 }

@@ -7,16 +7,12 @@
 }
 
 // Línea
-.footer__divider {
-    display: flex;
-    justify-content: center;
-
-    hr {
-        width: 90%;
-        height: 2px;
-        background-color: white;
-        margin: 0;
-    }
+.footer__divider hr {
+    background-color: rgba(255,255,255,0.2);
+    height: 1px;
+    border: none;
+    width: 100%;
+    margin: 0;
 }
 
 // Redes

@@ -1,34 +1,25 @@
-// Base
-body {
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+.shows-page {
     min-height: 100vh;
     overflow: visible;
-}
-
-
-.main-shows {
-    height: 60vh;
-}
-
-.shows {
-
-    &__title h1 {
-        font-family: $fontitulo;
-        font-size: 28px;
-        font-weight: 400;
-        color: white;
-        letter-spacing: 0.1rem;
-        overflow-y: hidden;
+    &__header {
+    padding-top: 3rem;
+    padding-bottom: 0;
     }
-
+    &__title h1 {
+    font-family: "Castoro Titling", cursive;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.1rem;
+    overflow-y: hidden;
+    margin-bottom: 1rem;
+    }
     &__divider hr {
-        background-color: white;
-        height: 2px;
-        width: 100%;
-        margin: 0;
+    background-color: rgba(255,255,255,0.2);
+    height: 1px;
+    border: none;
+    width: 100%;
+    margin: 0;
     }
 }
 

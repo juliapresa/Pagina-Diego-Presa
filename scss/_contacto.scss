@@ -1,141 +1,185 @@
-body {
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 .contact {
+  height: fit-content;
+  overflow: visible;
+
+  &__header {
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+
+  &__title h1 {
+    font-family: $fontitulo;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  &__divider hr {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 1px;
+    border: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 4rem 6%;
     height: fit-content;
     overflow: visible;
+  }
 
-    &__title h1 {
-        font-family: $fontitulo;
-        font-size: 28px;
-        font-weight: 400;
-        color: white;
-        letter-spacing: 0.1rem;
-        overflow: hidden;
+  &__image {
+    width: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: grayscale(30%);
+      transition: filter 0.4s ease;
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
+
+  &__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    gap: 0.5rem;
+  }
+
+  &__field {
+    width: 100%;
+    font-family: $fontexto;
+    color: white;
+
+    label {
+      color: rgba(255, 255, 255, 0.45);
+      font-family: $fontexto;
+      font-size: 13px;
+      letter-spacing: 0.06em;
     }
 
-    &__divider hr{
+    .form-control {
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0;
+      padding-left: 0;
+      font-family: $fontexto;
+      font-size: 14px;
+      transition: border-color 0.2s;
+
+      &:focus {
+        background-color: transparent;
         color: white;
-        height: 2px;
-        width: 100%;
+        border-bottom-color: rgba(255, 255, 255, 0.8);
+        box-shadow: none;
+        outline: none;
+      }
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    textarea.form-control {
+      resize: none;
+    }
+  }
+
+  &__button {
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.7);
+    font-family: $fontexto;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 10px 28px;
+    border-radius: 0;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+    &:hover {
+      background-color: white;
+      border-color: white;
+      color: black;
+    }
+  }
+
+  &__mail {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 3rem;
+
+    a {
+      font-family: $fontexto;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      color: rgba(200, 196, 190, 0.6);
+      transition: color 0.2s;
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .contact {
+
+    &__title {
+      margin-top: 2rem;
+      margin-left: 5%;
     }
 
     &__content {
-        height: fit-content;
-        overflow: visible;
-        margin-bottom: 5%;
-        margin-top: 5%;
-        margin-right: 2%;
-        display: flex;
+      flex-direction: column;
+      padding: 2rem 5%;
+      gap: 2rem;
     }
 
     &__image {
-        width: 50%;
-        img {
-            padding-left: 2%;
-            height: 370px;
-            width: auto;
-        }
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
 
     &__form {
-        align-items: center;
-        background-color: black;
-        width: 50%;
-        padding-left: 2%;
+      width: 100%;
     }
-    
+
     &__field {
-        width: 75%;
-        font-family: $fontexto;
-        color: white;
-
-        .form-control {
-            background-color: black;
-            color: white;
-        }
+      width: 100%;
     }
 
-    &__button {
-        background-color: black;
-        border: 1px solid white;
-        color: white;
-        font-family: $fontexto;
-        &:hover{
-            background-color: white;
-            color: black;
-        }
+    &__mail a {
+      font-size: 13px;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
     }
-    
-    &__mail {
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-        a {
-            font-size: x-large;
-            overflow: hidden;
-            text-decoration: none;
-            color: rgb(194, 190, 190);
-            margin-bottom: 3%;
-            &:hover {
-                overflow: hidden;
-                text-decoration: none;
-                color: white;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 768px){
-
-    .contact {
-        height: fit-content;
-        overflow: visible;
-        
-        &__title {
-            margin-top: 2rem;
-        }
-
-        &__content {
-            height: fit-content;
-            width: 100%;
-            margin: 0%;
-            padding: 0%;
-            flex-direction: column;
-        }
-
-        &__image {
-            width: 100%;
-            margin-top: 2rem;
-            margin-bottom: 3rem;
-            justify-content: center;
-            img {
-                padding: 0;
-                height: auto;
-                width: 300px;
-            }
-        }
-
-        &__form {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-        
-        &__field {
-            padding: 0;
-            width: 95%;
-        }
-    
-        &__mail a{
-            font-size: large;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-                
-        }
-    }
+  }
 }
