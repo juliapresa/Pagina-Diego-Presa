@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,12 +17,14 @@
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header data-aos="fade-up" class="index-header container-fluid">
-    <div class="logonav-container row col-md-12 col-sm-12 d-flex">
-      <div class="logo-container col-md-6 col-sm-6 d-flex justify-content-first">
+    <div class="index-header__logonav logonav-container row col-md-12 col-sm-12 d-flex">
+      <div class="index-header__logo-wrap logo-container col-md-6 col-sm-6 d-flex justify-content-first">
         <a title="logo" href="#"><img src="./assets/img/logoBlanco.png" alt="logo" title="logo"></a>
       </div>
-      <div class="nav-container col-md-6 col-sm-6 d-flex justify-content-end">
+      <div class="index-header__nav-wrap nav-container col-md-6 col-sm-6 d-flex justify-content-end">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -32,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" class="active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 <a class="nav-link" title="pages" href="./pages/noticias.html">Noticias</a>
                 <a class="nav-link" title="pages" href="./pages/conciertos.html">Conciertos</a>
                 <a class="nav-link" title="pages" href="./pages/musica.html">Música</a>
@@ -45,47 +46,32 @@
         </nav>
       </div>
     </div>
-    <div class="header-links col-md-12 col-sm-12 d-flex justify-content-center">
-      <div class="div-links">
-        <a href="https://www.instagram.com/diegopresabuceo/" title="links" target="_blank"><i
-          class="fa-brands fa-instagram"></i></a>
-      </div>
-      <div class="div-links">
-        <a href="https://twitter.com/diegopresabuceo?lang=es" title="links" target="_blank"><i
-          class="fa-brands fa-x"></i></a>
-      </div>
-      <div class="div-links">
-        <a href="https://www.facebook.com/diegopresabuceo/?locale=es_LA" title="links" target="_blank"><i
-          class="fa-brands fa-facebook-f"></i></a>
-      </div>
-      <div class="div-links">
-        <a href="https://open.spotify.com/artist/3ocrfk5U9Q5V2j6F0T8fjT" title="links" target="_blank"><i
-          class="fa-brands fa-spotify"></i></a>
-      </div>
-      <div class="div-links">
-        <a href="https://www.youtube.com/c/DiegoPresa" title="links" target="_blank"><i
-          class="fa-brands fa-youtube"></i></a>
-      </div>
+    <div class="index-header__social header-links col-md-12 col-sm-12 d-flex justify-content-center">
+      <a class="index-header__social-link" href="https://www.instagram.com/diegopresabuceo/" title="links" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a class="index-header__social-link" href="https://twitter.com/diegopresabuceo?lang=es" title="links" target="_blank"><i class="fa-brands fa-x"></i></a>
+      <a class="index-header__social-link" href="https://www.facebook.com/diegopresabuceo/?locale=es_LA" title="links" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a class="index-header__social-link" href="https://open.spotify.com/artist/3ocrfk5U9Q5V2j6F0T8fjT" title="links" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+      <a class="index-header__social-link" href="https://www.youtube.com/c/DiegoPresa" title="links" target="_blank"><i class="fa-brands fa-youtube"></i></a>
     </div>
   </header>
 
   <main class="index">
 
+    <!-- BIO -->
     <section class="container index__header">
-      <div class="index__title col-md-12 col-sm-12 d-flex justify-content-first">
+      <div class="index__title">
         <h1 data-aos="zoom-in">BIOGRAFÍA</h1>
       </div>
-      <div class="index__divider col-md-12 col-sm-12 d-flex justify-content-first">
+      <div class="index__divider">
         <hr>
       </div>
     </section>
 
-    <div data-aos="zoom-in" class="bio row d-flex">
-        <p>Diego Presa (Montevideo, 1975) es músico y autor de canciones. Posee una trayectoria sostenida desde hace dos décadas, con quince obras editadas y cientos de conciertos en salas reconocidas de Uruguay y con presentaciones constantes en Argentina. Sus creaciones se desarrollan tanto en formato solista como en colectivo. Es integrante de Buceo Invisible, conforma un dúo junto a Julieta Díaz (Argentina) y fue miembro del trío El Astillero. A finales de la década del 90’ junto a otros artistas funda Buceo Invisible, un espacio de encuentro y trabajo de músicos, poetas, plásticos y cineastas. Dentro del colectivo es cantante, guitarrista, compositor y arreglador. El trabajo con Julieta Díaz, que comenzó en 2021, es el resultado de un encuentro de poesía y música, con dos álbumes editados. El Astillero fue un trío acústico formado en 2016 junto a Garo Arakelian y Gonzalo Deniz, que editó dos discos y realizó más de medio centenar de conciertos a lo largo de cuatro años. Como solista ha publicado cinco álbumes y realizado presentaciones en vivo de manera constante. Por esta trayectoria de obras editadas y conciertos ha recibido varios Premios Graffiti a la Música uruguaya y un amplio reconocimiento de la crítica especializada.
-      </div>
+    <div data-aos="zoom-in" class="bio">
+      <p>Diego Presa (Montevideo, 1975) es músico y autor de canciones. Posee una trayectoria sostenida desde hace dos décadas, con quince obras editadas y cientos de conciertos en salas reconocidas de Uruguay y con presentaciones constantes en Argentina. Sus creaciones se desarrollan tanto en formato solista como en colectivo. Es integrante de Buceo Invisible, conforma un dúo junto a Julieta Díaz (Argentina) y fue miembro del trío El Astillero. A finales de la década del 90' junto a otros artistas funda Buceo Invisible, un espacio de encuentro y trabajo de músicos, poetas, plásticos y cineastas. Dentro del colectivo es cantante, guitarrista, compositor y arreglador. El trabajo con Julieta Díaz, que comenzó en 2021, es el resultado de un encuentro de poesía y música, con dos álbumes editados. El Astillero fue un trío acústico formado en 2016 junto a Garo Arakelian y Gonzalo Deniz, que editó dos discos y realizó más de medio centenar de conciertos a lo largo de cuatro años. Como solista ha publicado cinco álbumes y realizado presentaciones en vivo de manera constante. Por esta trayectoria de obras editadas y conciertos ha recibido varios Premios Graffiti a la Música uruguaya y un amplio reconocimiento de la crítica especializada.</p>
     </div>
 
-
+    <!-- NOTICIAS -->
     <section data-aos="zoom-in" class="container index__header">
       <div class="index__title">
         <h2>NOTICIAS RECIENTES</h2>
@@ -95,50 +81,44 @@
       </div>
     </section>
 
-    <section data-aos="fade-up" class="new d-flex col-md-12 col-sm-12 row">
-      <article class="new__item d-flex row col-md-12 col-sm-12">
-
-        <div class="col-md-12 col-sm-12 new__images">
+    <section data-aos="fade-up" class="new">
+      <article class="new__item">
+        <div class="new__images">
           <img class="new__img" src="./assets/img/noticiaOficiodelCantor.jpg" alt="pic" title="news">
         </div>
-
-        <div class="col-md-12 col-sm-12 new__content">
+        <div class="new__content">
           <h3>DIEGO PRESA TRÍO presenta nuevo single</h3>
-          <div class="new__links d-flex justify-content-center">
+          <div class="new__links">
             <a title="links" href="https://open.spotify.com/intl-es/track/588TEUdo1E3U6Ts3zsRwCI?si=7c741ab81067447d&nd=1&dlsi=1e220790bb004add" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-            <a title="links" href="https://www.youtube.com/watch?v=TRYCa9M1YbA" target="_blank"><i class="fa-brands fa-youtube"></i></a>  
+            <a title="links" href="https://www.youtube.com/watch?v=TRYCa9M1YbA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
           </div>
-        </div>
-
-        <div class="new__divider col-md-12 col-sm-12 d-flex justify-content-center">
-          <hr>
         </div>
       </article>
+      <div class="new__divider"><hr></div>
     </section>
 
-    <section data-aos="fade-up" class="new col-md-12 col-sm-12 row">
-      <div class="new__item row col-md-12 col-sm-12">
-          <div class="new__images col-md-12 col-sm-12">
-            <img class="new__img" src="./assets/img/florAbiertaTapa.jpeg" alt="foto" title="news">
-            <img class="new__img--secondary" src="./assets/img/florAbiertaContratapa.jpeg" alt="foto" title="news">
-          </div>
-        <div class="new__content col-md-12 col-sm-12">
+    <section data-aos="fade-up" class="new">
+      <article class="new__item">
+        <div class="new__images">
+          <img class="new__img" src="./assets/img/florAbiertaTapa.jpeg" alt="foto" title="news">
+          <img class="new__img--secondary" src="./assets/img/florAbiertaContratapa.jpeg" alt="foto" title="news">
+        </div>
+        <div class="new__content">
           <h3>Flor Abierta</h3>
           <p>Nuevo álbum.</p>
           <div class="new__links">
             <a title="links" href="https://open.spotify.com/intl-es/album/6Tbw48ufyLArSIRT8Ox2yJ?si=_lUL8xRVRKGpElgbXEaibg" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-            <a title="links" href="https://youtube.com/playlist?list=OLAK5uy_nqyZeC7EkPLu-x8Gw-DWbkNpg45WS1cEg&si=czqYiyRZdNH0J--P" target="_blank"><i class="fa-brands fa-youtube"></i></a>  
+            <a title="links" href="https://youtube.com/playlist?list=OLAK5uy_nqyZeC7EkPLu-x8Gw-DWbkNpg45WS1cEg&si=czqYiyRZdNH0J--P" target="_blank"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
-      </div>
+      </article>
     </section>
 
-    <div class="index__button col-md-12 col-sm-12">
-        <button onclick="window.location.href='https://www.diegopresa.com/pages/noticias'">VER MÁS NOTICIAS <i
-          class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></button>
-      </div>
+    <div class="index__button">
+      <button onclick="window.location.href='https://www.diegopresa.com/pages/noticias'">VER MÁS NOTICIAS <i class="fa-solid fa-arrow-right-long"></i></button>
+    </div>
 
-
+    <!-- MÚSICA -->
     <section data-aos="zoom-in" class="container index__header">
       <div class="index__title">
         <h2>MÚSICA</h2>
@@ -148,145 +128,116 @@
       </div>
     </section>
 
-    <section data-aos="fade-up" class="recordsIndex col-md-12 col-sm-12">
-      <div class="recordsIndex__itemIndex col-sm-12 col-md-4 d-flex flex-column align-items-center">
+    <section data-aos="fade-up" class="recordsIndex">
+      <div class="recordsIndex__itemIndex">
         <a title="record" href="https://open.spotify.com/intl-es/album/0U95lSGqfHJnfmMp8ZWKvs" target="_blank">
           <img src="./assets/img/julietados.jpg" alt="record" title="record">
           <h3>Río</h3>
-          <h4>con Julieta Díaz • 2023</h4>
+          <h4>con Julieta Díaz · 2023</h4>
         </a>
       </div>
-      <div class="recordsIndex__itemIndex col-sm-12 col-md-4 d-flex flex-column align-items-center">
+      <div class="recordsIndex__itemIndex">
         <a title="record" href="https://open.spotify.com/intl-es/album/2AUtpa9e7gY3L7iZcs6o6C" target="_blank">
           <img src="./assets/img/diegocuatro.jpg" alt="disco" title="record">
           <h3>Cuarto</h3>
-          <h4>Diego Presa • 2020</h4>
+          <h4>Diego Presa · 2020</h4>
         </a>
       </div>
-      <div class="recordsIndex__itemIndex col-sm-12 col-md-4 d-flex flex-column align-items-center">
+      <div class="recordsIndex__itemIndex">
         <a title="record" href="https://open.spotify.com/intl-es/album/5uAyH2tpC6hQ1Gn5s5ddLU" target="_blank">
           <img src="./assets/img/buceocinco.jpg" alt="disco" title="record">
           <h3>Luz marginal</h3>
-          <h4>Buceo Invisible • 2018</h4>
+          <h4>Buceo Invisible · 2018</h4>
         </a>
       </div>
     </section>
 
-    <div class="index__button d-flex col-md-12 col-sm-12 justify-content-end">
-        <button onclick="window.location.href='https://www.diegopresa.com/pages/musica'">VER MÁS MÚSICA <i class="fa-solid fa-arrow-right-long"
-          style="color: #ffffff;"></i></button>
-      </div>
+    <div class="index__button">
+      <button onclick="window.location.href='https://www.diegopresa.com/pages/musica'">VER MÁS MÚSICA <i class="fa-solid fa-arrow-right-long"></i></button>
+    </div>
 
+    <!-- VIDEOS -->
     <section data-aos="zoom-in" class="container index__header">
-      <div class="index__title col-md-12 col-sm-12 d-flex justify-content-first">
+      <div class="index__title">
         <h2>VIDEOS</h2>
       </div>
-      <div class="index__divider col-md-12 col-sm-12 d-flex justify-content-first">
+      <div class="index__divider">
         <hr>
       </div>
     </section>
 
-    <div data-aos="fade-up" class="videosIndex d-flex col-md-12 col-sm-12 row">
-      <div class="videoIndex d-flex col-sm-12 col-md-12 justify-content-center">
-        <iframe width="700" height="450" src="https://www.youtube.com/embed/canOBwBnAAU?si=9v9QVe2aaSyT7Xgr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div data-aos="fade-up" class="videosIndex">
+      <div class="videos__embed-wrap">
+        <iframe src="https://www.youtube.com/embed/canOBwBnAAU?si=9v9QVe2aaSyT7Xgr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
 
-    <div class="index__button d-flex col-md-12 col-sm-12 justify-content-end">
-      <button onclick="window.location.href='https://www.diegopresa.com/pages/videos'">VER MÁS VIDEOS <i class="fa-solid fa-arrow-right-long"
-              style="color: #ffffff;"></i></button>
+    <div class="index__button">
+      <button onclick="window.location.href='https://www.diegopresa.com/pages/videos'">VER MÁS VIDEOS <i class="fa-solid fa-arrow-right-long"></i></button>
     </div>
-    
+
+    <!-- LIBROS -->
     <section data-aos="zoom-in" class="container index__header">
-      <div class="index__title col-md-12 col-sm-12 d-flex justify-content-first">
+      <div class="index__title">
         <h2>LIBROS</h2>
       </div>
-      <div class="index__divider col-md-12 col-sm-12 d-flex justify-content-first">
+      <div class="index__divider">
         <hr>
       </div>
     </section>
 
-    <section data-aos="fade-up" class="book col-md-12 col-sm-12 row">
-      <div class="book__item row col-md-12 col-sm-12">
-        <div class="book__image col-md-4 col-sm-12">
+    <section data-aos="fade-up" class="book">
+      <div class="book__item">
+        <div class="book__image">
           <img src="./assets/img/libro.JPG" alt="pic" title="book">
         </div>
-        <div class="book__content col-md-4 col-sm-12">
+        <div class="book__content">
           <h3>Desviaciones</h3>
-          <p >(Poesía, Pez en el hielo ediciones 2020)</p>
-          <p >Diego Presa</p>
-          <button onclick="window.location.href='https://pezenelhielo.wordpress.com'" type="button" class="btn btn-dark">IR A EDITORIAL</button>
+          <p>(Poesía, Pez en el hielo ediciones 2020)</p>
+          <p>Diego Presa</p>
+          <button onclick="window.location.href='https://pezenelhielo.wordpress.com'" type="button" class="btn">IR A EDITORIAL</button>
         </div>
       </div>
     </section>
 
+    <!-- GALERÍA -->
     <section data-aos="zoom-in" class="container index__header">
-      <div class="index__title col-md-12 col-sm-12 d-flex justify-content-first">
+      <div class="index__title">
         <h2>GALERÍA</h2>
       </div>
-      <div class="index__divider col-md-12 col-sm-12 d-flex justify-content-first">
+      <div class="index__divider">
         <hr>
       </div>
     </section>
 
     <div data-aos="fade-up" class="container galery">
-      <div class="galery__box">
-        <img src="./assets/img/solisdos.jpg" alt="pic" title="galery">
-      </div>
-      <div class="galery__box">
-        <img src="./assets/img/rojo.jpg" alt="pic" title="galery">
-      </div>
-      <div class="galery__box">
-        <img src="./assets/img/verdeUno.jpg" alt="pic" title="galery">
-      </div>
-      <div class="galery__box">
-        <img src="./assets/img/conciertodosgrande.jpg" alt="pic" title="galery">
-      </div>
-      <div class="galery__box">
-        <img src="./assets/img/solisunogrande.jpg" alt="pic" title="galery">
-      </div>
-      <div class="galery__box">
-        <img src="./assets/img/conjulieta.jpg" alt="pic" title="galery">
-      </div>
-      <div class="galery__box">
-        <img src="./assets/img/piano.jpg" alt="pic" title="galery">
-      </div>
+      <div class="galery__box"><img src="./assets/img/solisdos.jpg" alt="pic" title="galery"></div>
+      <div class="galery__box"><img src="./assets/img/rojo.jpg" alt="pic" title="galery"></div>
+      <div class="galery__box"><img src="./assets/img/verdeUno.jpg" alt="pic" title="galery"></div>
+      <div class="galery__box"><img src="./assets/img/conciertodosgrande.jpg" alt="pic" title="galery"></div>
+      <div class="galery__box"><img src="./assets/img/solisunogrande.jpg" alt="pic" title="galery"></div>
+      <div class="galery__box"><img src="./assets/img/conjulieta.jpg" alt="pic" title="galery"></div>
+      <div class="galery__box"><img src="./assets/img/piano.jpg" alt="pic" title="galery"></div>
     </div>
+
   </main>
 
   <footer class="footer container-fluid">
-
-        <div class="footer__divider">
-            <hr>
-        </div>
-
-        <div class="footer__social">
-            <a href="https://www.instagram.com/diegopresabuceo/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://twitter.com/diegopresabuceo?lang=es" target="_blank">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="https://www.facebook.com/diegopresabuceo/?locale=es_LA" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://open.spotify.com/artist/3ocrfk5U9Q5V2j6F0T8fjT" target="_blank">
-                <i class="fa-brands fa-spotify"></i>
-            </a>
-            <a href="https://www.youtube.com/c/DiegoPresa" target="_blank">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-        </div>
-
-        <div class="footer__copy">
-            <p>© 2024. Todos los derechos reservados</p>
-        </div>
-
-    </footer>
+    <div class="footer__divider"><hr></div>
+    <div class="footer__social">
+      <a href="https://www.instagram.com/diegopresabuceo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/diegopresabuceo?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.facebook.com/diegopresabuceo/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://open.spotify.com/artist/3ocrfk5U9Q5V2j6F0T8fjT" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+      <a href="https://www.youtube.com/c/DiegoPresa" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footer__copy">
+      <p>© 2024. Todos los derechos reservados</p>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script> AOS.init({duration: 1000, once: true});</script>
+  <script>AOS.init({duration: 1000, once: true});</script>
   <script src="./js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
