@@ -401,8 +401,8 @@ body {
 @media screen and (min-width: 0px) and (max-width: 768px) {
 
   .index {
-    overflow-x: hidden;
     width: 100%;
+    overflow: hidden;
 
     &__header {
       margin-top: 2rem;
