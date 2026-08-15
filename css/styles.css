@@ -1066,6 +1066,7 @@ body {
   /* ── CONTENIDO ── */
   /* ── LINKS ── */
   /* ── DIVISOR ── */
+  /* ── TEXTO EXPANDIBLE / VER MÁS ── */
 }
 .news__item {
   margin: 0;
@@ -1174,6 +1175,62 @@ body {
   border: none;
   width: 100%;
   margin: 0;
+}
+.news__text-wrap {
+  position: relative;
+}
+.news__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.news__author {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+.news__extra {
+  display: none;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+.news__extra p {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(200, 196, 190, 0.7);
+  margin-bottom: 10px;
+}
+.news__text-wrap.is-expanded .news__text {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  display: block;
+}
+.news__text-wrap.is-expanded .news__extra {
+  display: block;
+}
+.news__toggle {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+.news__toggle:hover {
+  color: #ffffff;
 }
 
 /* ── RESPONSIVE ── */
